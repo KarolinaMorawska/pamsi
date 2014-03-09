@@ -5,13 +5,22 @@
 
 using namespace std;
 
+/*!
+*  Argumenty i najwazniejsze pola funkcji
+   -tab1 -tablica na ktorej elementach beda wykonywane dzialania
+
+*/
 void Dzialania::oblicz()
 {
     for (unsigned int i=0; i<tab1.rozmiar() ;i++){
 	 tab2[i]=tab1[i]*2;
 	}
 }
+/*!
+*  Argumenty i najwazniejsze pola funkcji 
+  -nazwapl zmienna typu char zawierajaca nazwe pliku
 
+*/
 bool Dzialania::wczytajplik(char *nazwapl)
 {
 	ifstream plik;
@@ -32,7 +41,11 @@ bool Dzialania::wczytajplik(char *nazwapl)
 	}
 	return true;
 }
+/*!
+*  Argumenty i najwazniejsze pola funkcji 
+  -nazwapl zmienna typu char zawierajaca nazwe pliku
 
+*/
 bool Dzialania::porownaj(char* nazwapl)
 	{
 		ifstream pliks;
@@ -60,7 +73,10 @@ bool Dzialania::porownaj(char* nazwapl)
 	}
 		 	return true;
 	}
-
+/*!
+*   Argumenty i najwazniejsze pola funkcji
+    -iloscpowtorzen -zmienna zawierajaca ile powtorzen ma wykonywac program.
+*/
 	double Dzialania::liczczas(int iloscpowtorzen)
 	{
 	    clock_t tmp = clock();

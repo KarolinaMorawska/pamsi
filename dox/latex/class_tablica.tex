@@ -1,0 +1,225 @@
+\hypertarget{class_tablica}{\section{Dokumentacja klasy Tablica}
+\label{class_tablica}\index{Tablica@{Tablica}}
+}
+
+
+Deklaracja klasy \hyperlink{class_tablica}{Tablica}.  
+
+
+
+
+{\ttfamily \#include $<$tablica.\-hh$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_tablica_a4f69d95776f0ea1454a87bb72562713b}{zamienelementy} (int i, int j)
+\item 
+void \hyperlink{class_tablica_ad4d99dc2ca07689167d703ba24a4dab2}{dodajelement} (int element)
+\item 
+void \hyperlink{class_tablica_ae63b8d381eb4f6a19cae52241228ae07}{odwrockolejnosc} ()
+\item 
+void \hyperlink{class_tablica_ac5b21c0e98c4f5ac5c728b99f092b112}{dodajelementy} (const \hyperlink{class_tablica}{Tablica} \&T1)
+\item 
+\hyperlink{class_tablica_a5f484e7b0478e1ff9b62e894f9d7b28d}{Tablica} ()
+\item 
+\hyperlink{class_tablica_a6e1e50608ad0f9f9626d0b1fb698b180}{$\sim$\-Tablica} ()
+\item 
+unsigned int \hyperlink{class_tablica_ae95a62ea4245e732b96c110c0fc53532}{rozmiar} () const 
+\item 
+void \hyperlink{class_tablica_a4e743bdbb74647717d63015894dfae8d}{zmianarozmiaru} (unsigned int nowyrozmiar)
+\item 
+int \& \hyperlink{class_tablica_aa73e557bfd1a0283d94b594f159cf6d1}{operator\mbox{[}$\,$\mbox{]}} (const unsigned int b)
+\item 
+const int \& \hyperlink{class_tablica_a16a2591adbcce8add22be48ff8f1a830}{operator\mbox{[}$\,$\mbox{]}} (const unsigned int b) const 
+\item 
+\hyperlink{class_tablica}{Tablica} \& \hyperlink{class_tablica_a469a403559ecce37e70c8adc67a0fc0d}{operator+} (const \hyperlink{class_tablica}{Tablica} \&argument) const 
+\item 
+\hyperlink{class_tablica}{Tablica} \& \hyperlink{class_tablica_af42a963c962250d20240811a0defd6b4}{operator=} (const \hyperlink{class_tablica}{Tablica} \&argument)
+\item 
+bool \hyperlink{class_tablica_a9416cdb689731ec64d440de10d944549}{operator==} (const \hyperlink{class_tablica}{Tablica} \&argument) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Deklaracja klasy \hyperlink{class_tablica}{Tablica}. 
+
+Klasa \hyperlink{class_tablica}{Tablica} posiada pola oraz funkcje potrzebne do wykonywania dzialan na tablicach. 
+
+Definicja w linii 10 pliku tablica.\-hh.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_tablica_a5f484e7b0478e1ff9b62e894f9d7b28d}{\index{Tablica@{Tablica}!Tablica@{Tablica}}
+\index{Tablica@{Tablica}!Tablica@{Tablica}}
+\subsubsection[{Tablica}]{\setlength{\rightskip}{0pt plus 5cm}Tablica\-::\-Tablica (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_tablica_a5f484e7b0478e1ff9b62e894f9d7b28d}
+Konstruktor klasy \hyperlink{class_tablica}{Tablica}. 
+
+Definicja w linii 32 pliku tablica.\-hh.
+
+\hypertarget{class_tablica_a6e1e50608ad0f9f9626d0b1fb698b180}{\index{Tablica@{Tablica}!$\sim$\-Tablica@{$\sim$\-Tablica}}
+\index{$\sim$\-Tablica@{$\sim$\-Tablica}!Tablica@{Tablica}}
+\subsubsection[{$\sim$\-Tablica}]{\setlength{\rightskip}{0pt plus 5cm}Tablica\-::$\sim$\-Tablica (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_tablica_a6e1e50608ad0f9f9626d0b1fb698b180}
+Destruktor klasy \hyperlink{class_tablica}{Tablica}. 
+
+Definicja w linii 35 pliku tablica.\-hh.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_tablica_ad4d99dc2ca07689167d703ba24a4dab2}{\index{Tablica@{Tablica}!dodajelement@{dodajelement}}
+\index{dodajelement@{dodajelement}!Tablica@{Tablica}}
+\subsubsection[{dodajelement}]{\setlength{\rightskip}{0pt plus 5cm}void Tablica\-::dodajelement (
+\begin{DoxyParamCaption}
+\item[{int}]{element}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_ad4d99dc2ca07689167d703ba24a4dab2}
+Funkcja dodaje element na tablice.\-Wykorzystuje funkcje pomocnicza $\ast$ zmiana rozmiaru.
+
+Argumenty i najwazniejsze pola funkcji -\/element -\/zmienna ktora zostaje dodana do tablicy 
+
+Definicja w linii 44 pliku tablica.\-cpp.
+
+\hypertarget{class_tablica_ac5b21c0e98c4f5ac5c728b99f092b112}{\index{Tablica@{Tablica}!dodajelementy@{dodajelementy}}
+\index{dodajelementy@{dodajelementy}!Tablica@{Tablica}}
+\subsubsection[{dodajelementy}]{\setlength{\rightskip}{0pt plus 5cm}void Tablica\-::dodajelementy (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tablica} \&}]{T1}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_ac5b21c0e98c4f5ac5c728b99f092b112}
+Funkcja laczy ze soba dwie tablice.
+
+Argumenty i najwazniejsze pola funkcji -\/\-T1 -\/tablica ktora powtaje po polaczeniu. 
+
+Definicja w linii 53 pliku tablica.\-cpp.
+
+\hypertarget{class_tablica_ae63b8d381eb4f6a19cae52241228ae07}{\index{Tablica@{Tablica}!odwrockolejnosc@{odwrockolejnosc}}
+\index{odwrockolejnosc@{odwrockolejnosc}!Tablica@{Tablica}}
+\subsubsection[{odwrockolejnosc}]{\setlength{\rightskip}{0pt plus 5cm}void Tablica\-::odwrockolejnosc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_ae63b8d381eb4f6a19cae52241228ae07}
+Funkcja odwraca kolejnosc w tablicy.
+
+Argumenty i najwazniejsze pola funkcji -\/dlugosctab -\/zmmienna zawierajaca dlugosc tablicy na ktorej wykonywane jest dzialania 
+
+Definicja w linii 22 pliku tablica.\-cpp.
+
+\hypertarget{class_tablica_a469a403559ecce37e70c8adc67a0fc0d}{\index{Tablica@{Tablica}!operator+@{operator+}}
+\index{operator+@{operator+}!Tablica@{Tablica}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tablica} \& Tablica\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tablica} \&}]{argument}
+\end{DoxyParamCaption}
+) const}}\label{class_tablica_a469a403559ecce37e70c8adc67a0fc0d}
+Przeciazenie operatora dodawania.
+
+Argumenty i najwazniejsze pola funkcji -\/argument -\/przecciazenie operatora 
+
+Definicja w linii 77 pliku tablica.\-cpp.
+
+\hypertarget{class_tablica_af42a963c962250d20240811a0defd6b4}{\index{Tablica@{Tablica}!operator=@{operator=}}
+\index{operator=@{operator=}!Tablica@{Tablica}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tablica} \& Tablica\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tablica} \&}]{argument}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_af42a963c962250d20240811a0defd6b4}
+Przeciazenie operatora przypisywania.
+
+Argumenty i najwazniejsze pola funkcji -\/agrument -\/przeciazenie operatora 
+
+Definicja w linii 65 pliku tablica.\-cpp.
+
+\hypertarget{class_tablica_a9416cdb689731ec64d440de10d944549}{\index{Tablica@{Tablica}!operator==@{operator==}}
+\index{operator==@{operator==}!Tablica@{Tablica}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Tablica\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tablica} \&}]{argument}
+\end{DoxyParamCaption}
+) const}}\label{class_tablica_a9416cdb689731ec64d440de10d944549}
+Przeciazenie operatora porownania.
+
+Argumenty i najwazniejsze pola funkcji -\/argumenti -\/przeciazenie operatora 
+
+Definicja w linii 89 pliku tablica.\-cpp.
+
+\hypertarget{class_tablica_aa73e557bfd1a0283d94b594f159cf6d1}{\index{Tablica@{Tablica}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Tablica@{Tablica}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}int\& Tablica\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_tablica_aa73e557bfd1a0283d94b594f159cf6d1}
+Przeciazenie operatora indeksujacego. 
+
+Definicja w linii 44 pliku tablica.\-hh.
+
+\hypertarget{class_tablica_a16a2591adbcce8add22be48ff8f1a830}{\index{Tablica@{Tablica}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Tablica@{Tablica}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}const int\& Tablica\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{b}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_tablica_a16a2591adbcce8add22be48ff8f1a830}
+
+
+Definicja w linii 45 pliku tablica.\-hh.
+
+\hypertarget{class_tablica_ae95a62ea4245e732b96c110c0fc53532}{\index{Tablica@{Tablica}!rozmiar@{rozmiar}}
+\index{rozmiar@{rozmiar}!Tablica@{Tablica}}
+\subsubsection[{rozmiar}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Tablica\-::rozmiar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_tablica_ae95a62ea4245e732b96c110c0fc53532}
+Funkcja pomocnicza zwraca dlugosc tablicy. 
+
+Definicja w linii 38 pliku tablica.\-hh.
+
+\hypertarget{class_tablica_a4f69d95776f0ea1454a87bb72562713b}{\index{Tablica@{Tablica}!zamienelementy@{zamienelementy}}
+\index{zamienelementy@{zamienelementy}!Tablica@{Tablica}}
+\subsubsection[{zamienelementy}]{\setlength{\rightskip}{0pt plus 5cm}void Tablica\-::zamienelementy (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_a4f69d95776f0ea1454a87bb72562713b}
+Funkcja sluzaca do zamiany elementow.
+
+Argumenty i najwazniejsze pola funkcji -\/i, j -\/zmienne oznaczajace elementy w tablicy 
+
+Definicja w linii 9 pliku tablica.\-cpp.
+
+\hypertarget{class_tablica_a4e743bdbb74647717d63015894dfae8d}{\index{Tablica@{Tablica}!zmianarozmiaru@{zmianarozmiaru}}
+\index{zmianarozmiaru@{zmianarozmiaru}!Tablica@{Tablica}}
+\subsubsection[{zmianarozmiaru}]{\setlength{\rightskip}{0pt plus 5cm}void Tablica\-::zmianarozmiaru (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{nowyrozmiar}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_a4e743bdbb74647717d63015894dfae8d}
+Funkcja pomocnicza sluzaca do zmiany rozmiaru .
+
+Argumenty i najwazniejsze pola funkcji \begin{DoxyReturn}{Zwraca}
+nowyrozmiar -\/\-Rozmiar tablicy po zmianie. 
+\end{DoxyReturn}
+
+
+Definicja w linii 34 pliku tablica.\-cpp.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+/home/karolina/\-Pulpit/pamsi/prj/inc/\hyperlink{tablica_8hh}{tablica.\-hh}\item 
+/home/karolina/\-Pulpit/pamsi/prj/src/\hyperlink{tablica_8cpp}{tablica.\-cpp}\end{DoxyCompactItemize}
