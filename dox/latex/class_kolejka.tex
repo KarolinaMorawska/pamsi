@@ -1,0 +1,112 @@
+\hypertarget{class_kolejka}{\section{Dokumentacja szablonu klasy Kolejka$<$ Typ $>$}
+\label{class_kolejka}\index{Kolejka$<$ Typ $>$@{Kolejka$<$ Typ $>$}}
+}
+
+
+Szablon klasy \hyperlink{class_kolejka}{Kolejka} Klasa zaimplementowana na liscie.  
+
+
+
+
+{\ttfamily \#include $<$kolejka.\-hh$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{class_kolejka_a6fa67cc293681c3333e6d553cfe3ce84}{size} () const 
+\item 
+bool \hyperlink{class_kolejka_a6dca0c5c22b17197882b83a54b4649d4}{isempty} () const 
+\item 
+const Typ \& \hyperlink{class_kolejka_ab0222c8041187d540a4fe63ae15f0799}{top} () const 
+\item 
+void \hyperlink{class_kolejka_ac30514f0d3eb95411b472baebe859f2e}{enqueue} (const Typ element)
+\item 
+void \hyperlink{class_kolejka_a73e7c4df8f400108a4c48132c2476d5a}{dequeue} ()
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+std\-::list$<$ Typ $>$ \hyperlink{class_kolejka_ac357392f2e883da4f59981f95ed69ec2}{lista}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\subsubsection*{template$<$typename Typ$>$class Kolejka$<$ Typ $>$}
+
+
+
+Definicja w linii 10 pliku kolejka.\-hh.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_kolejka_a73e7c4df8f400108a4c48132c2476d5a}{\index{Kolejka@{Kolejka}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!Kolejka@{Kolejka}}
+\subsubsection[{dequeue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ void {\bf Kolejka}$<$ Typ $>$\-::dequeue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_kolejka_a73e7c4df8f400108a4c48132c2476d5a}
+Metoda ktora sciaga element ze stosu 
+
+Definicja w linii 33 pliku kolejka.\-hh.
+
+\hypertarget{class_kolejka_ac30514f0d3eb95411b472baebe859f2e}{\index{Kolejka@{Kolejka}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!Kolejka@{Kolejka}}
+\subsubsection[{enqueue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ void {\bf Kolejka}$<$ Typ $>$\-::enqueue (
+\begin{DoxyParamCaption}
+\item[{const Typ}]{element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_kolejka_ac30514f0d3eb95411b472baebe859f2e}
+Metoda ktora dodaje do kolejki elementy 
+
+Definicja w linii 28 pliku kolejka.\-hh.
+
+\hypertarget{class_kolejka_a6dca0c5c22b17197882b83a54b4649d4}{\index{Kolejka@{Kolejka}!isempty@{isempty}}
+\index{isempty@{isempty}!Kolejka@{Kolejka}}
+\subsubsection[{isempty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ bool {\bf Kolejka}$<$ Typ $>$\-::isempty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_kolejka_a6dca0c5c22b17197882b83a54b4649d4}
+Metoda sprawdza zawartosc listy 
+
+Definicja w linii 20 pliku kolejka.\-hh.
+
+\hypertarget{class_kolejka_a6fa67cc293681c3333e6d553cfe3ce84}{\index{Kolejka@{Kolejka}!size@{size}}
+\index{size@{size}!Kolejka@{Kolejka}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ unsigned int {\bf Kolejka}$<$ Typ $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_kolejka_a6fa67cc293681c3333e6d553cfe3ce84}
+Metoda zwraca rozmiar listy 
+
+Definicja w linii 17 pliku kolejka.\-hh.
+
+\hypertarget{class_kolejka_ab0222c8041187d540a4fe63ae15f0799}{\index{Kolejka@{Kolejka}!top@{top}}
+\index{top@{top}!Kolejka@{Kolejka}}
+\subsubsection[{top}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ const Typ\& {\bf Kolejka}$<$ Typ $>$\-::top (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_kolejka_ab0222c8041187d540a4fe63ae15f0799}
+Metoda sprawdzajaca wierzcholek 
+
+Definicja w linii 24 pliku kolejka.\-hh.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_kolejka_ac357392f2e883da4f59981f95ed69ec2}{\index{Kolejka@{Kolejka}!lista@{lista}}
+\index{lista@{lista}!Kolejka@{Kolejka}}
+\subsubsection[{lista}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ std\-::list$<$Typ$>$ {\bf Kolejka}$<$ Typ $>$\-::lista\hspace{0.3cm}{\ttfamily [private]}}}\label{class_kolejka_ac357392f2e883da4f59981f95ed69ec2}
+
+
+Definicja w linii 12 pliku kolejka.\-hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{kolejka_8hh}{kolejka.\-hh}\end{DoxyCompactItemize}

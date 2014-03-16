@@ -1,0 +1,11 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Czasstos::czas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_czasstos.html#a49b08edabe35c166e4f8cddb4c9260c3"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Czaskol::czas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_czaskol.html#a0ce6e7012a511af4c9c0012bfdec2fbc"];
+}

@@ -1,6 +1,8 @@
 #ifndef DZIALANIA_HH
 #define DZIALANIA_HH
 
+
+
 #include "tablica.hh"
 /*! \brief Deklaracja klasy Dzialania.
 

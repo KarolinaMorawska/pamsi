@@ -1,0 +1,112 @@
+\hypertarget{class_stos}{\section{Dokumentacja szablonu klasy Stos$<$ Typ $>$}
+\label{class_stos}\index{Stos$<$ Typ $>$@{Stos$<$ Typ $>$}}
+}
+
+
+Szablon klasy stos. Klasa stos wykonuja dzialania \-: -\/odklada elementy na stos -\/sciaga element ze stosu -\/zwraca rozmiar -\/sprawdza czy stos jesyt pusty.  
+
+
+
+
+{\ttfamily \#include $<$stos.\-hh$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+const Typ \& \hyperlink{class_stos_a07d6df2e59cdfdac65d8f793777ff463}{top} () const 
+\item 
+void \hyperlink{class_stos_ae288acf023c8a1c25184dc5c6a57ee2a}{push} (Typ element)
+\item 
+void \hyperlink{class_stos_a38e84abe604aa6d1e9b9c6ac524a33bc}{pop} ()
+\item 
+bool \hyperlink{class_stos_a70aadb72c5b4728dc0c4b1e1adaa868e}{isempty} () const 
+\item 
+int \hyperlink{class_stos_a472d836bf51faa0264fefd08eb4224d6}{size} () const 
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tablica}{Tablica}$<$ Typ $>$ \hyperlink{class_stos_abda1a3c37f21b8728a3fcfb4accd2108}{tab}
+\begin{DoxyCompactList}\small\item\em Pole przechowujace tablic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\subsubsection*{template$<$typename Typ$>$class Stos$<$ Typ $>$}
+
+
+
+Definicja w linii 15 pliku stos.\-hh.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_stos_a70aadb72c5b4728dc0c4b1e1adaa868e}{\index{Stos@{Stos}!isempty@{isempty}}
+\index{isempty@{isempty}!Stos@{Stos}}
+\subsubsection[{isempty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ bool {\bf Stos}$<$ Typ $>$\-::isempty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_stos_a70aadb72c5b4728dc0c4b1e1adaa868e}
+Metoda sprawdza czy stos jest pusty. 
+
+Definicja w linii 29 pliku stos.\-hh.
+
+\hypertarget{class_stos_a38e84abe604aa6d1e9b9c6ac524a33bc}{\index{Stos@{Stos}!pop@{pop}}
+\index{pop@{pop}!Stos@{Stos}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ void {\bf Stos}$<$ Typ $>$\-::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stos_a38e84abe604aa6d1e9b9c6ac524a33bc}
+Metoda sciaga ze stosu element. 
+
+Definicja w linii 46 pliku stos.\-hh.
+
+\hypertarget{class_stos_ae288acf023c8a1c25184dc5c6a57ee2a}{\index{Stos@{Stos}!push@{push}}
+\index{push@{push}!Stos@{Stos}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ void {\bf Stos}$<$ Typ $>$\-::push (
+\begin{DoxyParamCaption}
+\item[{Typ}]{element}
+\end{DoxyParamCaption}
+)}}\label{class_stos_ae288acf023c8a1c25184dc5c6a57ee2a}
+Metoda odkladajaca na stosie elementy 
+
+Definicja w linii 41 pliku stos.\-hh.
+
+\hypertarget{class_stos_a472d836bf51faa0264fefd08eb4224d6}{\index{Stos@{Stos}!size@{size}}
+\index{size@{size}!Stos@{Stos}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ int {\bf Stos}$<$ Typ $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_stos_a472d836bf51faa0264fefd08eb4224d6}
+Metoda zwraca rozmiar stosu. 
+
+Definicja w linii 34 pliku stos.\-hh.
+
+\hypertarget{class_stos_a07d6df2e59cdfdac65d8f793777ff463}{\index{Stos@{Stos}!top@{top}}
+\index{top@{top}!Stos@{Stos}}
+\subsubsection[{top}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ const Typ\& {\bf Stos}$<$ Typ $>$\-::top (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_stos_a07d6df2e59cdfdac65d8f793777ff463}
+Metoda zwraca szczyt stosu 
+
+Definicja w linii 20 pliku stos.\-hh.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_stos_abda1a3c37f21b8728a3fcfb4accd2108}{\index{Stos@{Stos}!tab@{tab}}
+\index{tab@{tab}!Stos@{Stos}}
+\subsubsection[{tab}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ {\bf Tablica}$<$Typ$>$ {\bf Stos}$<$ Typ $>$\-::tab\hspace{0.3cm}{\ttfamily [private]}}}\label{class_stos_abda1a3c37f21b8728a3fcfb4accd2108}
+
+
+Definicja w linii 37 pliku stos.\-hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{stos_8hh}{stos.\-hh}\end{DoxyCompactItemize}

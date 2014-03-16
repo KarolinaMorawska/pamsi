@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7etablica',['~Tablica',['../class_tablica.html#a6e1e50608ad0f9f9626d0b1fb698b180',1,'Tablica']]]
+  ['_7etablica',['~Tablica',['../class_tablica.html#aea2479778376598550fe82ec459a24ba',1,'Tablica']]]
 ];

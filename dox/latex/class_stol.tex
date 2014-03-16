@@ -1,0 +1,112 @@
+\hypertarget{class_stol}{\section{Dokumentacja szablonu klasy Stol$<$ Typ $>$}
+\label{class_stol}\index{Stol$<$ Typ $>$@{Stol$<$ Typ $>$}}
+}
+
+
+Szablon klasy \hyperlink{class_stol}{Stol}.  
+
+
+
+
+{\ttfamily \#include $<$stoslista.\-hh$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{class_stol_a0fe3754424071aaa5a8bcd45fd145c5b}{size} () const 
+\item 
+void \hyperlink{class_stol_a6a92606f32fb4bed2261b7ca5e192e4c}{push} (Typ element)
+\item 
+void \hyperlink{class_stol_ab6de7dccb1eb7324c8a9b866fc557ed6}{pop} ()
+\item 
+bool \hyperlink{class_stol_ab4ffd8ef21aefe4966b65ba923b0b780}{isempty} () const 
+\item 
+const Typ \& \hyperlink{class_stol_a347f84a10b44bc97af0d6f77643cd45a}{top} () const 
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+std\-::list$<$ Typ $>$ \hyperlink{class_stol_a1684a3d6a3801a6e4ea2ade79e634ea2}{lista}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\subsubsection*{template$<$typename Typ$>$class Stol$<$ Typ $>$}
+
+Klasa \hyperlink{class_stol}{Stol} posiada pola oraz funkcje potrzebne do wykonywania dzialan na liscie. 
+
+Definicja w linii 11 pliku stoslista.\-hh.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_stol_ab4ffd8ef21aefe4966b65ba923b0b780}{\index{Stol@{Stol}!isempty@{isempty}}
+\index{isempty@{isempty}!Stol@{Stol}}
+\subsubsection[{isempty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ bool {\bf Stol}$<$ Typ $>$\-::isempty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_stol_ab4ffd8ef21aefe4966b65ba923b0b780}
+Metoda sprawdza zawartosc listy 
+
+Definicja w linii 30 pliku stoslista.\-hh.
+
+\hypertarget{class_stol_ab6de7dccb1eb7324c8a9b866fc557ed6}{\index{Stol@{Stol}!pop@{pop}}
+\index{pop@{pop}!Stol@{Stol}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ void {\bf Stol}$<$ Typ $>$\-::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_stol_ab6de7dccb1eb7324c8a9b866fc557ed6}
+Metoda sciaga element z listy 
+
+Definicja w linii 25 pliku stoslista.\-hh.
+
+\hypertarget{class_stol_a6a92606f32fb4bed2261b7ca5e192e4c}{\index{Stol@{Stol}!push@{push}}
+\index{push@{push}!Stol@{Stol}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ void {\bf Stol}$<$ Typ $>$\-::push (
+\begin{DoxyParamCaption}
+\item[{Typ}]{element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_stol_a6a92606f32fb4bed2261b7ca5e192e4c}
+Metoda dodaje element 
+
+Definicja w linii 20 pliku stoslista.\-hh.
+
+\hypertarget{class_stol_a0fe3754424071aaa5a8bcd45fd145c5b}{\index{Stol@{Stol}!size@{size}}
+\index{size@{size}!Stol@{Stol}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ unsigned int {\bf Stol}$<$ Typ $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_stol_a0fe3754424071aaa5a8bcd45fd145c5b}
+Metoda zwraca rozmiar listy 
+
+Definicja w linii 18 pliku stoslista.\-hh.
+
+\hypertarget{class_stol_a347f84a10b44bc97af0d6f77643cd45a}{\index{Stol@{Stol}!top@{top}}
+\index{top@{top}!Stol@{Stol}}
+\subsubsection[{top}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ const Typ\& {\bf Stol}$<$ Typ $>$\-::top (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_stol_a347f84a10b44bc97af0d6f77643cd45a}
+Metoda sprawdza wierzchlek stosu. 
+
+Definicja w linii 34 pliku stoslista.\-hh.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_stol_a1684a3d6a3801a6e4ea2ade79e634ea2}{\index{Stol@{Stol}!lista@{lista}}
+\index{lista@{lista}!Stol@{Stol}}
+\subsubsection[{lista}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ std\-::list$<$Typ$>$ {\bf Stol}$<$ Typ $>$\-::lista\hspace{0.3cm}{\ttfamily [private]}}}\label{class_stol_a1684a3d6a3801a6e4ea2ade79e634ea2}
+
+
+Definicja w linii 13 pliku stoslista.\-hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{stoslista_8hh}{stoslista.\-hh}\end{DoxyCompactItemize}

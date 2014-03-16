@@ -1,4 +1,4 @@
-digraph "/home/karolina/Pulpit/pamsi/prj/src" {
+digraph "src" {
   compound=true
   node [ fontsize="10", fontname="Helvetica"];
   edge [ labelfontsize="10", labelfontname="Helvetica"];
@@ -7,5 +7,5 @@ digraph "/home/karolina/Pulpit/pamsi/prj/src" {
   dir_400757c3a0df52e783ed9699284f29ce [shape=box, label="src", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_400757c3a0df52e783ed9699284f29ce.html"];
   }
   dir_72345776cd6700fb0dedb8f1faaa0c00 [shape=box label="inc" URL="dir_72345776cd6700fb0dedb8f1faaa0c00.html"];
-  dir_400757c3a0df52e783ed9699284f29ce->dir_72345776cd6700fb0dedb8f1faaa0c00 [headlabel="3", labeldistance=1.5 headhref="dir_000002_000001.html"];
+  dir_400757c3a0df52e783ed9699284f29ce->dir_72345776cd6700fb0dedb8f1faaa0c00 [headlabel="4", labeldistance=1.5 headhref="dir_000002_000001.html"];
 }

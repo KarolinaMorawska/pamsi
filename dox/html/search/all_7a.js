@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['zamienelementy',['zamienelementy',['../class_tablica.html#a4f69d95776f0ea1454a87bb72562713b',1,'Tablica']]],
-  ['zmianarozmiaru',['zmianarozmiaru',['../class_tablica.html#a4e743bdbb74647717d63015894dfae8d',1,'Tablica']]]
+  ['zamienelementy',['zamienelementy',['../class_tablica.html#aea49337f0b2ee035ddc1df13ff228511',1,'Tablica']]],
+  ['zmianarozmiaru',['zmianarozmiaru',['../class_tablica.html#aafcf1f86b79c0146fa313bae711cc97e',1,'Tablica']]]
 ];

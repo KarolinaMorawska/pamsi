@@ -1,0 +1,17 @@
+digraph "Tablica::rozmiar"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Tablica::rozmiar",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Dzialania::rozmiartab",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dzialania.html#a177e69d16b8280aae1d658adb67a8fbc"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Tablica::dodajelementy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tablica.html#ad139387fb64394e133e1e1b3402f7290"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Tablica::operator+",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tablica.html#acea602357c4cbb36f9bf71bc33d62090"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Tablica::operator=",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tablica.html#a5145425b03eadaf6e97243f1fa5e5737"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Tablica::operator==",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tablica.html#a5feb149bbeae655c6d7bafada90f9615"];
+}

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>Lab2: Dokumentacja pliku /home/karolina/Pulpit/pamsi/prj/src/main.cpp</title>
+<title>My Project: Dokumentacja pliku main.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Lab2
-   &#160;<span id="projectnumber">0.1</span>
+   <div id="projectname">My Project
+   &#160;<span id="projectnumber">2.0</span>
    </div>
   </td>
  </tr>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Strony</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,13 +91,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br/>
-<code>#include &lt;<a class="el" href="dzialania_8hh_source.html">dzialania.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="tablica_8hh_source.html">tablica.hh</a>&gt;</code><br/>
 <code>#include &lt;cstdlib&gt;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
+<code>#include &quot;<a class="el" href="czas_8hh_source.html">czas.hh</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Wykres zależności załączania dla main.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#_2home_2karolina_2_pulpit_2pamsi_2prj_2src_2main_8cpp" alt=""/></div>
-<map name="_2home_2karolina_2_pulpit_2pamsi_2prj_2src_2main_8cpp" id="_2home_2karolina_2_pulpit_2pamsi_2prj_2src_2main_8cpp">
+<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#main_8cpp" alt=""/></div>
+<map name="main_8cpp" id="main_8cpp">
 </map>
 </div>
 </div>
@@ -106,7 +108,7 @@ Wykres zależności załączania dla main.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Funkcje</h2></td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
-<tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja main wykonuje algorytm i sprawdza czas dzialania algorytmu. W funkcji main wykonywane sa operacje : -Wczytywanie pliku z danymi wejsciowym -Dane sa mnozone razy 2 (w tej chwili wlaczany jest stoper) -Wczytywanie pliku z danymi sprawdzajacymi -Sprawdzanie zgodnosci -Stoper zostaje wylaczony i na wyjsciu programu podany zostaje czas dzialania algorytmu.  <a href="#a3c04138a5bfe5d72780bb7e82a18e627">Więcej...</a><br/></td></tr>
+<tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja main wykonuje algorytm i sprawdza czas dzialania algorytmu. W funkcji main wykonywane sa operacje : -sprawdzenie ilosci wywolanych argumentow -sprawdzenie poprawnosci wpisywanej nazwy przez uzytkownika i wyslanie odpowiedniego komunikatu -wypisanie na terminalu czas dzialania algorytmu.  <a href="#a3c04138a5bfe5d72780bb7e82a18e627">Więcej...</a><br/></td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Dokumentacja funkcji</h2>
@@ -134,16 +136,23 @@ Funkcje</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Funkcja main wykonuje algorytm i sprawdza czas dzialania algorytmu. W funkcji main wykonywane sa operacje : -Wczytywanie pliku z danymi wejsciowym -Dane sa mnozone razy 2 (w tej chwili wlaczany jest stoper) -Wczytywanie pliku z danymi sprawdzajacymi -Sprawdzanie zgodnosci -Stoper zostaje wylaczony i na wyjsciu programu podany zostaje czas dzialania algorytmu. </p>
-
 <p>Definicja w linii <a class="el" href="main_8cpp_source.html#l00022">22</a> pliku <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.png" border="0" usemap="#main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" alt=""/></div>
+<map name="main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" id="main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph">
+</map>
+</div>
+</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano N, 9 mar 2014 22:40:25 dla Lab2 programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano N, 16 mar 2014 11:05:59 dla My Project programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

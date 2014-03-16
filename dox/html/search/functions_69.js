@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['isempty',['isempty',['../class_kolejka.html#a6dca0c5c22b17197882b83a54b4649d4',1,'Kolejka::isempty()'],['../class_stos.html#a70aadb72c5b4728dc0c4b1e1adaa868e',1,'Stos::isempty()'],['../class_stos2.html#a749e533abbbb8db8e5d97e6028869a7a',1,'Stos2::isempty()'],['../class_stol.html#ab4ffd8ef21aefe4966b65ba923b0b780',1,'Stol::isempty()']]]
+];

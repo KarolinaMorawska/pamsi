@@ -1,14 +1,22 @@
-digraph "/home/karolina/Pulpit/pamsi/prj/inc/tablica.hh"
+digraph "tablica.hh"
 {
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="/home/karolina/Pulpit\l/pamsi/prj/inc/tablica.hh",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 [label="tablica.hh",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="/home/karolina/Pulpit\l/pamsi/prj/inc/dzialania.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dzialania_8hh.html"];
+  Node2 [label="stos.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stos_8hh.html"];
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="/home/karolina/Pulpit\l/pamsi/prj/src/dzialania.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dzialania_8cpp.html"];
-  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="/home/karolina/Pulpit\l/pamsi/prj/src/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html"];
+  Node3 [label="czas.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$czas_8hh.html"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html"];
   Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="/home/karolina/Pulpit\l/pamsi/prj/src/tablica.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tablica_8cpp.html"];
+  Node5 [label="stos2.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stos2_8hh.html"];
+  Node5 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="dzialania.hh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dzialania_8hh.html"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="dzialania.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dzialania_8cpp.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="tablica.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tablica_8cpp.html"];
 }

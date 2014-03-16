@@ -1,39 +1,64 @@
 /*! \mainpage Dokumentacja zadania PAMSI LAB 1
- * 
- *
- *  \Created on: 1 mar 2014
- *  \ Author: karolina
+ *   
+ *  \author Karolina Morawska
+ *  \date 16.03.2014
+ *  \version 0.2
  */
 
 
 #include <iostream>
-#include <dzialania.hh>
+#include <tablica.hh>
 #include <cstdlib>
+#include <string>
+#include "czas.hh"
 
 using namespace std;
 /*! \brief Funkcja main wykonuje algorytm i sprawdza czas dzialania algorytmu.
 W funkcji main wykonywane sa operacje :
--Wczytywanie pliku z danymi wejsciowym
--Dane sa mnozone razy 2 (w tej chwili wlaczany jest stoper)
--Wczytywanie pliku z danymi sprawdzajacymi
--Sprawdzanie zgodnosci 
--Stoper zostaje wylaczony i na wyjsciu programu podany zostaje czas dzialania algorytmu
+-sprawdzenie ilosci wywolanych argumentow
+-sprawdzenie poprawnosci wpisywanej nazwy przez uzytkownika i wyslanie odpowiedniego komunikatu
+-wypisanie na terminalu czas dzialania algorytmu
 */
 int main (int argc ,char **argv) {
 	if (argc<4){
 		cout<< "Zbyt mała liczba argumentow" ;
 		return 0; }
+unsigned int lpowtorzen , zmienna;
+lpowtorzen=atoi(argv[3]);
+zmienna=atoi(argv[2]);
+double b;
+if(string(argv[1])=="stos")
+{
 
-Dzialania czasdzialania;
-if(!czasdzialania.wczytajplik(argv[1]))return 0;
-double czas=czasdzialania.liczczas(atoi(argv[3]));
-if(!czasdzialania.porownaj(argv[2])) return 0;
+	Czasstos<Stos<int> >obiekt;
+	b=obiekt.czas(lpowtorzen , zmienna);
 
-cout << czasdzialania.rozmiartab() << "," << atoi(argv[3]) <<","<< czas <<"s" << endl;
+}
+else if(string(argv[1])=="stos2"){
 
+	Czasstos<Stos2<int> >obiekt;
+	b=obiekt.czas(lpowtorzen , zmienna);
+}
+else if(string(argv[1])=="kolejka"){
 
+	Czaskol<Kolejka<int> >obiekt;
+	b=obiekt.czas(lpowtorzen , zmienna);
+}
+
+else if (string(argv[1])=="stoslista") {
+
+		Czasstos<Stol<int> >obiekt;
+		b=obiekt.czas(lpowtorzen , zmienna);
+}
+
+else { cerr <<"nie ma takiej nazwy " <<endl;
+  return 0;
 }
 
 
+cout << zmienna << "," << lpowtorzen <<"," << b <<"s" <<endl;
+
+
+}
 
 

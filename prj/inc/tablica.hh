@@ -2,15 +2,16 @@
 #define TABLICA_HH
 
 
+#include <iostream>
 #include <cstdlib>
-/*! \brief Deklaracja klasy Tablica.
+/*! \brief Szablon klasy Tablica.
 *
 *  Klasa Tablica posiada pola oraz funkcje potrzebne do wykonywania dzialan  na tablicach.
 */
-class Tablica
+template <typename Typ> class Tablica
 {
-//! Pole przechowujeca wskaznik do tablicy.
-	int *T;
+//! Pole przechowujace wskaznik do tablicy.
+	Typ *T;
 //! Pole przechowujace dlugosc tablicy.
 	unsigned int dlugosctab;
 	
@@ -18,15 +19,15 @@ public :
   /*! Funkcja sluzaca do zamiany elementow.
 */
 	void zamienelementy(int i , int j);
-/*! Funkcja dodaje element na tablice.Wykorzystuje funkcje pomocnicza *    zmiana rozmiaru.
+/*! Funkcja dodaje element na tablice.Wykorzystuje funkcje pomocnicza zmiana rozmiaru.
 */
-	void dodajelement(int element);
+	void dodajelement(Typ element);
 /*! Funkcja odwraca kolejnosc w tablicy. 
 */
 	void odwrockolejnosc() ;
 /*! Funkcja laczy ze soba dwie tablice.
 */
-	void dodajelementy(const Tablica &T1);
+	void dodajelementy(const Tablica<Typ> &T1);
 /*! Konstruktor klasy Tablica.
 */
 	Tablica(): T(0) , dlugosctab(0) {} ;
@@ -39,20 +40,88 @@ public :
 /*! Funkcja pomocnicza sluzaca do zmiany rozmiaru .
 */
 	void zmianarozmiaru (unsigned int nowyrozmiar);
-/*! Przeciazenie operatora indeksujacego.
+
+/*! Przeciazenie operatora indeksujacego
 */
-	int& operator[](const unsigned int b) { return T[b]; }
-	const int& operator[](const unsigned int b) const {return T[b]; }
+	Typ& operator[](const unsigned int b) { return T[b]; }
+/* Przeciazenie operatora indeksujacego 
+*/
+	const Typ& operator[](const unsigned int b) const {return T[b]; }
 /*! Przeciazenie operatora dodawania.
 */
-	Tablica& operator +(const Tablica &argument) const;
+	Tablica<Typ>& operator +(const Tablica<Typ> &argument) const;
 /*! Przeciazenie operatora przypisywania.
 */
-	Tablica& operator = (const Tablica &argument);
+	Tablica<Typ>& operator = (const Tablica<Typ> &argument);
 /*! Przeciazenie operatora porownania.
 */
-	bool operator == (const Tablica &argument) const;
+	bool operator == (const Tablica<Typ> &argument) const;
 	
-}; 
+
+};
+
+template<typename Typ>
+void Tablica<Typ>::zamienelementy(int i, int j) {
+	Typ place1; Typ place2;
+		place1=T[i];
+		place2=T[j];
+		T[i]=place2;
+		T[j]=place1;
+}
+
+template<typename Typ>
+void Tablica<Typ>::dodajelement(Typ element) {
+	 zmianarozmiaru(rozmiar()+1);
+	 T[dlugosctab-1]=element;
+}
+
+template<typename Typ>
+void Tablica<Typ>::odwrockolejnosc() {
+	for ( unsigned int i=0 ;i<dlugosctab/2 ;i++){
+        zamienelementy(i,dlugosctab -1-i);
+		  }
+	}
+template<typename Typ>
+void Tablica<Typ>::dodajelementy(const Tablica<Typ>& T1) {
+
+	unsigned int tmp=rozmiar();
+	zmianarozmiaru(rozmiar()+T1.rozmiar());
+	for(unsigned int i=0;i<T1.rozmiar();i++){
+		T[tmp+1]=T[i];
+	}
+}
+
+template<typename Typ>
+void Tablica<Typ>::zmianarozmiaru(unsigned int nowyrozmiar) {
+	T=(Typ*)realloc(T,nowyrozmiar * sizeof(Typ));
+			dlugosctab=nowyrozmiar;
+}
+
+template<typename Typ>
+Tablica<Typ>& Tablica<Typ>::operator +(const Tablica<Typ>& argument) const {
+	Tablica<Typ> *tmp = new Tablica<Typ>;
+	   	tmp->dodajelementy(*this);
+	   	tmp->dodajelementy(argument);
+	   	return *tmp;
+}
+
+template<typename Typ>
+Tablica<Typ>& Tablica<Typ>::operator =(const Tablica<Typ>& argument) {
+	zmianarozmiaru(argument.rozmiar());
+		for (unsigned int i=0;i<rozmiar(); i++ ){
+			T[i]=argument[i];
+		}
+	 return *this;
+}
+
+template<typename Typ>
+bool Tablica<Typ>::operator ==(const Tablica<Typ>& argument) const {
+	if(rozmiar()!=argument.rozmiar()) return false;
+
+		for (unsigned int i=0;i<rozmiar() ; i++){
+			if(T[i]!=argument[i]) return false;
+		}
+		return true;
+}
 
 #endif 
