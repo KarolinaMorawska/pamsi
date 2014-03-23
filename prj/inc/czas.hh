@@ -7,6 +7,8 @@
 #include "stoslista.hh"
 #include "kolejka.hh"
 
+using namespace std;
+
 /*! \brief  Sablon klasy Czasstos.
 *  Klasa Czasstos mierzy czas dzialania algorytmu wykorzystuje    *parametry takie jak : liczba powtorzen i zmienna-czyli rozmiar  problemu .
 */

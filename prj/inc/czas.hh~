@@ -6,14 +6,23 @@
 #include "stos2.hh"
 #include "stoslista.hh"
 #include "kolejka.hh"
+#include "wczytywanie.hh"
+
+using namespace std;
+
+/*! \brief  Sablon klasy Czasstos.
+*  Klasa Czasstos mierzy czas dzialania algorytmu wykorzystuje    *parametry takie jak : liczba powtorzen i zmienna-czyli rozmiar  problemu .
+*/
 template <class klasasto > class Czasstos
 {
 public:
+   /*! Funckja liczaca czas dzialania algorytmu stosu */
 	double czas(unsigned int lpowtorzen,unsigned int zmienna);
 };
 template <class klasakol> class Czaskol
 {
 public:
+   /*! Funckja liczaca czas dzialania algorytmu kolejki */
 	double czas(unsigned int lpowtorzen,unsigned int zmienna);
 };
 

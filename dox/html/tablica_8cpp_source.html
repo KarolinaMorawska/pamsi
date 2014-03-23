@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>My Project: Plik źródłowy tablica.cpp</title>
+<title>Sortowanie: Plik źródłowy /home/karolina/Pulpit/pamsi/prj/src/tablica.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">My Project
-   &#160;<span id="projectnumber">2.0</span>
+   <div id="projectname">Sortowanie
+   &#160;<span id="projectnumber">4.0</span>
    </div>
+   <div id="projectbrief">Karolina Morawska</div>
   </td>
  </tr>
  </tbody>
@@ -88,67 +89,210 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <div class="title">tablica.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="tablica_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="tablica_8hh.html">tablica.hh</a>&gt;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#aea49337f0b2ee035ddc1df13ff228511">Tablica::zamienelementy</a> ( <span class="keywordtype">int</span> i ,  <span class="keywordtype">int</span> j){</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">int</span> place1; <span class="keywordtype">int</span> place2;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    place1=<a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>[i];</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    place2=<a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>[j];</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>[i]=place2;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>[j]=place1;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a405e0d82e9594f27cfc9dac94e53b582">Tablica::odwrockolejnosc</a>(){</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0 ;i&lt;<a class="code" href="class_tablica.html#a42b49425f0e086c4e958337dcba3a3b6" title="Pole przechowujace dlugosc tablicy.">dlugosctab</a>/2 ;i++)  {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <a class="code" href="class_tablica.html#aea49337f0b2ee035ddc1df13ff228511">zamienelementy</a>(i,<a class="code" href="class_tablica.html#a42b49425f0e086c4e958337dcba3a3b6" title="Pole przechowujace dlugosc tablicy.">dlugosctab</a> -1-i);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      }</div>
+<a href="tablica_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tablica_8hh.html">tablica.hh</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ&gt;</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="code" href="class_tablica.html#aea49337f0b2ee035ddc1df13ff228511">    4</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#aea49337f0b2ee035ddc1df13ff228511">Tablica&lt;Typ&gt;::zamienelementy</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j) {</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    Typ place1;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    Typ place2;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    place1 = T[i];</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    place2 = T[j];</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    T[i] = place2;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    T[j] = place1;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="class_tablica.html#a630e070c59709cdfe436db9b2f57c81f">   14</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a630e070c59709cdfe436db9b2f57c81f">Tablica&lt;Typ&gt;::dodajelement</a>(Typ element) {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    zmianarozmiaru(rozmiar() + 1);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    T[dlugosctab - 1] = element;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="class_tablica.html#a405e0d82e9594f27cfc9dac94e53b582">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a405e0d82e9594f27cfc9dac94e53b582">Tablica&lt;Typ&gt;::odwrockolejnosc</a>() {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; dlugosctab / 2; i++) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        zamienelementy(i, dlugosctab - 1 - i);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ&gt;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="class_tablica.html#ad139387fb64394e133e1e1b3402f7290">   26</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#ad139387fb64394e133e1e1b3402f7290">Tablica&lt;Typ&gt;::dodajelementy</a>(<span class="keyword">const</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a>&amp; T1) {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#aafcf1f86b79c0146fa313bae711cc97e">Tablica::zmianarozmiaru</a> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nowyrozmiar){</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>=(<span class="keywordtype">int</span>*)realloc(<a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>,nowyrozmiar * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_tablica.html#a42b49425f0e086c4e958337dcba3a3b6" title="Pole przechowujace dlugosc tablicy.">dlugosctab</a>=nowyrozmiar;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a630e070c59709cdfe436db9b2f57c81f">Tablica::dodajelement</a>(<span class="keywordtype">int</span> element) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; <a class="code" href="class_tablica.html#aafcf1f86b79c0146fa313bae711cc97e">zmianarozmiaru</a>(<a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">rozmiar</a>()+1);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; <a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>[<a class="code" href="class_tablica.html#a42b49425f0e086c4e958337dcba3a3b6" title="Pole przechowujace dlugosc tablicy.">dlugosctab</a>-1]=element;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#ad139387fb64394e133e1e1b3402f7290">Tablica::dodajelementy</a>(<span class="keyword">const</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica</a> &amp;T1){</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tmp=<a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">rozmiar</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_tablica.html#aafcf1f86b79c0146fa313bae711cc97e">zmianarozmiaru</a>(<a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">rozmiar</a>()+T1.<a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">rozmiar</a>());</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;T1.<a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">rozmiar</a>();i++){</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>[tmp+1]=<a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>[i];</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica</a>&amp; <a class="code" href="class_tablica.html#a5145425b03eadaf6e97243f1fa5e5737">Tablica::operator = </a>(<span class="keyword">const</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica</a> &amp;argument){</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_tablica.html#aafcf1f86b79c0146fa313bae711cc97e">zmianarozmiaru</a>(argument.<a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">rozmiar</a>());</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">rozmiar</a>(); i++ ){</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>[i]=argument[i];</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica</a>&amp; <a class="code" href="class_tablica.html#acea602357c4cbb36f9bf71bc33d62090">Tablica::operator + </a>(<span class="keyword">const</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica</a> &amp;argument)<span class="keyword"> const</span>{</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica</a> *tmp = <span class="keyword">new</span> <a class="code" href="class_tablica.html#a7d54bbcaa7963c50ee57e69f700b6cfc">Tablica</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    tmp-&gt;<a class="code" href="class_tablica.html#ad139387fb64394e133e1e1b3402f7290">dodajelementy</a>(*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    tmp-&gt;<a class="code" href="class_tablica.html#ad139387fb64394e133e1e1b3402f7290">dodajelementy</a>(argument);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> *tmp;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tablica.html#a5feb149bbeae655c6d7bafada90f9615">Tablica::operator == </a>(<span class="keyword">const</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica</a> &amp;argument)<span class="keyword"> const</span>{</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">rozmiar</a>()!=argument.<a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">rozmiar</a>()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">rozmiar</a>() ; i++){</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>[i]!=argument[i]) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tmp = rozmiar();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    zmianarozmiaru(rozmiar() + T1.<a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">rozmiar</a>());</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; T1.<a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">rozmiar</a>(); i++) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        T[tmp + 1] = T[i];</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="class_tablica.html#aafcf1f86b79c0146fa313bae711cc97e">   36</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#aafcf1f86b79c0146fa313bae711cc97e">Tablica&lt;Typ&gt;::zmianarozmiaru</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nowyrozmiar) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    T = (Typ*) realloc(T, nowyrozmiar * <span class="keyword">sizeof</span>(Typ));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    dlugosctab = nowyrozmiar;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ&gt;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="class_tablica.html#ae0716b9a85eb0306d3a722376727be6e">   42</a></span>&#160;<a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a>&amp; <a class="code" href="class_tablica.html#ae0716b9a85eb0306d3a722376727be6e">Tablica&lt;Typ&gt;::operator +</a>(<span class="keyword">const</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a>&amp; argument)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a> *tmp = <span class="keyword">new</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    tmp-&gt;<a class="code" href="class_tablica.html#ad139387fb64394e133e1e1b3402f7290">dodajelementy</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    tmp-&gt;<a class="code" href="class_tablica.html#ad139387fb64394e133e1e1b3402f7290">dodajelementy</a>(argument);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> *tmp;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="class_tablica.html#a3626fbc8c7e54b24e7fba96b86a4173f">   50</a></span>&#160;<a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a>&amp; <a class="code" href="class_tablica.html#a3626fbc8c7e54b24e7fba96b86a4173f">Tablica&lt;Typ&gt;::operator =</a>(<span class="keyword">const</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a>&amp; argument) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    zmianarozmiaru(argument.<a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">rozmiar</a>());</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; rozmiar(); i++) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        T[i] = argument[i];</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ&gt;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="class_tablica.html#a5feb149bbeae655c6d7bafada90f9615">   59</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tablica.html#a5feb149bbeae655c6d7bafada90f9615">Tablica&lt;Typ&gt;::operator ==</a>(<span class="keyword">const</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a>&amp; argument)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span> (rozmiar() != argument.<a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">rozmiar</a>())</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; rozmiar(); i++) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">if</span> (T[i] != argument[i])</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ&gt;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="class_tablica.html#a56d18f9872a1f48b9817334eba662437">   71</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a56d18f9872a1f48b9817334eba662437">Tablica&lt;Typ&gt;::quicksort</a>(<span class="keywordtype">int</span> lewy, <span class="keywordtype">int</span> prawy) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">int</span> x = T[(prawy + lewy) / 2]; <span class="comment">// obieramy x</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">int</span> i = lewy, j = prawy, w; <span class="comment">// i, j - indeksy w tabeli</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">while</span> (i &lt;= j) <span class="comment">// petla nieskonczona - wychodzimy z niej tylko przez return j</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">while</span> (T[j] &gt; x) <span class="comment">// dopoki elementy sa wieksze od x</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            j--;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">while</span> (T[i] &lt; x) <span class="comment">// dopoki elementy sa mniejsze od x</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            i++;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span> (i &lt; j) {  <span class="comment">// zamieniamy miejscami gdy i &lt; j</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            w = T[i];</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            T[i] = T[j];</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            T[j] = w;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            i++;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            j--;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (lewy &lt; j)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        quicksort(lewy, j);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> (i &lt; prawy)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        quicksort(i, prawy);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ&gt;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="class_tablica.html#a10405980a5d57f53ce38fa91fae0a38b">   94</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a10405980a5d57f53ce38fa91fae0a38b">Tablica&lt;Typ&gt;::mergesort</a>(<span class="keywordtype">int</span> lewy, <span class="keywordtype">int</span> prawy) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (lewy &lt; prawy) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">int</span> srodek = (lewy + prawy) / 2;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        mergesort(lewy, srodek);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        mergesort(srodek + 1, prawy);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        merge(lewy, prawy, srodek);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ&gt;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="code" href="class_tablica.html#a045ff88c70192a28c4fc4fd7585cad42">  104</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a045ff88c70192a28c4fc4fd7585cad42">Tablica&lt;Typ&gt;::merge</a>(<span class="keywordtype">int</span> lewy, <span class="keywordtype">int</span> prawy, <span class="keywordtype">int</span> srodek) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">int</span> i = lewy;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">int</span> j = prawy;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    Typ *newTab = <span class="keyword">new</span> Typ[prawy - lewy];</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">int</span> k = 0;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">while</span> (i &lt;= srodek &amp;&amp; j &lt;= prawy) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span> (T[i] &lt; T[j]) {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            newTab[k] = T[i];</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            i++;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            newTab[k] = T[j];</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            j++;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        k++;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">if</span> (i &lt;= srodek) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">while</span> (i &lt;= srodek) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            newTab[k] = T[i];</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            i++;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            k++;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">while</span> (j &lt;= prawy) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            newTab[k] = T[j];</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            j++;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            k++;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; k; i++) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        T[lewy + i] = newTab[i];</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keyword">delete</span>[] newTab;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ&gt;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="code" href="class_tablica.html#a5f6d42f9f1da7aeca51618f25532e2aa">  139</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a5f6d42f9f1da7aeca51618f25532e2aa">Tablica&lt;Typ&gt;::bubble</a>(<span class="keywordtype">int</span> lewy , <span class="keywordtype">int</span> prawy) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = lewy; i &lt;= prawy; ++i) {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = lewy; j &lt;= prawy-1 ; ++j) {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keywordflow">if</span> (T[j] &gt; T[j + 1]) {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                zamienelementy(T[j], T[j + 1]);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ&gt;</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="code" href="class_tablica.html#aac9cef276e6db6746cd57f3fa08ee9a6">  149</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#aac9cef276e6db6746cd57f3fa08ee9a6">Tablica&lt;Typ&gt;::intro</a>(<span class="keywordtype">int</span> lewy, <span class="keywordtype">int</span> prawy) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">int</span> x = T[(prawy + lewy) / 2]; <span class="comment">// obieramy x</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">int</span> i = lewy, j = prawy, w; <span class="comment">// i, j - indeksy w tabeli</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">while</span> (i &lt;= j) <span class="comment">// petla nieskonczona - wychodzimy z niej tylko przez return j</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">while</span> (T[j] &gt; x) <span class="comment">// dopoki elementy sa wieksze od x</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            j--;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">while</span> (T[i] &lt; x) <span class="comment">// dopoki elementy sa mniejsze od x</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            i++;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">if</span> (i &lt; j) {  <span class="comment">// zamieniamy miejscami gdy i &lt; j</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            w = T[i];</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            T[i] = T[j];</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            T[j] = w;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            i++;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            j--;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">if</span> (lewy &lt; j &amp;&amp; (j - lewy) &gt; 9)</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        quicksort(lewy, j);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        bubble(lewy,j);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">if</span> (i &lt; prawy &amp;&amp; (prawy - i) &gt; 9)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        quicksort(i, prawy);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        bubble(i,prawy);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ&gt;</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="code" href="class_tablica.html#a0c9690c0fff4d5a704318ae93f264b0f">  177</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tablica.html#a0c9690c0fff4d5a704318ae93f264b0f">Tablica&lt;Typ&gt;::wczytajplik</a>(<span class="keywordtype">char</span> *nazwapl) {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    std::ifstream plik;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    plik.open(nazwapl);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">if</span> (!plik.good()) {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Nie otworzono pliku &quot;</span>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> rozmiar;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    plik &gt;&gt; rozmiar;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    zmianarozmiaru(rozmiar);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; rozmiar; i++) {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        plik &gt;&gt; T[i];</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ&gt;</div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="code" href="class_tablica.html#acdaaf0758537334d35779497a1d60900">  196</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#acdaaf0758537334d35779497a1d60900">Tablica&lt;Typ&gt;::wyswietl</a>() {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; dlugosctab; ++i) {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        std::cout &lt;&lt; T[i] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano N, 16 mar 2014 11:05:59 dla My Project programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano N, 23 mar 2014 20:17:26 dla Sortowanie programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

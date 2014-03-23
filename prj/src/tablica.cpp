@@ -1,97 +1,200 @@
-#include <tablica.hh>
-#include <iostream>
+#include "tablica.hh"
 
-/*!
-*  Argumenty i najwazniejsze pola funkcji 
-  -i, j -zmienne oznaczajace elementy w tablicy 
-
-*/
-void Tablica::zamienelementy ( int i ,  int j){
-	int place1; int place2;
-	place1=T[i];
-	place2=T[j];
-	T[i]=place2;
-	T[j]=place1;
-	
+template<typename Typ>
+void Tablica<Typ>::zamienelementy(int i, int j) {
+	Typ place1;
+	Typ place2;
+	place1 = T[i];
+	place2 = T[j];
+	T[i] = place2;
+	T[j] = place1;
 }
-/*!
-*  Argumenty i najwazniejsze pola funkcji 
-  -dlugosctab -zmmienna zawierajaca dlugosc tablicy na ktorej wykonywane jest dzialania
 
-*/
-void Tablica::odwrockolejnosc(){
-  for ( unsigned int i=0 ;i<dlugosctab/2 ;i++)	{
-
-	  zamienelementy(i,dlugosctab -1-i);
-	  }
-
+template<typename Typ>
+void Tablica<Typ>::dodajelement(Typ element) {
+	zmianarozmiaru(rozmiar() + 1);
+	T[dlugosctab - 1] = element;
 }
-/*!
-*  Argumenty i najwazniejsze pola funkcji 
-  \return nowyrozmiar -Rozmiar tablicy po zmianie.
 
-*/
-void Tablica::zmianarozmiaru (unsigned int nowyrozmiar){
-
-	T=(int*)realloc(T,nowyrozmiar * sizeof(int));
-		dlugosctab=nowyrozmiar;
-	}
-/*!
-*  Argumenty i najwazniejsze pola funkcji 
-  -element -zmienna ktora zostaje dodana do tablicy
-
-*/
-void Tablica::dodajelement(int element) {
- zmianarozmiaru(rozmiar()+1);
- T[dlugosctab-1]=element;
- }
-/*!
-*  Argumenty i najwazniejsze pola funkcji 
-  -T1 -tablica ktora powtaje po polaczeniu.
-
-*/
-void Tablica::dodajelementy(const Tablica &T1){
-	unsigned int tmp=rozmiar();
-	zmianarozmiaru(rozmiar()+T1.rozmiar());
-	for(unsigned int i=0;i<T1.rozmiar();i++){
-		T[tmp+1]=T[i];
+template<typename Typ>
+void Tablica<Typ>::odwrockolejnosc() {
+	for (unsigned int i = 0; i < dlugosctab / 2; i++) {
+		zamienelementy(i, dlugosctab - 1 - i);
 	}
 }
-/*!
-*  Argumenty i najwazniejsze pola funkcji 
-  -agrument -przeciazenie operatora 
+template<typename Typ>
+void Tablica<Typ>::dodajelementy(const Tablica<Typ>& T1) {
 
-*/
-Tablica& Tablica::operator = (const Tablica &argument){
+	unsigned int tmp = rozmiar();
+	zmianarozmiaru(rozmiar() + T1.rozmiar());
+	for (unsigned int i = 0; i < T1.rozmiar(); i++) {
+		T[tmp + 1] = T[i];
+	}
+}
+
+template<typename Typ>
+void Tablica<Typ>::zmianarozmiaru(unsigned int nowyrozmiar) {
+	T = (Typ*) realloc(T, nowyrozmiar * sizeof(Typ));
+	dlugosctab = nowyrozmiar;
+}
+
+template<typename Typ>
+Tablica<Typ>& Tablica<Typ>::operator +(const Tablica<Typ>& argument) const {
+	Tablica<Typ> *tmp = new Tablica<Typ>;
+	tmp->dodajelementy(*this);
+	tmp->dodajelementy(argument);
+	return *tmp;
+}
+
+template<typename Typ>
+Tablica<Typ>& Tablica<Typ>::operator =(const Tablica<Typ>& argument) {
 	zmianarozmiaru(argument.rozmiar());
-	for (unsigned int i=0;i<rozmiar(); i++ ){
-		T[i]=argument[i];
+	for (unsigned int i = 0; i < rozmiar(); i++) {
+		T[i] = argument[i];
 	}
- return *this;
-}
-/*!
-*  Argumenty i najwazniejsze pola funkcji 
-  -argument -przecciazenie operatora
-
-*/
-Tablica& Tablica::operator + (const Tablica &argument) const{
-   	Tablica *tmp = new Tablica;
-   	tmp->dodajelementy(*this);
-   	tmp->dodajelementy(argument);
-   	return *tmp;
+	return *this;
 }
 
-/*!
-*  Argumenty i najwazniejsze pola funkcji 
-  -argumenti -przeciazenie operatora
+template<typename Typ>
+bool Tablica<Typ>::operator ==(const Tablica<Typ>& argument) const {
+	if (rozmiar() != argument.rozmiar())
+		return false;
 
-*/
-bool Tablica::operator == (const Tablica &argument) const{
-	if(rozmiar()!=argument.rozmiar()) return false;
-	
-	for (unsigned int i=0;i<rozmiar() ; i++){
-		if(T[i]!=argument[i]) return false;
+	for (unsigned int i = 0; i < rozmiar(); i++) {
+		if (T[i] != argument[i])
+			return false;
 	}
 	return true;
 }
 
+template<typename Typ>
+void Tablica<Typ>::quicksort(int lewy, int prawy) {
+	int x = T[(prawy + lewy) / 2]; // obieramy x
+	int i = lewy, j = prawy, w; // i, j - indeksy w tabeli
+	while (i <= j) // petla nieskonczona - wychodzimy z niej tylko przez return j
+	{
+		while (T[j] > x) // dopoki elementy sa wieksze od x
+			j--;
+		while (T[i] < x) // dopoki elementy sa mniejsze od x
+			i++;
+		if (i < j) {  // zamieniamy miejscami gdy i < j
+			w = T[i];
+			T[i] = T[j];
+			T[j] = w;
+			i++;
+			j--;
+		}
+	}
+	if (lewy < j)
+		quicksort(lewy, j);
+	if (i < prawy)
+		quicksort(i, prawy);
+}
+template<typename Typ>
+void Tablica<Typ>::mergesort(int lewy, int prawy) {
+	if (lewy < prawy) {
+		int srodek = (lewy + prawy) / 2;
+		mergesort(lewy, srodek);
+		mergesort(srodek + 1, prawy);
+		merge(lewy, prawy, srodek);
+	}
+
+}
+template<typename Typ>
+void Tablica<Typ>::merge(int lewy, int prawy, int srodek) {
+	int i = lewy;
+	int j = prawy;
+	Typ *newTab = new Typ[prawy - lewy];
+	int k = 0;
+	while (i <= srodek && j <= prawy) {
+		if (T[i] < T[j]) {
+			newTab[k] = T[i];
+			i++;
+		} else {
+			newTab[k] = T[j];
+			j++;
+		}
+		k++;
+	}
+	if (i <= srodek) {
+		while (i <= srodek) {
+			newTab[k] = T[i];
+			i++;
+			k++;
+		}
+
+	} else {
+		while (j <= prawy) {
+			newTab[k] = T[j];
+			j++;
+			k++;
+		}
+	}
+	for (int i = 0; i < k; i++) {
+		T[lewy + i] = newTab[i];
+	}
+	delete[] newTab;
+}
+template<typename Typ>
+void Tablica<Typ>::bubble(int lewy , int prawy) {
+	for (int i = lewy; i <= prawy; ++i) {
+		for (int j = lewy; j <= prawy-1 ; ++j) {
+			if (T[j] > T[j + 1]) {
+				zamienelementy(T[j], T[j + 1]);
+			}
+		}
+	}
+}
+template<typename Typ>
+void Tablica<Typ>::intro(int lewy, int prawy) {
+	int x = T[(prawy + lewy) / 2]; // obieramy x
+	int i = lewy, j = prawy, w; // i, j - indeksy w tabeli
+	while (i <= j) // petla nieskonczona - wychodzimy z niej tylko przez return j
+	{
+		while (T[j] > x) // dopoki elementy sa wieksze od x
+			j--;
+		while (T[i] < x) // dopoki elementy sa mniejsze od x
+			i++;
+		if (i < j) {  // zamieniamy miejscami gdy i < j
+			w = T[i];
+			T[i] = T[j];
+			T[j] = w;
+			i++;
+			j--;
+		}
+	}
+	if (lewy < j && (j - lewy) > 9)
+		quicksort(lewy, j);
+	else
+		bubble(lewy,j);
+	if (i < prawy && (prawy - i) > 9)
+		quicksort(i, prawy);
+	else
+		bubble(i,prawy);
+}
+
+template<typename Typ>
+bool Tablica<Typ>::wczytajplik(char *nazwapl) {
+	std::ifstream plik;
+	plik.open(nazwapl);
+
+	if (!plik.good()) {
+		std::cout << "Nie otworzono pliku ";
+		return false;
+	}
+
+	unsigned int rozmiar;
+	plik >> rozmiar;
+	zmianarozmiaru(rozmiar);
+
+	for (unsigned int i = 0; i < rozmiar; i++) {
+		plik >> T[i];
+	}
+	return true;
+}
+template<typename Typ>
+void Tablica<Typ>::wyswietl() {
+	for (int i = 0; i < dlugosctab; ++i) {
+		std::cout << T[i] << " ";
+	}
+}

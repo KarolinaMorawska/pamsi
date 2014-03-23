@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>My Project: Plik źródłowy stoslista.hh</title>
+<title>Sortowanie: Plik źródłowy /home/karolina/Pulpit/pamsi/prj/inc/stoslista.hh</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">My Project
-   &#160;<span id="projectnumber">2.0</span>
+   <div id="projectname">Sortowanie
+   &#160;<span id="projectnumber">4.0</span>
    </div>
+   <div id="projectbrief">Karolina Morawska</div>
   </td>
  </tr>
  </tbody>
@@ -96,20 +97,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="class_stol.html">   11</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Typ&gt; <span class="keyword">class </span><a class="code" href="class_stol.html" title="Szablon klasy Stol.">Stol</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="class_stol.html#a1684a3d6a3801a6e4ea2ade79e634ea2">   13</a></span>&#160;    std::list&lt;Typ&gt; <a class="code" href="class_stol.html#a1684a3d6a3801a6e4ea2ade79e634ea2">lista</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    std::list&lt;Typ&gt; lista;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="class_stol.html#a0fe3754424071aaa5a8bcd45fd145c5b">   18</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_stol.html#a0fe3754424071aaa5a8bcd45fd145c5b">size</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="class_stol.html#a1684a3d6a3801a6e4ea2ade79e634ea2">lista</a>.size(); }</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="class_stol.html#a0fe3754424071aaa5a8bcd45fd145c5b">   18</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_stol.html#a0fe3754424071aaa5a8bcd45fd145c5b">size</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> lista.size(); }</div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="class_stol.html#a6a92606f32fb4bed2261b7ca5e192e4c">   20</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_stol.html#a6a92606f32fb4bed2261b7ca5e192e4c">push</a> (Typ element)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;     <a class="code" href="class_stol.html#a1684a3d6a3801a6e4ea2ade79e634ea2">lista</a>.push_back(element);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;     lista.push_back(element);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="class_stol.html#ab6de7dccb1eb7324c8a9b866fc557ed6">   25</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_stol.html#ab6de7dccb1eb7324c8a9b866fc557ed6">pop</a>(){</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="class_stol.html#a1684a3d6a3801a6e4ea2ade79e634ea2">lista</a>.pop_back();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        lista.pop_back();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="class_stol.html#ab4ffd8ef21aefe4966b65ba923b0b780">   30</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_stol.html#ab4ffd8ef21aefe4966b65ba923b0b780">isempty</a>  ()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="class_stol.html#a1684a3d6a3801a6e4ea2ade79e634ea2">lista</a>.empty();}</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="class_stol.html#a347f84a10b44bc97af0d6f77643cd45a">   34</a></span>&#160;    <span class="keyword">const</span> Typ&amp; <a class="code" href="class_stol.html#a347f84a10b44bc97af0d6f77643cd45a">top</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="class_stol.html#a1684a3d6a3801a6e4ea2ade79e634ea2">lista</a>.back(); }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">    </span>{ <span class="keywordflow">return</span> lista.empty();}</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="class_stol.html#a347f84a10b44bc97af0d6f77643cd45a">   34</a></span>&#160;    <span class="keyword">const</span> Typ&amp; <a class="code" href="class_stol.html#a347f84a10b44bc97af0d6f77643cd45a">top</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> lista.back(); }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
@@ -119,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano N, 16 mar 2014 11:05:59 dla My Project programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano N, 23 mar 2014 20:17:26 dla Sortowanie programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>My Project: Plik źródłowy stos2.hh</title>
+<title>Sortowanie: Plik źródłowy /home/karolina/Pulpit/pamsi/prj/inc/stos2.hh</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,9 +22,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">My Project
-   &#160;<span id="projectnumber">2.0</span>
+   <div id="projectname">Sortowanie
+   &#160;<span id="projectnumber">4.0</span>
    </div>
+   <div id="projectbrief">Karolina Morawska</div>
   </td>
  </tr>
  </tbody>
@@ -97,19 +98,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="class_stos2.html">   11</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Typ&gt;<span class="keyword">class </span><a class="code" href="class_stos2.html" title="Szablon klasy Stos2 Stos ktory w przypadku przepelnienia zmienia swoj rozmiar. Metody analogiczne do ...">Stos2</a>  {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="class_stos2.html#a4cefb452cfd2da4eab15b9380c87b219">   16</a></span>&#160;    <span class="keyword">const</span> Typ&amp; <a class="code" href="class_stos2.html#a4cefb452cfd2da4eab15b9380c87b219">top</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> <a class="code" href="class_stos2.html#a9c7f4132f7a4302226d62fd816ed10ed">tab</a>[<a class="code" href="class_stos2.html#ad485021174de06d5faedba7cad9cbaa2">dltab</a>-1] ; }</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="class_stos2.html#a4cefb452cfd2da4eab15b9380c87b219">   16</a></span>&#160;    <span class="keyword">const</span> Typ&amp; <a class="code" href="class_stos2.html#a4cefb452cfd2da4eab15b9380c87b219">top</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> tab[dltab-1] ; }</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_stos2.html#ab9bf4dc27877d77a3a53736d33fb965f">push</a> (Typ element);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">void</span>  <a class="code" href="class_stos2.html#a9695a855dac219cc685cdded92ee38ac">pop</a> ();</div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="class_stos2.html#a749e533abbbb8db8e5d97e6028869a7a">   25</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="class_stos2.html#a749e533abbbb8db8e5d97e6028869a7a">isempty</a>  ()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">    </span>{ <span class="keywordflow">if</span>(<a class="code" href="class_stos2.html#ad485021174de06d5faedba7cad9cbaa2">dltab</a>()&gt;=0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">    </span>{ <span class="keywordflow">if</span>(dltab()&gt;=0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">true</span>;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="class_stos2.html#a6599f822eabbade13ab6593ebec18182">   30</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_stos2.html#a6599f822eabbade13ab6593ebec18182">size</a> ()<span class="keyword">const </span>{<span class="keywordflow">return</span> <a class="code" href="class_stos2.html#ad485021174de06d5faedba7cad9cbaa2">dltab</a>; }</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="class_stos2.html#a91771fcaa090ac82d4e14603624f4dd3">   33</a></span>&#160;    <a class="code" href="class_stos2.html#a91771fcaa090ac82d4e14603624f4dd3">Stos2</a>(): <a class="code" href="class_stos2.html#ad485021174de06d5faedba7cad9cbaa2">dltab</a>(0) {}</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="class_stos2.html#a6599f822eabbade13ab6593ebec18182">   30</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_stos2.html#a6599f822eabbade13ab6593ebec18182">size</a> ()<span class="keyword">const </span>{<span class="keywordflow">return</span> dltab; }</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="class_stos2.html#a91771fcaa090ac82d4e14603624f4dd3">   33</a></span>&#160;    <a class="code" href="class_stos2.html#a91771fcaa090ac82d4e14603624f4dd3">Stos2</a>(): dltab(0) {}</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span> :</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// wierzcholek stosu</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="class_stos2.html#a9c7f4132f7a4302226d62fd816ed10ed">   37</a></span>&#160;    <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a> <a class="code" href="class_stos2.html#a9c7f4132f7a4302226d62fd816ed10ed">tab</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="class_stos2.html#ad485021174de06d5faedba7cad9cbaa2">   38</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_stos2.html#ad485021174de06d5faedba7cad9cbaa2">dltab</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a> tab;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> dltab;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    };</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Typ&gt;</div>
@@ -136,7 +137,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano N, 16 mar 2014 11:05:59 dla My Project programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano N, 23 mar 2014 20:17:26 dla Sortowanie programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
