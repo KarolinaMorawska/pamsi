@@ -10,6 +10,15 @@ Szablon klasy \hyperlink{class_tablica}{Tablica}.
 
 {\ttfamily \#include $<$tablica.\-hh$>$}
 
+
+
+Diagram współpracy dla Tablica$<$ Typ $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_tablica__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Metody publiczne}
 \begin{DoxyCompactItemize}
 \item 
@@ -60,6 +69,11 @@ Typ $\ast$ \hyperlink{class_tablica_a8a186bd43f434e2c8b58377f6a54ab47}{T}
 \begin{DoxyCompactList}\small\item\em Pole przechowujace wskaznik do tablicy. \end{DoxyCompactList}\item 
 unsigned int \hyperlink{class_tablica_a42b49425f0e086c4e958337dcba3a3b6}{dlugosctab}
 \begin{DoxyCompactList}\small\item\em Pole przechowujace dlugosc tablicy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_tablica_a6c89297f43089edbc61582d7315b1a3c}{Licz}
+\end{DoxyCompactItemize}
 
 
 \subsection{Opis szczegółowy}
@@ -83,7 +97,7 @@ Definicja w linii 11 pliku tablica.\-hh.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_tablica_a7d54bbcaa7963c50ee57e69f700b6cfc}
 Konstruktor klasy \hyperlink{class_tablica}{Tablica}. 
 
-Definicja w linii 32 pliku tablica.\-hh.
+Definicja w linii 33 pliku tablica.\-hh.
 
 \hypertarget{class_tablica_aea2479778376598550fe82ec459a24ba}{\index{Tablica@{Tablica}!$\sim$\-Tablica@{$\sim$\-Tablica}}
 \index{$\sim$\-Tablica@{$\sim$\-Tablica}!Tablica@{Tablica}}
@@ -94,7 +108,7 @@ Definicja w linii 32 pliku tablica.\-hh.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_tablica_aea2479778376598550fe82ec459a24ba}
 Destruktor klasy \hyperlink{class_tablica}{Tablica}. 
 
-Definicja w linii 38 pliku tablica.\-hh.
+Definicja w linii 39 pliku tablica.\-hh.
 
 
 
@@ -109,11 +123,11 @@ Definicja w linii 38 pliku tablica.\-hh.
 )}}\label{class_tablica_a5f6d42f9f1da7aeca51618f25532e2aa}
 
 
-Definicja w linii 139 pliku tablica.\-cpp.
+Definicja w linii 157 pliku tablica.\-cpp.
 
 \hypertarget{class_tablica_a630e070c59709cdfe436db9b2f57c81f}{\index{Tablica@{Tablica}!dodajelement@{dodajelement}}
 \index{dodajelement@{dodajelement}!Tablica@{Tablica}}
-\subsubsection[{dodajelement}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ void {\bf Tablica}$<$ Typ $>$\-::dodajelement (
+\subsubsection[{dodajelement}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ$>$ void {\bf Tablica}$<$ Typ $>$\-::dodajelement (
 \begin{DoxyParamCaption}
 \item[{Typ}]{element}
 \end{DoxyParamCaption}
@@ -124,7 +138,7 @@ Definicja w linii 14 pliku tablica.\-cpp.
 
 \hypertarget{class_tablica_ad139387fb64394e133e1e1b3402f7290}{\index{Tablica@{Tablica}!dodajelementy@{dodajelementy}}
 \index{dodajelementy@{dodajelementy}!Tablica@{Tablica}}
-\subsubsection[{dodajelementy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ void {\bf Tablica}$<$ Typ $>$\-::dodajelementy (
+\subsubsection[{dodajelementy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ$>$ void {\bf Tablica}$<$ Typ $>$\-::dodajelementy (
 \begin{DoxyParamCaption}
 \item[{const {\bf Tablica}$<$ Typ $>$ \&}]{T1}
 \end{DoxyParamCaption}
@@ -132,28 +146,6 @@ Definicja w linii 14 pliku tablica.\-cpp.
 Funkcja laczy ze soba dwie tablice. 
 
 Definicja w linii 26 pliku tablica.\-cpp.
-
-
-
-Oto graf wywołań dla tej funkcji\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=320pt]{class_tablica_ad139387fb64394e133e1e1b3402f7290_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Oto graf wywoływań tej funkcji\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=330pt]{class_tablica_ad139387fb64394e133e1e1b3402f7290_icgraph}
-\end{center}
-\end{figure}
-
 
 \hypertarget{class_tablica_aac9cef276e6db6746cd57f3fa08ee9a6}{\index{Tablica@{Tablica}!intro@{intro}}
 \index{intro@{intro}!Tablica@{Tablica}}
@@ -165,7 +157,7 @@ Oto graf wywoływań tej funkcji\-:\nopagebreak
 )}}\label{class_tablica_aac9cef276e6db6746cd57f3fa08ee9a6}
 
 
-Definicja w linii 149 pliku tablica.\-cpp.
+Definicja w linii 169 pliku tablica.\-cpp.
 
 \hypertarget{class_tablica_a045ff88c70192a28c4fc4fd7585cad42}{\index{Tablica@{Tablica}!merge@{merge}}
 \index{merge@{merge}!Tablica@{Tablica}}
@@ -178,7 +170,7 @@ Definicja w linii 149 pliku tablica.\-cpp.
 )}}\label{class_tablica_a045ff88c70192a28c4fc4fd7585cad42}
 
 
-Definicja w linii 104 pliku tablica.\-cpp.
+Definicja w linii 122 pliku tablica.\-cpp.
 
 \hypertarget{class_tablica_a10405980a5d57f53ce38fa91fae0a38b}{\index{Tablica@{Tablica}!mergesort@{mergesort}}
 \index{mergesort@{mergesort}!Tablica@{Tablica}}
@@ -190,7 +182,7 @@ Definicja w linii 104 pliku tablica.\-cpp.
 )}}\label{class_tablica_a10405980a5d57f53ce38fa91fae0a38b}
 
 
-Definicja w linii 94 pliku tablica.\-cpp.
+Definicja w linii 111 pliku tablica.\-cpp.
 
 \hypertarget{class_tablica_a405e0d82e9594f27cfc9dac94e53b582}{\index{Tablica@{Tablica}!odwrockolejnosc@{odwrockolejnosc}}
 \index{odwrockolejnosc@{odwrockolejnosc}!Tablica@{Tablica}}
@@ -205,7 +197,7 @@ Definicja w linii 20 pliku tablica.\-cpp.
 
 \hypertarget{class_tablica_ae0716b9a85eb0306d3a722376727be6e}{\index{Tablica@{Tablica}!operator+@{operator+}}
 \index{operator+@{operator+}!Tablica@{Tablica}}
-\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ {\bf Tablica}$<$ Typ $>$ \& {\bf Tablica}$<$ Typ $>$\-::operator+ (
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ$>$ {\bf Tablica}$<$ Typ $>$ \& {\bf Tablica}$<$ Typ $>$\-::operator+ (
 \begin{DoxyParamCaption}
 \item[{const {\bf Tablica}$<$ Typ $>$ \&}]{argument}
 \end{DoxyParamCaption}
@@ -214,20 +206,9 @@ Przeciazenie operatora dodawania.
 
 Definicja w linii 42 pliku tablica.\-cpp.
 
-
-
-Oto graf wywołań dla tej funkcji\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_tablica_ae0716b9a85eb0306d3a722376727be6e_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_tablica_a3626fbc8c7e54b24e7fba96b86a4173f}{\index{Tablica@{Tablica}!operator=@{operator=}}
 \index{operator=@{operator=}!Tablica@{Tablica}}
-\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ {\bf Tablica}$<$ Typ $>$ \& {\bf Tablica}$<$ Typ $>$\-::operator= (
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ$>$ {\bf Tablica}$<$ Typ $>$ \& {\bf Tablica}$<$ Typ $>$\-::operator= (
 \begin{DoxyParamCaption}
 \item[{const {\bf Tablica}$<$ Typ $>$ \&}]{argument}
 \end{DoxyParamCaption}
@@ -236,20 +217,9 @@ Przeciazenie operatora przypisywania.
 
 Definicja w linii 50 pliku tablica.\-cpp.
 
-
-
-Oto graf wywołań dla tej funkcji\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=298pt]{class_tablica_a3626fbc8c7e54b24e7fba96b86a4173f_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_tablica_a5feb149bbeae655c6d7bafada90f9615}{\index{Tablica@{Tablica}!operator==@{operator==}}
 \index{operator==@{operator==}!Tablica@{Tablica}}
-\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ bool {\bf Tablica}$<$ Typ $>$\-::operator== (
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ$>$ bool {\bf Tablica}$<$ Typ $>$\-::operator== (
 \begin{DoxyParamCaption}
 \item[{const {\bf Tablica}$<$ Typ $>$ \&}]{argument}
 \end{DoxyParamCaption}
@@ -257,17 +227,6 @@ Oto graf wywołań dla tej funkcji\-:\nopagebreak
 Przeciazenie operatora porownania. 
 
 Definicja w linii 59 pliku tablica.\-cpp.
-
-
-
-Oto graf wywołań dla tej funkcji\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=304pt]{class_tablica_a5feb149bbeae655c6d7bafada90f9615_cgraph}
-\end{center}
-\end{figure}
-
 
 \hypertarget{class_tablica_a87f292495232b4f959291a3bc87bb829}{\index{Tablica@{Tablica}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
 \index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Tablica@{Tablica}}
@@ -278,7 +237,7 @@ Oto graf wywołań dla tej funkcji\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_tablica_a87f292495232b4f959291a3bc87bb829}
 Przeciazenie operatora indeksujacego 
 
-Definicja w linii 53 pliku tablica.\-hh.
+Definicja w linii 54 pliku tablica.\-hh.
 
 \hypertarget{class_tablica_a5d41b52977f5bc0a3abf9e62cc209cc4}{\index{Tablica@{Tablica}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
 \index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Tablica@{Tablica}}
@@ -289,7 +248,7 @@ Definicja w linii 53 pliku tablica.\-hh.
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_tablica_a5d41b52977f5bc0a3abf9e62cc209cc4}
 
 
-Definicja w linii 58 pliku tablica.\-hh.
+Definicja w linii 59 pliku tablica.\-hh.
 
 \hypertarget{class_tablica_a56d18f9872a1f48b9817334eba662437}{\index{Tablica@{Tablica}!quicksort@{quicksort}}
 \index{quicksort@{quicksort}!Tablica@{Tablica}}
@@ -299,7 +258,7 @@ Definicja w linii 58 pliku tablica.\-hh.
 \item[{int}]{prawy}
 \end{DoxyParamCaption}
 )}}\label{class_tablica_a56d18f9872a1f48b9817334eba662437}
-Funkcja wykonujaca algorytm szybkiego sortowania . 
+Funkcja sortujaca tablice 
 
 Definicja w linii 71 pliku tablica.\-cpp.
 
@@ -312,30 +271,15 @@ Definicja w linii 71 pliku tablica.\-cpp.
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_tablica_acf3f8d852711619ed205e1569f40f789}
 Funkcja pomocnicza zwraca dlugosc tablicy. 
 
-Definicja w linii 44 pliku tablica.\-hh.
-
-
-
-Oto graf wywoływań tej funkcji\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_tablica_acf3f8d852711619ed205e1569f40f789_icgraph}
-\end{center}
-\end{figure}
-
+Definicja w linii 45 pliku tablica.\-hh.
 
 \hypertarget{class_tablica_a0c9690c0fff4d5a704318ae93f264b0f}{\index{Tablica@{Tablica}!wczytajplik@{wczytajplik}}
 \index{wczytajplik@{wczytajplik}!Tablica@{Tablica}}
-\subsubsection[{wczytajplik}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ bool {\bf Tablica}$<$ Typ $>$\-::wczytajplik (
+\subsubsection[{wczytajplik}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ$>$ bool {\bf Tablica}$<$ Typ $>$\-::wczytajplik (
 \begin{DoxyParamCaption}
 \item[{char $\ast$}]{nazwapl}
 \end{DoxyParamCaption}
 )}}\label{class_tablica_a0c9690c0fff4d5a704318ae93f264b0f}
-
-
-Definicja w linii 177 pliku tablica.\-cpp.
-
 \hypertarget{class_tablica_acdaaf0758537334d35779497a1d60900}{\index{Tablica@{Tablica}!wyswietl@{wyswietl}}
 \index{wyswietl@{wyswietl}!Tablica@{Tablica}}
 \subsubsection[{wyswietl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ void {\bf Tablica}$<$ Typ $>$\-::wyswietl (
@@ -345,7 +289,7 @@ Definicja w linii 177 pliku tablica.\-cpp.
 )}}\label{class_tablica_acdaaf0758537334d35779497a1d60900}
 
 
-Definicja w linii 196 pliku tablica.\-cpp.
+Definicja w linii 199 pliku tablica.\-cpp.
 
 \hypertarget{class_tablica_aea49337f0b2ee035ddc1df13ff228511}{\index{Tablica@{Tablica}!zamienelementy@{zamienelementy}}
 \index{zamienelementy@{zamienelementy}!Tablica@{Tablica}}
@@ -372,6 +316,16 @@ Definicja w linii 36 pliku tablica.\-cpp.
 
 
 
+\subsection{Dokumentacja przyjaciół i funkcji związanych}
+\hypertarget{class_tablica_a6c89297f43089edbc61582d7315b1a3c}{\index{Tablica@{Tablica}!Licz@{Licz}}
+\index{Licz@{Licz}!Tablica@{Tablica}}
+\subsubsection[{Licz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ$>$ friend class {\bf Licz}\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_tablica_a6c89297f43089edbc61582d7315b1a3c}
+
+
+Definicja w linii 12 pliku tablica.\-hh.
+
+
+
 \subsection{Dokumentacja atrybutów składowych}
 \hypertarget{class_tablica_a42b49425f0e086c4e958337dcba3a3b6}{\index{Tablica@{Tablica}!dlugosctab@{dlugosctab}}
 \index{dlugosctab@{dlugosctab}!Tablica@{Tablica}}
@@ -382,7 +336,7 @@ Pole przechowujace dlugosc tablicy.
 
 
 
-Definicja w linii 16 pliku tablica.\-hh.
+Definicja w linii 17 pliku tablica.\-hh.
 
 \hypertarget{class_tablica_a8a186bd43f434e2c8b58377f6a54ab47}{\index{Tablica@{Tablica}!T@{T}}
 \index{T@{T}!Tablica@{Tablica}}
@@ -393,7 +347,7 @@ Pole przechowujace wskaznik do tablicy.
 
 
 
-Definicja w linii 14 pliku tablica.\-hh.
+Definicja w linii 15 pliku tablica.\-hh.
 
 
 

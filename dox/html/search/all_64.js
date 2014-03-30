@@ -7,5 +7,5 @@ var searchData=
   ['dzialania',['Dzialania',['../class_dzialania.html',1,'']]],
   ['dzialania_2ecpp',['dzialania.cpp',['../dzialania_8cpp.html',1,'']]],
   ['dzialania_2ehh',['dzialania.hh',['../dzialania_8hh.html',1,'']]],
-  ['dokumentacja_20zadania_20pamsi_20lab',['Dokumentacja zadania PAMSI LAB',['../index.html',1,'']]]
+  ['dokumentacja_20zadania_20pamsi_20lab_204',['Dokumentacja zadania PAMSI LAB 4',['../index.html',1,'']]]
 ];

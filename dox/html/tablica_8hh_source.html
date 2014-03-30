@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>Sortowanie: Plik źródłowy /home/karolina/Pulpit/pamsi/prj/inc/tablica.hh</title>
+<title>My Project: Plik źródłowy /home/karolina/Pulpit/pamsi/prj/inc/tablica.hh</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,10 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Sortowanie
-   &#160;<span id="projectnumber">4.0</span>
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">Karolina Morawska</div>
   </td>
  </tr>
  </tbody>
@@ -70,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Strony</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,58 +94,56 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="class_tablica.html">   11</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Typ&gt; <span class="keyword">class </span><a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47">   14</a></span>&#160;    Typ *<a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="class_tablica.html#a42b49425f0e086c4e958337dcba3a3b6">   16</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_tablica.html#a42b49425f0e086c4e958337dcba3a3b6" title="Pole przechowujace dlugosc tablicy.">dlugosctab</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#aea49337f0b2ee035ddc1df13ff228511">zamienelementy</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a630e070c59709cdfe436db9b2f57c81f">dodajelement</a>(Typ element);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a405e0d82e9594f27cfc9dac94e53b582">odwrockolejnosc</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#ad139387fb64394e133e1e1b3402f7290">dodajelementy</a>(<span class="keyword">const</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a> &amp;T1);</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="class_tablica.html#a7d54bbcaa7963c50ee57e69f700b6cfc">   32</a></span>&#160;    <a class="code" href="class_tablica.html#a7d54bbcaa7963c50ee57e69f700b6cfc">Tablica</a>() :</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>(0), <a class="code" href="class_tablica.html#a42b49425f0e086c4e958337dcba3a3b6" title="Pole przechowujace dlugosc tablicy.">dlugosctab</a>(0) {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    ;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="class_tablica.html#aea2479778376598550fe82ec459a24ba">   38</a></span>&#160;    <a class="code" href="class_tablica.html#aea2479778376598550fe82ec459a24ba">~Tablica</a>() {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        free(<a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    ;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">   44</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">rozmiar</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_tablica.html#a42b49425f0e086c4e958337dcba3a3b6" title="Pole przechowujace dlugosc tablicy.">dlugosctab</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#aafcf1f86b79c0146fa313bae711cc97e">zmianarozmiaru</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nowyrozmiar);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="class_tablica.html#a87f292495232b4f959291a3bc87bb829">   53</a></span>&#160;    Typ&amp; <a class="code" href="class_tablica.html#a87f292495232b4f959291a3bc87bb829">operator[]</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> b) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>[b];</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">/* Przeciazenie operatora indeksujacego</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="class_tablica.html#a5d41b52977f5bc0a3abf9e62cc209cc4">   58</a></span>&#160;    <span class="keyword">const</span> Typ&amp; <a class="code" href="class_tablica.html#a5d41b52977f5bc0a3abf9e62cc209cc4">operator[]</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> b)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>[b];</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a>&amp; <a class="code" href="class_tablica.html#ae0716b9a85eb0306d3a722376727be6e">operator +</a>(<span class="keyword">const</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a> &amp;argument) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a>&amp; <a class="code" href="class_tablica.html#a3626fbc8c7e54b24e7fba96b86a4173f">operator =</a>(<span class="keyword">const</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a> &amp;argument);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tablica.html#a5feb149bbeae655c6d7bafada90f9615">operator ==</a>(<span class="keyword">const</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a> &amp;argument) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a56d18f9872a1f48b9817334eba662437">quicksort</a>(<span class="keywordtype">int</span> lewy, <span class="keywordtype">int</span> prawy);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">/*  Funkcja wczytuje dane z pliku*/</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tablica.html#a0c9690c0fff4d5a704318ae93f264b0f">wczytajplik</a>(<span class="keywordtype">char</span> *nazwapl);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">/* Funkcja ktora wyswietla tablice */</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#acdaaf0758537334d35779497a1d60900">wyswietl</a>();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">/* Funkcja scalanie , uzywana przy sortowaniu mergesort.*/</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a045ff88c70192a28c4fc4fd7585cad42">merge</a>(<span class="keywordtype">int</span> lewy, <span class="keywordtype">int</span> prawy, <span class="keywordtype">int</span> srodek);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">/* Funkcja soryujaca poprzez scalanie*/</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a10405980a5d57f53ce38fa91fae0a38b">mergesort</a>(<span class="keywordtype">int</span> lewy, <span class="keywordtype">int</span> prawy);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">/* Funckja sortowania metoda introspektywna */</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#aac9cef276e6db6746cd57f3fa08ee9a6">intro</a>(<span class="keywordtype">int</span> lewy, <span class="keywordtype">int</span> prawy);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">/* Funkcja sortowania babelkowego , pomocnicza przy sortowaniu introspektywnym */</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a5f6d42f9f1da7aeca51618f25532e2aa">bubble</a>(<span class="keywordtype">int</span> lewy, <span class="keywordtype">int</span> prawy);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_tablica.html#a6c89297f43089edbc61582d7315b1a3c">   12</a></span>&#160;<span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_licz.html" title="Definicja klasy Licz.">Licz</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span> :</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47">   15</a></span>&#160;    Typ *<a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="class_tablica.html#a42b49425f0e086c4e958337dcba3a3b6">   17</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_tablica.html#a42b49425f0e086c4e958337dcba3a3b6" title="Pole przechowujace dlugosc tablicy.">dlugosctab</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#aea49337f0b2ee035ddc1df13ff228511">zamienelementy</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a630e070c59709cdfe436db9b2f57c81f">dodajelement</a>(Typ element);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a405e0d82e9594f27cfc9dac94e53b582">odwrockolejnosc</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#ad139387fb64394e133e1e1b3402f7290">dodajelementy</a>(<span class="keyword">const</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a> &amp;T1);</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="class_tablica.html#a7d54bbcaa7963c50ee57e69f700b6cfc">   33</a></span>&#160;    <a class="code" href="class_tablica.html#a7d54bbcaa7963c50ee57e69f700b6cfc">Tablica</a>() :</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>(0), <a class="code" href="class_tablica.html#a42b49425f0e086c4e958337dcba3a3b6" title="Pole przechowujace dlugosc tablicy.">dlugosctab</a>(0) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    ;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="class_tablica.html#aea2479778376598550fe82ec459a24ba">   39</a></span>&#160;    <a class="code" href="class_tablica.html#aea2479778376598550fe82ec459a24ba">~Tablica</a>() {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        free(<a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    ;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">   45</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_tablica.html#acf3f8d852711619ed205e1569f40f789">rozmiar</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_tablica.html#a42b49425f0e086c4e958337dcba3a3b6" title="Pole przechowujace dlugosc tablicy.">dlugosctab</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#aafcf1f86b79c0146fa313bae711cc97e">zmianarozmiaru</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nowyrozmiar);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="class_tablica.html#a87f292495232b4f959291a3bc87bb829">   54</a></span>&#160;    Typ&amp; <a class="code" href="class_tablica.html#a87f292495232b4f959291a3bc87bb829">operator[]</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> b) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>[b];</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">/* Przeciazenie operatora indeksujacego</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="class_tablica.html#a5d41b52977f5bc0a3abf9e62cc209cc4">   59</a></span>&#160;    <span class="keyword">const</span> Typ&amp; <a class="code" href="class_tablica.html#a5d41b52977f5bc0a3abf9e62cc209cc4">operator[]</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> b)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_tablica.html#a8a186bd43f434e2c8b58377f6a54ab47" title="Pole przechowujace wskaznik do tablicy.">T</a>[b];</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a>&amp; <a class="code" href="class_tablica.html#ae0716b9a85eb0306d3a722376727be6e">operator +</a>(<span class="keyword">const</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a> &amp;argument) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a>&amp; <a class="code" href="class_tablica.html#a3626fbc8c7e54b24e7fba96b86a4173f">operator =</a>(<span class="keyword">const</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a> &amp;argument);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tablica.html#a5feb149bbeae655c6d7bafada90f9615">operator ==</a>(<span class="keyword">const</span> <a class="code" href="class_tablica.html" title="Szablon klasy Tablica.">Tablica&lt;Typ&gt;</a> &amp;argument) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a56d18f9872a1f48b9817334eba662437">quicksort</a>(<span class="keywordtype">int</span> lewy, <span class="keywordtype">int</span> prawy);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tablica.html#a0c9690c0fff4d5a704318ae93f264b0f">wczytajplik</a>(<span class="keywordtype">char</span> *nazwapl);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#acdaaf0758537334d35779497a1d60900">wyswietl</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a045ff88c70192a28c4fc4fd7585cad42">merge</a>(<span class="keywordtype">int</span> lewy , <span class="keywordtype">int</span> prawy , <span class="keywordtype">int</span> srodek);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a10405980a5d57f53ce38fa91fae0a38b">mergesort</a>(<span class="keywordtype">int</span> lewy , <span class="keywordtype">int</span> prawy);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#aac9cef276e6db6746cd57f3fa08ee9a6">intro</a>(<span class="keywordtype">int</span> lewy , <span class="keywordtype">int</span> prawy);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a5f6d42f9f1da7aeca51618f25532e2aa">bubble</a>(<span class="keywordtype">int</span> lewy , <span class="keywordtype">int</span> prawy);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif </span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano N, 23 mar 2014 20:17:26 dla Sortowanie programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano N, 30 mar 2014 23:11:24 dla My Project programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

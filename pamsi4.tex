@@ -1,0 +1,82 @@
+\documentclass[11pt]{article} 
+\usepackage[T1]{fontenc}
+ \usepackage[polish]{babel} \usepackage[utf8]{inputenc}
+ \usepackage{lmodern} 
+\usepackage{graphicx} 
+\selectlanguage{polish} 
+\begin{document}
+ \begin{titlepage} 
+\title{ Sprawozdanie z laboratorium nr5 -PAMSI} 
+\author{Karolina Morawska}
+ \date{30 03 2014}
+ \maketitle 
+\end{titlepage}
+ \underline{Zadanie do wykonania}
+\\Ocena złożoności obliczeniowej poszczególnych algorytmów sortowania . 
+\begin{center}
+
+
+ \begin{figure}[ht!] 
+\centering
+ \includegraphics[width=90mm]{intro1.jpg}
+ \caption{Wykres zależności rozmiaru problemu od czasu dzialania algorytmu dla sortowania introspektywnego.  } 
+\label{overflow}
+ \end{figure}
+
+
+ \begin{figure}[ht!] 
+\centering
+ \includegraphics[width=90mm]{intro1.jpg}
+ \caption{Wykres zależności rozmiaru problemu od czasu dzialania algorytmu dla sortowania introspektywnego.} 
+\label{overflow}
+ \end{figure}
+
+ \begin{figure}[h!] 
+\centering
+ \includegraphics[width=90mm]{intro2.jpg}
+ \caption{Wykres zależności rozmiaru problemu od czasu dzialania algorytmu dla sortowania introspektywnego.}
+\label{overflow}
+ \end{figure}
+
+ \begin{figure}[h!] 
+\centering
+ \includegraphics[width=90mm]{intro3.jpg}
+ \caption{Wykres zależności rozmiaru problemu od czasu dzialania algorytmu dla sortowania introspektywnego.}
+\label{overflow}
+ \end{figure}
+
+ \begin{figure}[h!] 
+\centering
+ \includegraphics[width=90mm]{merge.jpg}
+ \caption{Wykres zależności rozmiaru problemu od czasu dzialania algorytmu dla sortowania merge czyli przez scalanie} 
+\label{overflow}
+ \end{figure}
+
+ \begin{figure}[h] 
+\centering
+ \includegraphics[width=90mm]{szybkie.jpg}
+ \caption{Wykres zależności rozmiaru problemu od czasu dzialania algorytmu dla sortowania szybkiego - 3 różne przypadki } 
+\label{overflow}
+ \end{figure}
+
+ \end{center}
+\newpage 
+ Wybrano sortowanie szybkie którego złożoność obliczeniowa wynosi $O(n log n)$.\\Jest to sortowanie wydajne oraz często używane ze względu na prostote implementacji i szybkość. 
+Następnym sortowaniem  jest mergesort-rekurencyjny algorytm sortowania danych który dziala w taki oto  sposob:
+   \\- dzieli zestaw danych na dwie równe części
+  \\-  stosuje sortowanie przez scalanie dla każdej z nich oddzielnie, chyba że pozostał już tylko jeden element;
+   \\ -łaczy posortowane podciągi w jeden.
+\\Jego złożoność  obliczeniowa jest taka sama jak w przypadku quicksort.
+
+Ostatnie sortowanie to introspektywne.W przypadku ogólnym, a więc  również w najgorszym, algorytm Sortowania Introspektywnego posiada złożonosc obliczeniową taką samą jak 2  poprzednie.
+W najgorszym przypadku algorytm wykonuje najpierw rekurencyjne wywołanie, takie jak w Sortowaniu Szybkim, a następnie dla pozostałego podzbioru wywołuje procedurę Heap Sort. Jest on algorytmem sortujacym w miejscu.
+\newpage 
+Wnioski:
+\\Czas sortowania dla zbiorów nieuporządkowanych jest dużo większy od czasu sortowania dla zbiorów uporządkowanych.
+\\Optymistyczny przypadek sortowania zachodzi tylko i wyłącznie wtedy gdy kluczem podziału jest mediana z sortowanego zbioru.Podział daje nam równe zbiory.
+\\ W przypadku przeciętnym , gdzie rozkład prawdopodobieństwa wyboru elementu jest taki sam złożoność jest zaledwie wyższa o 39% niż w przypadku optymistycznym.
+\\ Przypadek pesemistyczny zachodzi wtedy, gdy każdy podział jest skrajnie nirównomierny. tj. generuje jedno podzadanie puste,a drugie o1 mniejsze niz całe zadanie .
+\\Wszystkie otrzymane czasy sortowania są proporcjonalne do iloczynu n log2 n, możemy zauważyć zatem , iż klasa złożoności obliczeniowej algorytmu sortowania szybkiego jest równa $O(n log n)$.
+
+
+ \end{document}

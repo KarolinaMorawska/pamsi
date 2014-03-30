@@ -9,7 +9,8 @@
  *  Klasa Tablica posiada pola oraz funkcje potrzebne do wykonywania dzialan  na tablicach.
  */
 template<typename Typ> class Tablica {
-public:
+friend class Licz;
+public :
 //! Pole przechowujace wskaznik do tablicy.
 	Typ *T;
 //! Pole przechowujace dlugosc tablicy.
@@ -67,20 +68,17 @@ public:
 	/*! Przeciazenie operatora porownania.
 	 */
 	bool operator ==(const Tablica<Typ> &argument) const;
-	/*! Funkcja wykonujaca algorytm szybkiego sortowania .*/
+	/*! Funkcja sortujaca tablice */
 	void quicksort(int lewy, int prawy);
-	/*  Funkcja wczytuje dane z pliku*/
-	bool wczytajplik(char *nazwapl);
-	/* Funkcja ktora wyswietla tablice */
-	void wyswietl();
-	/* Funkcja scalanie , uzywana przy sortowaniu mergesort.*/
-	void merge(int lewy, int prawy, int srodek);
-	/* Funkcja soryujaca poprzez scalanie*/
-	void mergesort(int lewy, int prawy);
-	/* Funckja sortowania metoda introspektywna */
-	void intro(int lewy, int prawy);
-	/* Funkcja sortowania babelkowego , pomocnicza przy sortowaniu introspektywnym */
-	void bubble(int lewy, int prawy);
+bool wczytajplik(char *nazwapl);
+void wyswietl();
+void merge(int lewy , int prawy , int srodek);
+
+void mergesort(int lewy , int prawy);
+void intro(int lewy , int prawy);
+void bubble(int lewy , int prawy);
 };
+
+
 
 #endif 

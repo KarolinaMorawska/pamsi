@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['size',['size',['../class_kolejka.html#a6fa67cc293681c3333e6d553cfe3ce84',1,'Kolejka::size()'],['../class_stos.html#a472d836bf51faa0264fefd08eb4224d6',1,'Stos::size()'],['../class_stos2.html#a6599f822eabbade13ab6593ebec18182',1,'Stos2::size()'],['../class_stol.html#a0fe3754424071aaa5a8bcd45fd145c5b',1,'Stol::size()']]],
+  ['size',['size',['../class_kolejka.html#a6fa67cc293681c3333e6d553cfe3ce84',1,'Kolejka::size()'],['../class_licz.html#ae732b0bc554d7ab018a078380ff3977b',1,'Licz::size()'],['../class_stos.html#a472d836bf51faa0264fefd08eb4224d6',1,'Stos::size()'],['../class_stos2.html#a6599f822eabbade13ab6593ebec18182',1,'Stos2::size()'],['../class_stol.html#a0fe3754424071aaa5a8bcd45fd145c5b',1,'Stol::size()']]],
+  ['sortingtype',['sortingType',['../licz_8hh.html#a08f516d96c62462f77e4e83d222bfdfb',1,'licz.hh']]],
   ['stol',['Stol',['../class_stol.html',1,'']]],
   ['stos',['Stos',['../class_stos.html',1,'']]],
   ['stos_2ehh',['stos.hh',['../stos_8hh.html',1,'']]],

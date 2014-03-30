@@ -69,22 +69,39 @@ bool Tablica<Typ>::operator ==(const Tablica<Typ>& argument) const {
 
 template<typename Typ>
 void Tablica<Typ>::quicksort(int lewy, int prawy) {
+srand(time(NULL));
+if(!T.rozmiar()) return ;
 	int x = T[(prawy + lewy) / 2]; // obieramy x
+      //  int x=T[rand()%( prawy-lewy ) + lewy]; // indeks losowy
 	int i = lewy, j = prawy, w; // i, j - indeksy w tabeli
-	while (i <= j) // petla nieskonczona - wychodzimy z niej tylko przez return j
+/*													// Wariant pesymistyczny
+	for(int k = lewy; k < prawy; k++)
+	{
+		x = T[k];
+		if(T[k+1] < x)	x = T[k+1];
+	}
+	*/
+	/*													// Wariant optymistyczny ??
+	int a ,b ,c;
+	a = T[rand()%( prawy - lewy ) + lewy];
+	b = T[rand()%( prawy - lewy ) + lewy];
+	c = T[rand()%( prawy - lewy ) + lewy];
+	
+*/
+	do
 	{
 		while (T[j] > x) // dopoki elementy sa wieksze od x
 			j--;
 		while (T[i] < x) // dopoki elementy sa mniejsze od x
 			i++;
-		if (i < j) {  // zamieniamy miejscami gdy i < j
+		if (i <= j) {  // zamieniamy miejscami gdy i < j
 			w = T[i];
 			T[i] = T[j];
 			T[j] = w;
 			i++;
 			j--;
 		}
-	}
+	}while(i<=j);
 	if (lewy < j)
 		quicksort(lewy, j);
 	if (i < prawy)
@@ -92,8 +109,9 @@ void Tablica<Typ>::quicksort(int lewy, int prawy) {
 }
 template<typename Typ>
 void Tablica<Typ>::mergesort(int lewy, int prawy) {
-	if (lewy < prawy) {
-		int srodek = (lewy + prawy) / 2;
+  int srodek;
+	if (lewy != prawy) {
+	  srodek = (lewy + prawy) / 2;
 		mergesort(lewy, srodek);
 		mergesort(srodek + 1, prawy);
 		merge(lewy, prawy, srodek);
@@ -103,7 +121,7 @@ void Tablica<Typ>::mergesort(int lewy, int prawy) {
 template<typename Typ>
 void Tablica<Typ>::merge(int lewy, int prawy, int srodek) {
 	int i = lewy;
-	int j = prawy;
+	int j = srodek+1;
 	Typ *newTab = new Typ[prawy - lewy];
 	int k = 0;
 	while (i <= srodek && j <= prawy) {
@@ -130,17 +148,19 @@ void Tablica<Typ>::merge(int lewy, int prawy, int srodek) {
 			k++;
 		}
 	}
-	for (int i = 0; i < k; i++) {
+	for (int i = 0; i <= prawy - lewy; i++) {
 		T[lewy + i] = newTab[i];
 	}
 	delete[] newTab;
 }
 template<typename Typ>
 void Tablica<Typ>::bubble(int lewy , int prawy) {
-	for (int i = lewy; i <= prawy; ++i) {
-		for (int j = lewy; j <= prawy-1 ; ++j) {
+	for (int i = lewy; i <= prawy; i++) {
+		for (int j = lewy; j <= prawy-1 ; j++) {
 			if (T[j] > T[j + 1]) {
-				zamienelementy(T[j], T[j + 1]);
+			       int w = T[j];
+			T[j] = T[j+1];
+			T[j+1] = w;
 			}
 		}
 	}
@@ -149,20 +169,21 @@ template<typename Typ>
 void Tablica<Typ>::intro(int lewy, int prawy) {
 	int x = T[(prawy + lewy) / 2]; // obieramy x
 	int i = lewy, j = prawy, w; // i, j - indeksy w tabeli
-	while (i <= j) // petla nieskonczona - wychodzimy z niej tylko przez return j
+	do
 	{
 		while (T[j] > x) // dopoki elementy sa wieksze od x
 			j--;
 		while (T[i] < x) // dopoki elementy sa mniejsze od x
 			i++;
-		if (i < j) {  // zamieniamy miejscami gdy i < j
+		if (i <= j) {  // zamieniamy miejscami gdy i < j
 			w = T[i];
 			T[i] = T[j];
 			T[j] = w;
 			i++;
 			j--;
 		}
-	}
+	}while(i<=j);
+
 	if (lewy < j && (j - lewy) > 9)
 		quicksort(lewy, j);
 	else
@@ -173,28 +194,11 @@ void Tablica<Typ>::intro(int lewy, int prawy) {
 		bubble(i,prawy);
 }
 
-template<typename Typ>
-bool Tablica<Typ>::wczytajplik(char *nazwapl) {
-	std::ifstream plik;
-	plik.open(nazwapl);
 
-	if (!plik.good()) {
-		std::cout << "Nie otworzono pliku ";
-		return false;
-	}
-
-	unsigned int rozmiar;
-	plik >> rozmiar;
-	zmianarozmiaru(rozmiar);
-
-	for (unsigned int i = 0; i < rozmiar; i++) {
-		plik >> T[i];
-	}
-	return true;
-}
 template<typename Typ>
 void Tablica<Typ>::wyswietl() {
-	for (int i = 0; i < dlugosctab; ++i) {
+	for (unsigned int i = 0; i < dlugosctab; ++i) {
 		std::cout << T[i] << " ";
 	}
 }
+
