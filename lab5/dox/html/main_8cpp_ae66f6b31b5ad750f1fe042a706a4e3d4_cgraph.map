@@ -1,0 +1,6 @@
+<map id="main" name="main">
+<area shape="rect" id="node3" href="$class_tablicaas.html#ac97f4cb96d75a56448b9ed5a44b60826" title="Dodaje parę&#45;wartość i klucz. Dodatkowo zmienna ilosc elementow zostaje zwiekszona." alt="" coords="115,5,232,35"/>
+<area shape="rect" id="node5" href="$class_tablicaas.html#a329ae3086855ea056a5249430de4b5f3" title="Pobiera klucz. /return Zwraca zmienna o nazwie wartosc." alt="" coords="109,59,237,88"/>
+<area shape="rect" id="node7" href="$class_tablicaas.html#aa961a5575d84d6f5762063f719879ae1" title="Metoda która usuwa klucz. Dodatkowo zmienna ilosc elementow zostaje zmniejszona." alt="" coords="116,112,231,141"/>
+<area shape="rect" id="node9" href="$class_tablicaas.html#aff9f43c59bcb48c6f8fee095517960c9" title="Sprawdza zawartość tablicy." alt="" coords="104,165,243,195"/>
+</map>
