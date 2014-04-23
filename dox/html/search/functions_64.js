@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['dequeue',['dequeue',['../class_kolejka.html#a73e7c4df8f400108a4c48132c2476d5a',1,'Kolejka']]],
-  ['dodajelement',['dodajelement',['../class_tablica.html#a630e070c59709cdfe436db9b2f57c81f',1,'Tablica']]],
-  ['dodajelementy',['dodajelementy',['../class_tablica.html#ad139387fb64394e133e1e1b3402f7290',1,'Tablica']]]
+  ['dodaj',['dodaj',['../class_tablicaas.html#ac97f4cb96d75a56448b9ed5a44b60826',1,'Tablicaas::dodaj()'],['../class_tree.html#ab7fedd8767bedee15602ac3611a85d8a',1,'Tree::dodaj()']]]
 ];

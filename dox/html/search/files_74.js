@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tablica_2ecpp',['tablica.cpp',['../tablica_8cpp.html',1,'']]],
-  ['tablica_2ehh',['tablica.hh',['../tablica_8hh.html',1,'']]]
+  ['tablicaas_2ehh',['tablicaas.hh',['../tablicaas_8hh.html',1,'']]],
+  ['tree_2ehh',['tree.hh',['../tree_8hh.html',1,'']]]
 ];

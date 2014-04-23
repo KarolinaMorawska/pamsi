@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['czas_2ehh',['czas.hh',['../czas_8hh.html',1,'']]]
+  ['czas_2ecpp',['czas.cpp',['../czas_8cpp.html',1,'']]]
 ];

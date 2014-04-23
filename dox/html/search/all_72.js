@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['rozmiar',['rozmiar',['../class_tablica.html#acf3f8d852711619ed205e1569f40f789',1,'Tablica']]],
-  ['rozmiartab',['rozmiartab',['../class_dzialania.html#a177e69d16b8280aae1d658adb67a8fbc',1,'Dzialania']]]
+  ['right',['right',['../class_n_o_d_e.html#a569656ce6663a21e6f00aa3de1128c90',1,'NODE']]],
+  ['root',['root',['../class_tree.html#a9b7c5c70165244116357f68463c19f0b',1,'Tree']]],
+  ['rozmiar',['ROZMIAR',['../tablicaas_8hh.html#aa50aa866c5823769bb02e986d29a0589',1,'tablicaas.hh']]]
 ];

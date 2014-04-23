@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pop',['pop',['../class_stos.html#a38e84abe604aa6d1e9b9c6ac524a33bc',1,'Stos::pop()'],['../class_stos2.html#a9695a855dac219cc685cdded92ee38ac',1,'Stos2::pop()'],['../class_stol.html#ab6de7dccb1eb7324c8a9b866fc557ed6',1,'Stol::pop()']]],
-  ['porownaj',['porownaj',['../class_dzialania.html#af059b80e034854eb1ae878d6b636fff6',1,'Dzialania']]],
-  ['push',['push',['../class_stos.html#ae288acf023c8a1c25184dc5c6a57ee2a',1,'Stos::push()'],['../class_stos2.html#ab9bf4dc27877d77a3a53736d33fb965f',1,'Stos2::push()'],['../class_stol.html#a6a92606f32fb4bed2261b7ca5e192e4c',1,'Stol::push()']]]
+  ['para',['Para',['../class_para.html#a391b57d370246309feb169f708b33b8f',1,'Para::Para()'],['../class_para.html#aa167d3206ddb657c90a11144c52354d8',1,'Para::Para(int _klucz, int _wartosc)']]],
+  ['per',['per',['../classper.html#a73013b168f465e358ce0371a730a0bfa',1,'per::per(K _key, W _wartosc)'],['../classper.html#a15a9c5b538d2c25c8b2492f0acfbba89',1,'per::per()']]],
+  ['pobierz',['pobierz',['../class_tablicaas.html#a329ae3086855ea056a5249430de4b5f3',1,'Tablicaas']]]
 ];

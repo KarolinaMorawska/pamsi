@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>My Project: Plik źródłowy /home/karolina/Pulpit/pamsi/prj/src/main.cpp</title>
+<title>My Project: Plik źródłowy /home/karolina/Pulpit/pamsi6/prj/src/main.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Strony</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,87 +88,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 </div><!--header-->
 <div class="contents">
 <a href="main_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tablica_8hh.html">tablica.hh</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="licz_8hh.html">licz.hh</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tablica_8hh.html">tablica.hh</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/*int main (int argc ,char **argv) {</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">    if (argc&lt;4){</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">        cout&lt;&lt; &quot;Zbyt mała liczba argumentow&quot; ;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">        return 0; }</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">unsigned int lpowtorzen , zmienna;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">lpowtorzen=atoi(argv[3]);</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">zmienna=atoi(argv[2]);</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">double b;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">if(string(argv[1])==&quot;stos&quot;)</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">{</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">    Czasstos&lt;Stos&lt;int&gt; &gt;obiekt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">    b=obiekt.czas(lpowtorzen , zmienna);</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">}</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">else if(string(argv[1])==&quot;stos2&quot;){</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">    Czasstos&lt;Stos2&lt;int&gt; &gt;obiekt;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">    b=obiekt.czas(lpowtorzen , zmienna);</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">}</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">else if(string(argv[1])==&quot;kolejka&quot;){</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">    Czaskol&lt;Kolejka&lt;int&gt; &gt;obiekt;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">    b=obiekt.czas(lpowtorzen , zmienna);</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">}</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">else if (string(argv[1])==&quot;stoslista&quot;) {</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">        Czasstos&lt;Stol&lt;int&gt; &gt;obiekt;</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">        b=obiekt.czas(lpowtorzen , zmienna);</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">}</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">else { cerr &lt;&lt;&quot;nie ma takiej nazwy &quot; &lt;&lt;endl;</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">  return 0;</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">}</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">cout &lt;&lt; zmienna &lt;&lt; &quot;,&quot; &lt;&lt; lpowtorzen &lt;&lt;&quot;,&quot; &lt;&lt; b &lt;&lt;&quot;s&quot; &lt;&lt;endl;</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">}</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">   68</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Funkcja main wykonuje algorytm i sprawdza czas dzialania algorytmu. W funkcji main wykonywane sa oper...">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">if</span> (argc &lt; 5 )</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{ cerr &lt;&lt; <span class="stringliteral">&quot;Niewystarczajaca ilosc argumentow.&quot;</span>&lt;&lt; endl;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="class_licz.html" title="Definicja klasy Licz.">Licz</a> time;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">string</span> sortTyp=argv[1];</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<a class="code" href="licz_8hh.html#a08f516d96c62462f77e4e83d222bfdfb" title="Typ danych przechowujacy rodzaj sortowania.">sortingType</a> konw ;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordflow">if</span>(sortTyp == <span class="stringliteral">&quot;quick&quot;</span>) konw = <a class="code" href="licz_8hh.html#a08f516d96c62462f77e4e83d222bfdfba6e0cfea25efd107a876dcc7bf7b922c7">quick</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordflow">else</span> <span class="keywordflow">if</span>(sortTyp == <span class="stringliteral">&quot;merge&quot;</span>) konw = <a class="code" href="licz_8hh.html#a08f516d96c62462f77e4e83d222bfdfba47a79557511ab5d9be9b553a1be1872b">merge</a> ;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordflow">else</span> <span class="keywordflow">if</span>(sortTyp == <span class="stringliteral">&quot;intro&quot;</span>) konw = <a class="code" href="licz_8hh.html#a08f516d96c62462f77e4e83d222bfdfba9f059e6c3769afddef00542fed4102dd">intro</a> ;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordflow">else</span> { cerr &lt;&lt; <span class="stringliteral">&quot;Nie ma takiego sortowania &quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordflow">return</span> 0;}</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordflow">if</span>(!time.<a class="code" href="class_licz.html#aeb97a155eb71e9d611c2f3607e80047b" title="Funkcja wczytuje dane z pliku.">wczytajplik</a>(argv[2])) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">double</span> czas= time.<a class="code" href="class_licz.html#a9d1bd08a72880d8cb9ad95f699cb0170" title="Funkcja mierzy czas wykonywania algorytmu sortowania.">benchmark</a>(atoi(argv[4]) , konw) ;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;cout &lt;&lt; time.<a class="code" href="class_licz.html#ae732b0bc554d7ab018a078380ff3977b">size</a>() &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; atoi(argv[4]) &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; czas &lt;&lt;endl;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tablicaas_8hh.html" title="Definicja szablonu klasy Tablicaas(Tablica asocjacyjna)">tablicaas.hh</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tree_8hh.html" title="Definicja klasy Tree.">tree.hh</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;czas.hh&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include&lt;time.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> W&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_tablicaas.html" title="Modeluje pojęcie Tablicaas. Klasa modeluje pojęcie Tablica asocjacyjna . Jej atrybutem są pola zawier...">Tablicaas&lt;K, W&gt;::zmienna</a> = 0;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   25</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Główna funkcja programu W funkcji main: -tworzona jest tablica asocjacyjna -dodana do niej zostaje pa...">main</a>() {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    Zegar zeg_hasz, zeg_tree;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">/*zeg_tree.Start();         // Rozpoczęcie pracy zegara</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">    Tree tab;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">    Para zmienna(1, 5), tmp(4, 8), t(0, 4), a(8, 8);</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">    for (int i=0; i&lt;ROZMIAR;i++){</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     tab.dodaj(Para(zmienna));  // Wczytujemy pliki do DRZEWA</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     // ...</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     tab.wyszukaj(1);}</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     zeg_tree.Koniec();     // Koniec pracy zegara</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     zeg_tree.Wynik();      // Wynik pracy zegara</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;     <a class="code" href="class_tablicaas.html" title="Modeluje pojęcie Tablicaas. Klasa modeluje pojęcie Tablica asocjacyjna . Jej atrybutem są pola zawier...">Tablicaas &lt;string , int&gt;</a> taa;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;     <a class="code" href="classper.html" title="Modeluje pojęcie per. Klasa modeluje pojęcie per(para) . Jej atrybutem są pola zawierające klucz i wa...">per &lt;string,int&gt;</a> para(<span class="stringliteral">&quot;napis&quot;</span>, 10);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;     zeg_hasz.Start();      <span class="comment">// Rozpoczynamy pracę zegara</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="tablicaas_8hh.html#aa50aa866c5823769bb02e986d29a0589">ROZMIAR</a>;i++){</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;     taa.<a class="code" href="class_tablicaas.html#ac97f4cb96d75a56448b9ed5a44b60826" title="Dodaje parę-wartość i klucz. Dodatkowo zmienna ilosc elementow zostaje zwiekszona.">dodaj</a>(para);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;     taa.<a class="code" href="class_tablicaas.html#a329ae3086855ea056a5249430de4b5f3" title="Pobiera klucz. /return Zwraca zmienna o nazwie wartosc.">pobierz</a>(<span class="stringliteral">&quot;napis&quot;</span>);}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;     zeg_hasz.Koniec();         <span class="comment">// Koniec pracy zegara</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;     zeg_hasz.Wynik();          <span class="comment">// Wynik pracy zegara</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    cin.get();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano N, 30 mar 2014 23:11:24 dla My Project programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano Śr, 23 kwi 2014 23:25:07 dla My Project programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

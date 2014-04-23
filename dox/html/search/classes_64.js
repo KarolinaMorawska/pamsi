@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dzialania',['Dzialania',['../class_dzialania.html',1,'']]]
+  ['drzewo',['Drzewo',['../class_drzewo.html',1,'']]]
 ];

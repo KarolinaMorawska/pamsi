@@ -1,0 +1,204 @@
+\hypertarget{drzewo_8hh}{\section{Dokumentacja pliku /home/karolina/\-Pulpit/pamsi6/prj/inc/drzewo.hh}
+\label{drzewo_8hh}\index{/home/karolina/\-Pulpit/pamsi6/prj/inc/drzewo.\-hh@{/home/karolina/\-Pulpit/pamsi6/prj/inc/drzewo.\-hh}}
+}
+{\ttfamily \#include \char`\"{}per.\-hh\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$ctime$>$}\\*
+{\ttfamily \#include $<$rand$>$}\\*
+Wykres zależności załączania dla drzewo.\-hh\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{drzewo_8hh__incl}
+\end{center}
+\end{figure}
+\subsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_drzewo}{Drzewo}
+\end{DoxyCompactItemize}
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{drzewo_8hh_a026a6835811748fb9f9e560cb3e8f3ea}{dodaj} (\hyperlink{class_drzewo}{Drzewo} $\ast$\&root, string key)
+\item 
+void \hyperlink{drzewo_8hh_a6e8c9bcc6f9bb244a0d52826ff68e585}{inorder} (\hyperlink{class_drzewo}{Drzewo} $\ast$root)
+\item 
+int \hyperlink{drzewo_8hh_af9fa504dac752dfa67fb789c976147c6}{M\-I\-N\-\_\-\-K\-E\-Y} (\hyperlink{class_drzewo}{Drzewo} $\ast$root)
+\item 
+int \hyperlink{drzewo_8hh_a0886347da5e256a5f640cad63d87cce3}{M\-A\-X\-\_\-\-K\-E\-Y} (\hyperlink{class_drzewo}{Drzewo} $\ast$root)
+\item 
+\hyperlink{class_drzewo}{Drzewo} \hyperlink{drzewo_8hh_a44b45c9fdd0bfec3dff68b14962392d5}{poprzednik} (\hyperlink{class_drzewo}{Drzewo} $\ast$x)
+\item 
+\hyperlink{class_drzewo}{Drzewo} \hyperlink{drzewo_8hh_a9e7e8f628a7d8e0642827ada7eae3962}{nastepnik} (\hyperlink{class_drzewo}{Drzewo} $\ast$x)
+\item 
+\hyperlink{class_drzewo}{Drzewo} $\ast$ \hyperlink{drzewo_8hh_a5e0e50babdc5ca3c25d19183603ed0c6}{remove} (\hyperlink{class_drzewo}{Drzewo} $\ast$\&root, \hyperlink{class_drzewo}{Drzewo} $\ast$x)
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja funkcji}
+\hypertarget{drzewo_8hh_a026a6835811748fb9f9e560cb3e8f3ea}{\index{drzewo.\-hh@{drzewo.\-hh}!dodaj@{dodaj}}
+\index{dodaj@{dodaj}!drzewo.hh@{drzewo.\-hh}}
+\subsubsection[{dodaj}]{\setlength{\rightskip}{0pt plus 5cm}void dodaj (
+\begin{DoxyParamCaption}
+\item[{{\bf Drzewo} $\ast$\&}]{root, }
+\item[{string}]{key}
+\end{DoxyParamCaption}
+)}}\label{drzewo_8hh_a026a6835811748fb9f9e560cb3e8f3ea}
+
+
+Definicja w linii 28 pliku drzewo.\-hh.
+
+\hypertarget{drzewo_8hh_a6e8c9bcc6f9bb244a0d52826ff68e585}{\index{drzewo.\-hh@{drzewo.\-hh}!inorder@{inorder}}
+\index{inorder@{inorder}!drzewo.hh@{drzewo.\-hh}}
+\subsubsection[{inorder}]{\setlength{\rightskip}{0pt plus 5cm}void inorder (
+\begin{DoxyParamCaption}
+\item[{{\bf Drzewo} $\ast$}]{root}
+\end{DoxyParamCaption}
+)}}\label{drzewo_8hh_a6e8c9bcc6f9bb244a0d52826ff68e585}
+
+
+Definicja w linii 40 pliku drzewo.\-hh.
+
+\hypertarget{drzewo_8hh_a0886347da5e256a5f640cad63d87cce3}{\index{drzewo.\-hh@{drzewo.\-hh}!M\-A\-X\-\_\-\-K\-E\-Y@{M\-A\-X\-\_\-\-K\-E\-Y}}
+\index{M\-A\-X\-\_\-\-K\-E\-Y@{M\-A\-X\-\_\-\-K\-E\-Y}!drzewo.hh@{drzewo.\-hh}}
+\subsubsection[{M\-A\-X\-\_\-\-K\-E\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int M\-A\-X\-\_\-\-K\-E\-Y (
+\begin{DoxyParamCaption}
+\item[{{\bf Drzewo} $\ast$}]{root}
+\end{DoxyParamCaption}
+)}}\label{drzewo_8hh_a0886347da5e256a5f640cad63d87cce3}
+
+
+Definicja w linii 53 pliku drzewo.\-hh.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{drzewo_8hh_a0886347da5e256a5f640cad63d87cce3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{drzewo_8hh_af9fa504dac752dfa67fb789c976147c6}{\index{drzewo.\-hh@{drzewo.\-hh}!M\-I\-N\-\_\-\-K\-E\-Y@{M\-I\-N\-\_\-\-K\-E\-Y}}
+\index{M\-I\-N\-\_\-\-K\-E\-Y@{M\-I\-N\-\_\-\-K\-E\-Y}!drzewo.hh@{drzewo.\-hh}}
+\subsubsection[{M\-I\-N\-\_\-\-K\-E\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int M\-I\-N\-\_\-\-K\-E\-Y (
+\begin{DoxyParamCaption}
+\item[{{\bf Drzewo} $\ast$}]{root}
+\end{DoxyParamCaption}
+)}}\label{drzewo_8hh_af9fa504dac752dfa67fb789c976147c6}
+
+
+Definicja w linii 47 pliku drzewo.\-hh.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{drzewo_8hh_af9fa504dac752dfa67fb789c976147c6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{drzewo_8hh_a9e7e8f628a7d8e0642827ada7eae3962}{\index{drzewo.\-hh@{drzewo.\-hh}!nastepnik@{nastepnik}}
+\index{nastepnik@{nastepnik}!drzewo.hh@{drzewo.\-hh}}
+\subsubsection[{nastepnik}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Drzewo} nastepnik (
+\begin{DoxyParamCaption}
+\item[{{\bf Drzewo} $\ast$}]{x}
+\end{DoxyParamCaption}
+)}}\label{drzewo_8hh_a9e7e8f628a7d8e0642827ada7eae3962}
+
+
+Definicja w linii 74 pliku drzewo.\-hh.
+
+
+
+Oto graf wywołań dla tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{drzewo_8hh_a9e7e8f628a7d8e0642827ada7eae3962_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{drzewo_8hh_a9e7e8f628a7d8e0642827ada7eae3962_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{drzewo_8hh_a44b45c9fdd0bfec3dff68b14962392d5}{\index{drzewo.\-hh@{drzewo.\-hh}!poprzednik@{poprzednik}}
+\index{poprzednik@{poprzednik}!drzewo.hh@{drzewo.\-hh}}
+\subsubsection[{poprzednik}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Drzewo} poprzednik (
+\begin{DoxyParamCaption}
+\item[{{\bf Drzewo} $\ast$}]{x}
+\end{DoxyParamCaption}
+)}}\label{drzewo_8hh_a44b45c9fdd0bfec3dff68b14962392d5}
+
+
+Definicja w linii 60 pliku drzewo.\-hh.
+
+
+
+Oto graf wywołań dla tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{drzewo_8hh_a44b45c9fdd0bfec3dff68b14962392d5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{drzewo_8hh_a44b45c9fdd0bfec3dff68b14962392d5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{drzewo_8hh_a5e0e50babdc5ca3c25d19183603ed0c6}{\index{drzewo.\-hh@{drzewo.\-hh}!remove@{remove}}
+\index{remove@{remove}!drzewo.hh@{drzewo.\-hh}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Drzewo}$\ast$ remove (
+\begin{DoxyParamCaption}
+\item[{{\bf Drzewo} $\ast$\&}]{root, }
+\item[{{\bf Drzewo} $\ast$}]{x}
+\end{DoxyParamCaption}
+)}}\label{drzewo_8hh_a5e0e50babdc5ca3c25d19183603ed0c6}
+
+
+Definicja w linii 91 pliku drzewo.\-hh.
+
+
+
+Oto graf wywołań dla tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{drzewo_8hh_a5e0e50babdc5ca3c25d19183603ed0c6_cgraph}
+\end{center}
+\end{figure}
+
+

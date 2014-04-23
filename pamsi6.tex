@@ -1,0 +1,120 @@
+
+\documentclass[11pt]{article} 
+\usepackage{amsmath}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage{url}
+\frenchspacing
+
+
+\usepackage{geometry}
+\geometry{a4paper}
+
+
+\usepackage{graphicx} 
+\usepackage{booktabs} 
+\usepackage{array} 
+\usepackage{paralist} 
+\usepackage{verbatim} 
+\usepackage{subfig} 
+
+\usepackage{fancyhdr} 
+\pagestyle{fancy} 
+\renewcommand{\headrulewidth}{0pt} 
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} 
+\usepackage[nottoc,notlof,notlot]{tocbibind} 
+\usepackage[titles,subfigure]{tocloft} 
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} 
+
+
+
+\title{Sprawozdanie z ćwiczenia laboratoryjnego \\,,Implementacja tablicy asocjacyjnej''. }
+\author{Karolina Morawska}
+\date{20.04.2014}  
+
+\begin{document}
+\maketitle
+\newpage
+\section{Wstęp}
+
+Celem ćwiczenia było przetestowanie struktury danych jaką jest tablica asocjacyjna , która pozwala dostać się do danych przy użyciu klucza. Mamy różne mozliwości zaimplementowania. Ja wybrałam:
+
+  \begin{itemize}
+  \item Tablice haszującą
+  \item Drzewo przeszukiwań binarnych
+  \end{itemize}
+
+\subsection{Tablica haszująca}
+
+Zaletą takich struktur jest bardzo szybki dostęp do danych i nie zależy on od rozmiaru tablicy ani położenia elementu.Podstawową wadą tablic mieszających jest duża złożoność pesymistyczna wyszukiwania, wynosząca $\mathcal{O}(n)$. Ponadto kosztowne może być także obliczanie wartości dobrej funkcji mieszającej.
+Kolejna wada wiąże się z architekturą współczesnych procesorów, które wykorzystują pamięć podręczną. Ponieważ pamięć podręczna przyspiesza odwołania do komórek pamięci operacyjnej, gdy są one zgrupowane blisko siebie, zastosowanie tablicy mieszającej dla zbyt małej liczby elementów może być wolniejsze niż zastosowanie zwykłej tablicy przeszukiwanej sekwencyjnie.
+\subsection{Drzewo przeszukiwań binarnych }
+
+Podstawowe operacje na drzewach poszukiwań binarnych wymagają czasu proporcjonalnego do wysokości drzewa.W pełnym (tzw.zrównoważonym) drzewie binarnym o \textbf{\textsl{n}} węzłach takie operacje działaja w najgorszym przypadku w czasie $\mathcal{O}(lg(n))$.Jesli jednak drzewo składa się z jednej gałęzi o długości \textbf{\textsl{n}}, to te same operacje wymagają w pesymistycznym przypadku czasu $\mathcal{O}(n)$.
+
+\newpage
+\section{Wyniki przeprowadzonych testów}
+\subsection{Tablica haszująca}
+
+
+ 
+  \begin{figure}[ht!] 
+\centering
+ \includegraphics[width=70mm]{haasz.jpg}
+ \caption{Tabela zawierająca pomiar czasu wyszukiwania elementu dla tablicy haszującej. } 
+\label{overflow}
+ \end{figure}
+
+ \begin{figure}[ht!] 
+\centering
+ \includegraphics[width=100mm]{haaasz.jpg}
+ \caption{Pomiar czasu wyszukiwania elementu dla tablicy haszującej. } 
+\label{overflow}
+ \end{figure}
+ \newpage
+\subsection{Drzewo przeszukiwań binarnych }
+
+ 
+ \begin{figure}[ht!] 
+\centering
+ \includegraphics[width=70mm]{drzewko.jpg}
+ \caption{Tabela zaeirająca pomiar czasu wyszukiwania elementu dla drzewka przeszukiwań binarnych. } 
+\label{overflow}
+ \end{figure}
+
+  \begin{figure}[ht!] 
+\centering
+ \includegraphics[width=100mm]{drzeeewo.jpg}
+ \caption{Pomiar czasu wyszukiwania elementu dla drzewka przeszukiwań binarnych. } 
+\label{overflow}
+ \end{figure}
+ 
+   \begin{figure}[ht!] 
+\centering
+ \includegraphics[width=120mm]{suma.jpg}
+ \caption{Pomiar czasu wyszukiwania elementu dla dwóch algorytmów. W kolorze niebieskim zaznaczono pomiar dla drzewa binarnego ; kolor czerwony tablica haszująca. } 
+\label{overflow}
+ \end{figure}
+ 
+\newpage
+\section{Wnioski}
+\begin{itemize}
+\item Przedstawione przeze mnie algorytmy cechują się szybkim czasem działania dlatego służą one między innymi do tworzenia słowników.
+\item Dla danych rzędu miliona czas wyszukiwania w każdej z powyższych struktur jest praktycznie niezauważalny dla pojedynczego wyszukiwania.
+\item Z wykresu obu algorytmów widać że czas wyszukiwania elementu w tablicy haszującaj jest szybszy niż w drzewie przeszukiwań binarnych.
+\end{itemize} 
+
+\begin{thebibliography}{99}
+\bibitem{pa}
+\emph{$ http://pl.wikipedia.org/wiki/Binarne_drzewo_poszukiwan$,}
+\bibitem{pa}
+\emph{$http://pl.wikipedia.org/wiki/Tablica_mieszaj$}
+\end{thebibliography}
+\end{document}

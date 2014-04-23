@@ -1,11 +1,5 @@
 var searchData=
 [
-  ['dequeue',['dequeue',['../class_kolejka.html#a73e7c4df8f400108a4c48132c2476d5a',1,'Kolejka']]],
-  ['dlugosctab',['dlugosctab',['../class_tablica.html#a42b49425f0e086c4e958337dcba3a3b6',1,'Tablica']]],
-  ['dodajelement',['dodajelement',['../class_tablica.html#a630e070c59709cdfe436db9b2f57c81f',1,'Tablica']]],
-  ['dodajelementy',['dodajelementy',['../class_tablica.html#ad139387fb64394e133e1e1b3402f7290',1,'Tablica']]],
-  ['dzialania',['Dzialania',['../class_dzialania.html',1,'']]],
-  ['dzialania_2ecpp',['dzialania.cpp',['../dzialania_8cpp.html',1,'']]],
-  ['dzialania_2ehh',['dzialania.hh',['../dzialania_8hh.html',1,'']]],
-  ['dokumentacja_20zadania_20pamsi_20lab_204',['Dokumentacja zadania PAMSI LAB 4',['../index.html',1,'']]]
+  ['dodaj',['dodaj',['../class_tablicaas.html#ac97f4cb96d75a56448b9ed5a44b60826',1,'Tablicaas::dodaj()'],['../class_tree.html#ab7fedd8767bedee15602ac3611a85d8a',1,'Tree::dodaj()']]],
+  ['dokumentacja_20zadania_20lab6',['Dokumentacja zadania lab6',['../index.html',1,'']]]
 ];
