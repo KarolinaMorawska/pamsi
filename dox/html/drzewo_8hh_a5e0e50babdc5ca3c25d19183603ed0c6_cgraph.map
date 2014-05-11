@@ -1,6 +1,0 @@
-<map id="remove" name="remove">
-<area shape="rect" id="node3" href="$drzewo_8hh.html#a44b45c9fdd0bfec3dff68b14962392d5" title="poprzednik" alt="" coords="120,5,205,35"/>
-<area shape="rect" id="node7" href="$drzewo_8hh.html#a9e7e8f628a7d8e0642827ada7eae3962" title="nastepnik" alt="" coords="124,59,201,88"/>
-<area shape="rect" id="node5" href="$drzewo_8hh.html#a0886347da5e256a5f640cad63d87cce3" title="MAX_KEY" alt="" coords="253,5,339,35"/>
-<area shape="rect" id="node9" href="$drzewo_8hh.html#af9fa504dac752dfa67fb789c976147c6" title="MIN_KEY" alt="" coords="256,59,336,88"/>
-</map>

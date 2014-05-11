@@ -1,4 +1,7 @@
 <map id="main" name="main">
-<area shape="rect" id="node3" href="$class_tablicaas.html#ac97f4cb96d75a56448b9ed5a44b60826" title="Dodaje parę&#45;wartość i klucz. Dodatkowo zmienna ilosc elementow zostaje zwiekszona." alt="" coords="109,5,227,35"/>
-<area shape="rect" id="node5" href="$class_tablicaas.html#a329ae3086855ea056a5249430de4b5f3" title="Pobiera klucz. /return Zwraca zmienna o nazwie wartosc." alt="" coords="104,59,232,88"/>
+<area shape="rect" id="node3" href="$class_graf.html#a924085191a51a6f0afbab7075f26eae3" title="Metoda ktora dodaje wierzcholek do grafu. Jej atrybutem jest zmienna typu int o nazwie wierzcholek..." alt="" coords="104,5,203,35"/>
+<area shape="rect" id="node5" href="$class_graf.html#a462c9d3d65e85fbee8e16bbeb7110803" title="Metoda ktora dodaje krawedz do grafu. Jej atrybutem sa zmienne okreslajace wierzcholki przez ktore ma..." alt="" coords="105,59,201,88"/>
+<area shape="rect" id="node9" href="$class_graf.html#a5c5e84172e32e1e0564c931fcb3f7088" title="Metoda sprawdza sasiadow wybranego wierzcholka i wypisuje ich." alt="" coords="107,112,200,141"/>
+<area shape="rect" id="node11" href="$class_graf.html#a989e232821c5f0fa37d993168d56be6f" title="Metoda usuwa krawedz. Jej atrybutem sa dwie zmienne oznaczajace wierzcholki ktorych krawedz ma byc us..." alt="" coords="107,165,200,195"/>
+<area shape="rect" id="node7" href="$class_graf.html#aa153595415bd8bec9bc26bd8fb521492" title="Metoda sprawdza czy wystepuje polaczenie miedzy dwoma wierzcholkami." alt="" coords="252,112,369,141"/>
 </map>
