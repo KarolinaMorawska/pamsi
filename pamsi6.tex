@@ -53,11 +53,11 @@ Celem ćwiczenia było przetestowanie struktury danych jaką jest tablica asocja
 
 \subsection{Tablica haszująca}
 
-Zaletą takich struktur jest bardzo szybki dostęp do danych i nie zależy on od rozmiaru tablicy ani położenia elementu.Podstawową wadą tablic mieszających jest duża złożoność pesymistyczna wyszukiwania, wynosząca $\mathcal{O}(n)$. Ponadto kosztowne może być także obliczanie wartości dobrej funkcji mieszającej.
+Zaletą takich struktur jest bardzo szybki dostęp do danych i nie zależy on od rozmiaru tablicy ani położenia elementu.Podstawową wadą tablic mieszających jest duża złożoność pesymistyczna wyszukiwania, wynosząca $\mathcal{O}(n)$ co widać na \ref{Wykresie nr 1} wykresie. Ponadto kosztowne może być także obliczanie wartości dobrej funkcji mieszającej.
 Kolejna wada wiąże się z architekturą współczesnych procesorów, które wykorzystują pamięć podręczną. Ponieważ pamięć podręczna przyspiesza odwołania do komórek pamięci operacyjnej, gdy są one zgrupowane blisko siebie, zastosowanie tablicy mieszającej dla zbyt małej liczby elementów może być wolniejsze niż zastosowanie zwykłej tablicy przeszukiwanej sekwencyjnie.
 \subsection{Drzewo przeszukiwań binarnych }
 
-Podstawowe operacje na drzewach poszukiwań binarnych wymagają czasu proporcjonalnego do wysokości drzewa.W pełnym (tzw.zrównoważonym) drzewie binarnym o \textbf{\textsl{n}} węzłach takie operacje działaja w najgorszym przypadku w czasie $\mathcal{O}(lg(n))$.Jesli jednak drzewo składa się z jednej gałęzi o długości \textbf{\textsl{n}}, to te same operacje wymagają w pesymistycznym przypadku czasu $\mathcal{O}(n)$.
+Podstawowe operacje na drzewach poszukiwań binarnych wymagają czasu proporcjonalnego do wysokości drzewa.W pełnym (tzw.zrównoważonym) drzewie binarnym o \textbf{\textsl{n}} węzłach takie operacje działaja w najgorszym przypadku w czasie $\mathcal{O}(lg(n))$ , przedstawia to \ref{Wykres nr 4} wykres .Jesli jednak drzewo składa się z jednej gałęzi o długości \textbf{\textsl{n}}, to te same operacje wymagają w pesymistycznym przypadku czasu $\mathcal{O}(n)$.
 
 \newpage
 \section{Wyniki przeprowadzonych testów}
@@ -69,7 +69,7 @@ Podstawowe operacje na drzewach poszukiwań binarnych wymagają czasu proporcjon
 \centering
  \includegraphics[width=70mm]{haasz.jpg}
  \caption{Tabela zawierająca pomiar czasu wyszukiwania elementu dla tablicy haszującej. } 
-\label{overflow}
+\label{Wykresie nr 1}
  \end{figure}
 
  \begin{figure}[ht!] 
@@ -85,7 +85,7 @@ Podstawowe operacje na drzewach poszukiwań binarnych wymagają czasu proporcjon
  \begin{figure}[ht!] 
 \centering
  \includegraphics[width=70mm]{drzewko.jpg}
- \caption{Tabela zaeirająca pomiar czasu wyszukiwania elementu dla drzewka przeszukiwań binarnych. } 
+ \caption{Tabela zawierająca pomiar czasu wyszukiwania elementu dla drzewka przeszukiwań binarnych. } 
 \label{overflow}
  \end{figure}
 
@@ -93,7 +93,7 @@ Podstawowe operacje na drzewach poszukiwań binarnych wymagają czasu proporcjon
 \centering
  \includegraphics[width=100mm]{drzeeewo.jpg}
  \caption{Pomiar czasu wyszukiwania elementu dla drzewka przeszukiwań binarnych. } 
-\label{overflow}
+\label{Wykres nr 4}
  \end{figure}
  
    \begin{figure}[ht!] 
