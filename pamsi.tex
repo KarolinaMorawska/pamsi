@@ -1,0 +1,70 @@
+\documentclass[11pt]{article} 
+\usepackage[T1]{fontenc}
+ \usepackage[polish]{babel} \usepackage[utf8]{inputenc}
+ \usepackage{lmodern} 
+\usepackage{graphicx} 
+\selectlanguage{polish} 
+\begin{document}
+ \begin{titlepage} 
+\title{ Sprawozdanie z laboratorium nr3 -PAMSI
+\\ ,,Stos i kolejka "} 
+\author{Karolina Morawska}
+ \date{16 03 2014}
+ \maketitle 
+\end{titlepage}
+
+\tableofcontents
+ \section{Zadanie do wykonania} 
+Zaimplementowanie stosu i kolejki za pomocą list lub tablic.
+\subsection{Opis algorytmu jakim jest stos}
+Jest to liniowa struktura danych, w ktorej dane dokładane są na wierzch stosu i z wierzchołka stosu są pobierane.Elementy stosu poniżej wierzchołka można wyłącznie obejrzeć, aby je ściągnąć, trzeba najpierw po kolei ściągnać to, co jest nad nimi.Stos jest bardzo często wykorzystywaną strukturą danych. Działanie na nim jest częśto porównywane do stosu talerzy: nie można usunąć talerza znajdującego się na dnie stosu nie usuwając wcześniej wszystkich innych. Nie można także dodać nowego talerza gdzieś indziej, niż na samą górę.
+
+\subsection{Opis algorytmu jakim jest kolejka }
+Liniowa struktura danych, w której nowe dane dopisywane są na końcu kolejki, a z początku kolejki pobierane sa dane do dlaszego przetwarzania.ak w przypadku stosu, z tą różnicą, że usuwamy dane od początku a nie od końca.Pierwszy element (a dokładniej wskaźnik do jego miejsca w pamięci) musi zostać zapamiętany, by możliwe było usuwanie pierwszego elementu w czasie stałym O(1). Gdybyśmy tego nie zrobili, aby dotrzeć do pierwszego elementu należałoby przejść wszystkie od elementu aktualnego (czyli ostatniego), co wymaga czasu O(n).
+Działanie na kolejce jest intuicyjnie jasne, gdy skojarzymy ją z kolejką ludzi np. w sklepie. Każdy nowy klient staje na jej końcu, obsługa odbywa się jedynie na początku. 
+
+
+\newpage
+\subsection{Wykresy pozwalające lepiej porównać sposoby implemetacji kolejki i stosu róznymi sposobami}
+ \begin{center}
+ \begin{figure}[ht!] 
+\centering
+ \includegraphics[width=90mm]{kolejka.jpg}
+ \caption{Wykres zależności czasu działania od rozmiaru problemu algorytmu dla kolejki } 
+\label{overflow}
+ \end{figure}
+
+ \begin{figure}[ht!] 
+\centering
+ \includegraphics[width=90mm]{stos.jpg}
+ \caption{Wykres zależności  czasu działania od rozmiaru problemu  algorytmu dla zwyklego stosu} 
+\label{overflow}
+ \end{figure}
+
+ \begin{figure}[ht!] 
+\centering
+ \includegraphics[width=90mm]{stos2.jpg}
+ \caption{Wykres zależności  czasu działania od rozmiaru problemu  algorytmu dla stosu z mnozeniem} 
+\label{overflow}
+ \end{figure}
+ \begin{figure}[ht!] 
+\centering
+ \includegraphics[width=90mm]{stoslista.jpg}
+ \caption{Wykres zależności czasu działania od rozmiaru problemu  algorytmu dla stosu dzialajace na liscie} 
+\label{overflow}
+ \end{figure}
+
+\newpage
+
+\section{Wnioski}
+Z wykresow mozemy zauwazyć pewne zależności :
+\begin{itemize}
+ \item Czas dzialania programu na kolejce jest duzo szybszy od zwyklego stosu.
+\item Stos zaimlementowany na tablicy ma najdluższy czas działania w porownaniu do pozostalych dwoch  \item Stos z mnozeniem rozmiaru tablicy jest najszybszy sposrod wszystkich trzech sposobów implemetacji. 
+\item Najbardziej wydajne pod względem szybkości wykonania okazały się struktury wykorzystujące listę lub tablicę podwajającą swój rozmiar po wypełnieniu struktury.
+Złożoność obliczeniową takiej implementacji szacuje się na $ O(n) $
+\item Struktury, które każdorazowo zwiększały rozmiar tablicy działają dużo wolniej, jednak ich zaletą jest oszczędniejsze  zagospodarowanie pamięci.
+Ich złozoność obliczeniową szacuje się na $ O(n^{2}) $
+\end{itemize}
+\end{center}
+ \end{document}
