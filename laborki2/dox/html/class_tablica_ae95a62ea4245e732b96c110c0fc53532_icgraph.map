@@ -1,0 +1,9 @@
+<map id="Tablica::rozmiar" name="Tablica::rozmiar">
+<area shape="rect" id="node3" href="$class_dzialania.html#a177e69d16b8280aae1d658adb67a8fbc" title="Funkcja pomocnicza zwraca rozmiar tablicy ." alt="" coords="175,5,319,35"/>
+<area shape="rect" id="node7" href="$class_tablica.html#ad4d99dc2ca07689167d703ba24a4dab2" title="Funkcja dodaje element na tablice.Wykorzystuje funkcje pomocnicza * zmiana rozmiaru." alt="" coords="172,59,321,88"/>
+<area shape="rect" id="node9" href="$class_tablica.html#ac5b21c0e98c4f5ac5c728b99f092b112" title="Funkcja laczy ze soba dwie tablice." alt="" coords="169,112,324,141"/>
+<area shape="rect" id="node13" href="$class_tablica.html#af42a963c962250d20240811a0defd6b4" title="Przeciazenie operatora przypisywania." alt="" coords="184,165,309,195"/>
+<area shape="rect" id="node15" href="$class_tablica.html#a9416cdb689731ec64d440de10d944549" title="Przeciazenie operatora porownania." alt="" coords="180,219,313,248"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Funkcja main wykonuje algorytm i sprawdza czas dzialania algorytmu. W funkcji main wykonywane sa oper..." alt="" coords="412,5,463,35"/>
+<area shape="rect" id="node11" href="$class_tablica.html#a469a403559ecce37e70c8adc67a0fc0d" title="Przeciazenie operatora dodawania." alt="" coords="375,112,500,141"/>
+</map>

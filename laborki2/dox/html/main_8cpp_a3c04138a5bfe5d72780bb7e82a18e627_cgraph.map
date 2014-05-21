@@ -1,0 +1,7 @@
+<map id="main" name="main">
+<area shape="rect" id="node3" href="$class_dzialania.html#a4d1a1b41a0f2f76d4c16ad20f77b7cfa" title="Funkcja wczytujaca plik i sprawdzajaca porawnosc wykonania funkcji." alt="" coords="104,5,253,35"/>
+<area shape="rect" id="node5" href="$class_dzialania.html#a8c13fb89281d74f9dd8dd22f43bffbb9" title="Funkcja mierzy czas dzialania algorytmu." alt="" coords="113,59,244,88"/>
+<area shape="rect" id="node7" href="$class_dzialania.html#af059b80e034854eb1ae878d6b636fff6" title="Funkcja porownuje dwa pliki : plik wejsciowy i sprawdzajacy , informuje o porawnosci wykonywanego * d..." alt="" coords="111,112,247,141"/>
+<area shape="rect" id="node9" href="$class_dzialania.html#a177e69d16b8280aae1d658adb67a8fbc" title="Funkcja pomocnicza zwraca rozmiar tablicy ." alt="" coords="107,165,251,195"/>
+<area shape="rect" id="node11" href="$class_tablica.html#ae95a62ea4245e732b96c110c0fc53532" title="Funkcja pomocnicza zwraca dlugosc tablicy." alt="" coords="301,165,416,195"/>
+</map>

@@ -1,0 +1,187 @@
+\hypertarget{class_dzialania}{\section{Dokumentacja klasy Dzialania}
+\label{class_dzialania}\index{Dzialania@{Dzialania}}
+}
+
+
+Deklaracja klasy \hyperlink{class_dzialania}{Dzialania}.  
+
+
+
+
+{\ttfamily \#include $<$dzialania.\-hh$>$}
+
+
+
+Diagram współpracy dla Dzialania\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{class_dzialania__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_dzialania_a4d1a1b41a0f2f76d4c16ad20f77b7cfa}{wczytajplik} (char $\ast$nazwapl)
+\begin{DoxyCompactList}\small\item\em Funkcja wczytujaca plik i sprawdzajaca porawnosc wykonania funkcji. \end{DoxyCompactList}\item 
+bool \hyperlink{class_dzialania_af059b80e034854eb1ae878d6b636fff6}{porownaj} (char $\ast$nazwapl)
+\begin{DoxyCompactList}\small\item\em Funkcja porownuje dwa pliki \-: plik wejsciowy i sprawdzajacy , informuje o porawnosci wykonywanego $\ast$ dzialania. \end{DoxyCompactList}\item 
+int \hyperlink{class_dzialania_a177e69d16b8280aae1d658adb67a8fbc}{rozmiartab} ()
+\begin{DoxyCompactList}\small\item\em Funkcja pomocnicza zwraca rozmiar tablicy . \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_dzialania_a5e82b0cea1d28ce02b6968071c1d20e5}{oblicz} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wykonujaca dzialanie mnozenia danych z pliku x2. \end{DoxyCompactList}\item 
+double \hyperlink{class_dzialania_a8c13fb89281d74f9dd8dd22f43bffbb9}{liczczas} (int iloscpowtorzen)
+\begin{DoxyCompactList}\small\item\em Funkcja mierzy czas dzialania algorytmu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tablica}{Tablica} \hyperlink{class_dzialania_aa1cf12383b1e7fe159856ff7a29216fc}{tab1}
+\begin{DoxyCompactList}\small\item\em Pole przechowujace tablice numer 1. \end{DoxyCompactList}\item 
+\hyperlink{class_tablica}{Tablica} \hyperlink{class_dzialania_a63fcc04c8e704850ceec908ed61b408a}{tab2}
+\begin{DoxyCompactList}\small\item\em Pole przechowujace tablice numer 2. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa \hyperlink{class_dzialania}{Dzialania} posiada pola oraz funkcje potrzebne do wykonywania dzialan na tablicach . 
+
+Definicja w linii 17 pliku dzialania.\-hh.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_dzialania_a8c13fb89281d74f9dd8dd22f43bffbb9}{\index{Dzialania@{Dzialania}!liczczas@{liczczas}}
+\index{liczczas@{liczczas}!Dzialania@{Dzialania}}
+\subsubsection[{liczczas}]{\setlength{\rightskip}{0pt plus 5cm}double Dzialania\-::liczczas (
+\begin{DoxyParamCaption}
+\item[{int}]{iloscpowtorzen}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dzialania_a8c13fb89281d74f9dd8dd22f43bffbb9}
+Argumenty i najwazniejsze pola funkcji -\/iloscpowtorzen -\/zmienna zawierajaca ile powtorzen ma wykonywac program. 
+
+Definicja w linii 83 pliku dzialania.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{class_dzialania_a8c13fb89281d74f9dd8dd22f43bffbb9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_dzialania_a5e82b0cea1d28ce02b6968071c1d20e5}{\index{Dzialania@{Dzialania}!oblicz@{oblicz}}
+\index{oblicz@{oblicz}!Dzialania@{Dzialania}}
+\subsubsection[{oblicz}]{\setlength{\rightskip}{0pt plus 5cm}void Dzialania\-::oblicz (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dzialania_a5e82b0cea1d28ce02b6968071c1d20e5}
+Argumenty i najwazniejsze pola funkcji -\/tab1 -\/tablica na ktorej elementach beda wykonywane dzialania 
+
+Definicja w linii 16 pliku dzialania.\-cpp.
+
+\hypertarget{class_dzialania_af059b80e034854eb1ae878d6b636fff6}{\index{Dzialania@{Dzialania}!porownaj@{porownaj}}
+\index{porownaj@{porownaj}!Dzialania@{Dzialania}}
+\subsubsection[{porownaj}]{\setlength{\rightskip}{0pt plus 5cm}bool Dzialania\-::porownaj (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nazwapl}
+\end{DoxyParamCaption}
+)}}\label{class_dzialania_af059b80e034854eb1ae878d6b636fff6}
+Argumenty i najwazniejsze pola funkcji -\/nazwapl zmienna typu char zawierajaca nazwe pliku 
+
+Definicja w linii 52 pliku dzialania.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_dzialania_af059b80e034854eb1ae878d6b636fff6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_dzialania_a177e69d16b8280aae1d658adb67a8fbc}{\index{Dzialania@{Dzialania}!rozmiartab@{rozmiartab}}
+\index{rozmiartab@{rozmiartab}!Dzialania@{Dzialania}}
+\subsubsection[{rozmiartab}]{\setlength{\rightskip}{0pt plus 5cm}int Dzialania\-::rozmiartab (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_dzialania_a177e69d16b8280aae1d658adb67a8fbc}
+
+
+Definicja w linii 50 pliku dzialania.\-hh.
+
+
+
+Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_dzialania_a177e69d16b8280aae1d658adb67a8fbc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{class_dzialania_a177e69d16b8280aae1d658adb67a8fbc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_dzialania_a4d1a1b41a0f2f76d4c16ad20f77b7cfa}{\index{Dzialania@{Dzialania}!wczytajplik@{wczytajplik}}
+\index{wczytajplik@{wczytajplik}!Dzialania@{Dzialania}}
+\subsubsection[{wczytajplik}]{\setlength{\rightskip}{0pt plus 5cm}bool Dzialania\-::wczytajplik (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{nazwapl}
+\end{DoxyParamCaption}
+)}}\label{class_dzialania_a4d1a1b41a0f2f76d4c16ad20f77b7cfa}
+Argumenty i najwazniejsze pola funkcji -\/nazwapl zmienna typu char zawierajaca nazwe pliku 
+
+Definicja w linii 27 pliku dzialania.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{class_dzialania_a4d1a1b41a0f2f76d4c16ad20f77b7cfa_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_dzialania_aa1cf12383b1e7fe159856ff7a29216fc}{\index{Dzialania@{Dzialania}!tab1@{tab1}}
+\index{tab1@{tab1}!Dzialania@{Dzialania}}
+\subsubsection[{tab1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tablica} Dzialania\-::tab1\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dzialania_aa1cf12383b1e7fe159856ff7a29216fc}
+
+
+Definicja w linii 23 pliku dzialania.\-hh.
+
+\hypertarget{class_dzialania_a63fcc04c8e704850ceec908ed61b408a}{\index{Dzialania@{Dzialania}!tab2@{tab2}}
+\index{tab2@{tab2}!Dzialania@{Dzialania}}
+\subsubsection[{tab2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tablica} Dzialania\-::tab2\hspace{0.3cm}{\ttfamily [private]}}}\label{class_dzialania_a63fcc04c8e704850ceec908ed61b408a}
+
+
+Definicja w linii 27 pliku dzialania.\-hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dzialania_8hh}{dzialania.\-hh}\item 
+\hyperlink{dzialania_8cpp}{dzialania.\-cpp}\end{DoxyCompactItemize}
