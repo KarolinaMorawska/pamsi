@@ -1,0 +1,9 @@
+<map id="Graf::Astar" name="Graf::Astar">
+<area shape="rect" id="node3" href="$class_graf.html#ac00087eee459e249a5eb875cb9174db0" title="Metoda ktora zwraca minimalna odleglosc pomiedzy wierzcholkami." alt="" coords="143,5,252,35"/>
+<area shape="rect" id="node7" href="$class_graf.html#a3cbc8ee97c65b37076bbc1191a263497" title="Metoda ktora sprawdza dostepnosc wierzcholka." alt="" coords="149,59,245,88"/>
+<area shape="rect" id="node9" href="$class_graf.html#a96c839a91f11e176f2daabe6d02389b0" title="Metoda ktora zwraca sume funkcji zwroch i funkcji zwrocg." alt="" coords="151,163,244,192"/>
+<area shape="rect" id="node11" href="$class_graf.html#a85a1a93b7853bb90374e65373cc21658" title="Graf::zwroch" alt="" coords="323,136,419,165"/>
+<area shape="rect" id="node13" href="$class_graf.html#aa4bdae7e3634f247228d8027d993c06e" title="Metoda ktora zwraca droge pomiedzy wierzcholkiem poczatkowym a x." alt="" coords="323,201,419,231"/>
+<area shape="rect" id="node5" href="$class_graf.html#a22163f8368f0231f61c188bb867fddaa" title="Metoda ktora zwraca dla wierzcholka funkcje f." alt="" coords="301,5,440,35"/>
+<area shape="rect" id="node15" href="$class_graf.html#a8f2d2d697b7dd639708657e6c4deb388" title="Graf::odleglosc" alt="" coords="489,201,599,231"/>
+</map>

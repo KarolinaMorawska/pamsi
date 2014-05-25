@@ -1,0 +1,96 @@
+.TH "para" 3 "N, 25 maj 2014" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+para \- 
+.PP
+Modeluje pojęcie para\&. Klasa modeluje pojęcie para \&. Jej atrybutem sa pola zawierajace numer wierzcholka i jego wage\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <para\&.h>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "\fBpara\fP ()"
+.br
+.RI "\fIDefinicja konstruktora\&. \fP"
+.ti -1c
+.RI "virtual \fB~para\fP ()"
+.br
+.RI "\fIDefinicja konstruktora wirtualnego\&. \fP"
+.ti -1c
+.RI "\fBpara\fP (int _waga, int _numer)"
+.br
+.RI "\fIInicjalizuje konstruktor\&. \fP"
+.in -1c
+.SS "Atrybuty publiczne"
+
+.in +1c
+.ti -1c
+.RI "double \fBG\fP"
+.br
+.RI "\fIPomocnicza zmienna okreslajaca funkcje G\&. \fP"
+.ti -1c
+.RI "double \fBF\fP"
+.br
+.RI "\fIPomocnicza zmienna okreslajaca funkcje F(suma funkcji G i H)\&. \fP"
+.ti -1c
+.RI "double \fBH\fP"
+.br
+.RI "\fIPomocnicza zmienna okreslajaca funkcje H\&. \fP"
+.ti -1c
+.RI "int \fBwaga\fP"
+.br
+.RI "\fIZmienna zawierajace wage wierzcholka\&. \fP"
+.ti -1c
+.RI "int \fBnumer\fP"
+.br
+.RI "\fIZmienna zawierajaca numer wierzcholka ktory jest sasiadem\&. \fP"
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Definicja w linii 22 pliku para\&.h\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "para::para ()"
+
+.PP
+Definicja w linii 13 pliku para\&.cpp\&.
+.SS "para::~para ()\fC [virtual]\fP"
+
+.PP
+Definicja w linii 18 pliku para\&.cpp\&.
+.SS "para::para (int_waga, int_numer)\fC [inline]\fP"
+
+.PP
+Definicja w linii 55 pliku para\&.h\&.
+.SH "Dokumentacja atrybutów składowych"
+.PP 
+.SS "double para::F"
+
+.PP
+Definicja w linii 31 pliku para\&.h\&.
+.SS "double para::G"
+
+.PP
+Definicja w linii 27 pliku para\&.h\&.
+.SS "double para::H"
+
+.PP
+Definicja w linii 35 pliku para\&.h\&.
+.SS "int para::numer"
+
+.PP
+Definicja w linii 51 pliku para\&.h\&.
+.SS "int para::waga"
+
+.PP
+Definicja w linii 47 pliku para\&.h\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla My Project\&.

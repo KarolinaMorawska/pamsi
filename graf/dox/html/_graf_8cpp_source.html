@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>My Project: Plik źródłowy /home/karolina/Pulpit/astar/prj/Graf.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4aa64b0872d36146e049722e293482e3.html">prj</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Graf.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_graf_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Graf.cpp</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 27 kwi 2014</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: karolina</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_graf_8h.html" title="Definicja klasy Graf.">Graf.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="class_graf.html#a22163f8368f0231f61c188bb867fddaa">   13</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_graf.html#a22163f8368f0231f61c188bb867fddaa" title="Metoda ktora zwraca dla wierzcholka funkcje f.">Graf::zwrocdlawierz</a>(<span class="keywordtype">int</span> w1, <span class="keywordtype">int</span> w2) {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">for</span> (list&lt;para&gt;::iterator it = <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[w1].begin(); it != <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[w1].end();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            ++it) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">if</span> (it-&gt;numer == w2) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordflow">return</span> it-&gt;F;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> 1000000;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="class_graf.html#ac00087eee459e249a5eb875cb9174db0">   23</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_graf.html#ac00087eee459e249a5eb875cb9174db0" title="Metoda ktora zwraca minimalna odleglosc pomiedzy wierzcholkami.">Graf::zwrocmin</a>() {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">int</span> tmp = 100000;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    list&lt;int&gt;::iterator it = <a class="code" href="class_graf.html#a7b668c8a19ae96d9ce221451296093ec" title="Lista wezlow otwartych.">OL</a>.begin();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    list&lt;int&gt;::iterator it2 = <a class="code" href="class_graf.html#a7b668c8a19ae96d9ce221451296093ec" title="Lista wezlow otwartych.">OL</a>.begin();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    it2++;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">for</span> (; it2 != <a class="code" href="class_graf.html#a7b668c8a19ae96d9ce221451296093ec" title="Lista wezlow otwartych.">OL</a>.end(); ++it, ++it) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_graf.html#a22163f8368f0231f61c188bb867fddaa" title="Metoda ktora zwraca dla wierzcholka funkcje f.">zwrocdlawierz</a>(*it, *it2) &lt; tmp) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            tmp = <a class="code" href="class_graf.html#a22163f8368f0231f61c188bb867fddaa" title="Metoda ktora zwraca dla wierzcholka funkcje f.">zwrocdlawierz</a>(*it, *it2);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="class_graf.html#a924085191a51a6f0afbab7075f26eae3">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_graf.html#a924085191a51a6f0afbab7075f26eae3" title="Metoda ktora dodaje wierzcholek do grafu. Jej atrybutem jest zmienna typu int o nazwie wierzcholek...">Graf::Dodajw</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> wierzcholek) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    list&lt;para&gt; listawierzcholka;  <span class="comment">//pomocnicza zmienna typu lista</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    listawierzcholka.clear();   <span class="comment">//wyczyszczenie przed bledami</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>.size() &lt;= wierzcholek)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>.resize(wierzcholek + 1); <span class="comment">//zmiana rozmiaru</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[wierzcholek] = listawierzcholka;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="class_graf.html#a462c9d3d65e85fbee8e16bbeb7110803">   43</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_graf.html#a462c9d3d65e85fbee8e16bbeb7110803" title="Metoda ktora dodaje krawedz do grafu. Jej atrybutem sa zmienne okreslajace wierzcholki przez ktore ma...">Graf::Dodajk</a>(<span class="keywordtype">int</span> waga, <span class="keywordtype">int</span> w1, <span class="keywordtype">int</span> w2) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="class_graf.html#aa153595415bd8bec9bc26bd8fb521492" title="Metoda sprawdza czy wystepuje polaczenie miedzy dwoma wierzcholkami.">Polaczenie</a>(w1, w2)) { <span class="comment">// tylko jezeli polaczenie</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classpara.html" title="Modeluje pojęcie para. Klasa modeluje pojęcie para . Jej atrybutem sa pola zawierajace numer wierzcho...">para</a> element(waga, w2);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[w1].push_back(element);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="class_graf.html#a989e232821c5f0fa37d993168d56be6f">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_graf.html#a989e232821c5f0fa37d993168d56be6f" title="Metoda usuwa krawedz. Jej atrybutem sa dwie zmienne oznaczajace wierzcholki ktorych krawedz ma byc us...">Graf::Usunk</a>(<span class="keywordtype">int</span> w1, <span class="keywordtype">int</span> w2) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_graf.html#aa153595415bd8bec9bc26bd8fb521492" title="Metoda sprawdza czy wystepuje polaczenie miedzy dwoma wierzcholkami.">Polaczenie</a>(w1, w2)) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">for</span> (list&lt;para&gt;::iterator it = <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[w1].begin();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                it != <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[w1].end(); ++it) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span> (it-&gt;numer == w2) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[w1].erase(it);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="class_graf.html#a9c8c9ffa7ad533e0b5ab71d9addbaab5">   60</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_graf.html#a9c8c9ffa7ad533e0b5ab71d9addbaab5" title="Metoda usuwa wierzcholek. Jej atrybutem jest zmienna typu int o nazwie wierzcholek.">Graf::Usunw</a>(<span class="keywordtype">int</span> wierzcholek) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>.erase(<a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>.begin() + wierzcholek);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="class_graf.html#aa153595415bd8bec9bc26bd8fb521492">   63</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_graf.html#aa153595415bd8bec9bc26bd8fb521492" title="Metoda sprawdza czy wystepuje polaczenie miedzy dwoma wierzcholkami.">Graf::Polaczenie</a>(<span class="keywordtype">int</span> w1, <span class="keywordtype">int</span> w2) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">for</span> (list&lt;para&gt;::iterator it = <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[w1].begin(); it != <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[w1].end();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            ++it) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span> (it-&gt;numer == w2) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="class_graf.html#a5c5e84172e32e1e0564c931fcb3f7088">   72</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_graf.html#a5c5e84172e32e1e0564c931fcb3f7088" title="Metoda sprawdza sasiadow wybranego wierzcholka i wypisuje ich.">Graf::Sasiad</a>(<span class="keywordtype">int</span> w1) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Sasiedztwo wierzcholka numer &quot;</span> &lt;&lt; w1 &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; <span class="charliteral">&#39;  &#39;</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">for</span> (list&lt;para&gt;::iterator it = <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[w1].begin(); it != <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[w1].end();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            ++it) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        cout &lt;&lt; it-&gt;numer &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; it-&gt;waga &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="class_graf.html#a48ef7dc699b09162388314e67cc6e150">   80</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_graf.html#a48ef7dc699b09162388314e67cc6e150" title="Metoda przeszukiwania wstecz.Danymi wejściowymi dla algorytmu jest wierzchołek od którego rozpoczynan...">Graf::BFS</a>(<span class="keywordtype">int</span> wierzcholeks) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_graf.html#a8cc46484cf7f96ce274d87829bf10120" title="Inicjalizuje zmienna typu wektor ktora wykorzystywana jest przy metodach przeszukiwan aby sprawdzic c...">colour</a>.resize(<a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>.size());</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    list&lt;int&gt; kolejka;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>.size(); i++) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="class_graf.html#a8cc46484cf7f96ce274d87829bf10120" title="Inicjalizuje zmienna typu wektor ktora wykorzystywana jest przy metodach przeszukiwan aby sprawdzic c...">colour</a>[i] = 0; <span class="comment">//kolor 0=bialy 1=szary 2=czarny</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="class_graf.html#a8cc46484cf7f96ce274d87829bf10120" title="Inicjalizuje zmienna typu wektor ktora wykorzystywana jest przy metodach przeszukiwan aby sprawdzic c...">colour</a>[wierzcholeks] = 1;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    kolejka.push_back(wierzcholeks);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">int</span> u;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">while</span> (!kolejka.empty()) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        u = kolejka.front();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        kolejka.pop_front();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">for</span> (list&lt;para&gt;::iterator it = <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[u].begin(); it != <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[u].end();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                ++it) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_graf.html#a8cc46484cf7f96ce274d87829bf10120" title="Inicjalizuje zmienna typu wektor ktora wykorzystywana jest przy metodach przeszukiwan aby sprawdzic c...">colour</a>[it-&gt;numer] == 0) {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <a class="code" href="class_graf.html#a8cc46484cf7f96ce274d87829bf10120" title="Inicjalizuje zmienna typu wektor ktora wykorzystywana jest przy metodach przeszukiwan aby sprawdzic c...">colour</a>[it-&gt;numer] = 1;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                kolejka.push_back(it-&gt;numer);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="class_graf.html#a8cc46484cf7f96ce274d87829bf10120" title="Inicjalizuje zmienna typu wektor ktora wykorzystywana jest przy metodach przeszukiwan aby sprawdzic c...">colour</a>[u] = 2;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="code" href="class_graf.html#a8340cd1321426d1a49b5e50f1c7e10f1">  105</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_graf.html#a8340cd1321426d1a49b5e50f1c7e10f1" title="Pomocnicza metoda przy wyszkukiwaniu w glab, ktora sluzy do odwiedzania wezla.Na poczatku zamalowywuj...">Graf::VisitNode</a>(<span class="keywordtype">int</span> wierzcholek) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="class_graf.html#a8cc46484cf7f96ce274d87829bf10120" title="Inicjalizuje zmienna typu wektor ktora wykorzystywana jest przy metodach przeszukiwan aby sprawdzic c...">colour</a>[wierzcholek] = 1;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">for</span> (list&lt;para&gt;::iterator it = <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[wierzcholek].begin();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            it != <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[wierzcholek].end(); ++it) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_graf.html#a8cc46484cf7f96ce274d87829bf10120" title="Inicjalizuje zmienna typu wektor ktora wykorzystywana jest przy metodach przeszukiwan aby sprawdzic c...">colour</a>[it-&gt;numer] == 0) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <a class="code" href="class_graf.html#a8340cd1321426d1a49b5e50f1c7e10f1" title="Pomocnicza metoda przy wyszkukiwaniu w glab, ktora sluzy do odwiedzania wezla.Na poczatku zamalowywuj...">VisitNode</a>(it-&gt;numer);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="class_graf.html#a8cc46484cf7f96ce274d87829bf10120" title="Inicjalizuje zmienna typu wektor ktora wykorzystywana jest przy metodach przeszukiwan aby sprawdzic c...">colour</a>[wierzcholek] = 2;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="code" href="class_graf.html#a8b40e6700dd8f1f71b6b47558c0975a1">  115</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_graf.html#a8b40e6700dd8f1f71b6b47558c0975a1" title="Metoda przeszukiwania w glab.Na poczatku dla kazdego wierzcholka u z grafu kolor wierzcholka ustawian...">Graf::DFS</a>() {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="class_graf.html#a8cc46484cf7f96ce274d87829bf10120" title="Inicjalizuje zmienna typu wektor ktora wykorzystywana jest przy metodach przeszukiwan aby sprawdzic c...">colour</a>.resize(<a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>.size());</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>.size(); i++) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="class_graf.html#a8cc46484cf7f96ce274d87829bf10120" title="Inicjalizuje zmienna typu wektor ktora wykorzystywana jest przy metodach przeszukiwan aby sprawdzic c...">colour</a>[i] = 0; <span class="comment">//kolor 0=bialy 1=szary 2=czarny</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>.size(); i++) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_graf.html#a8cc46484cf7f96ce274d87829bf10120" title="Inicjalizuje zmienna typu wektor ktora wykorzystywana jest przy metodach przeszukiwan aby sprawdzic c...">colour</a>[i] == 0) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <a class="code" href="class_graf.html#a8340cd1321426d1a49b5e50f1c7e10f1" title="Pomocnicza metoda przy wyszkukiwaniu w glab, ktora sluzy do odwiedzania wezla.Na poczatku zamalowywuj...">VisitNode</a>(i);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="code" href="class_graf.html#a8f2d2d697b7dd639708657e6c4deb388">  128</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_graf.html#a8f2d2d697b7dd639708657e6c4deb388">Graf::odleglosc</a>(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">for</span> (list&lt;para&gt;::iterator it = <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[a].begin(); it != <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[a].end();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            ++it) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">if</span> (it-&gt;numer == b) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">return</span> it-&gt;waga;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> 1000000;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="code" href="class_graf.html#a85a1a93b7853bb90374e65373cc21658">  137</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_graf.html#a85a1a93b7853bb90374e65373cc21658">Graf::zwroch</a>() {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">return</span> 0.0;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="code" href="class_graf.html#aa4bdae7e3634f247228d8027d993c06e">  141</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_graf.html#aa4bdae7e3634f247228d8027d993c06e" title="Metoda ktora zwraca droge pomiedzy wierzcholkiem poczatkowym a x.">Graf::zwrocg</a>() {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">double</span> suma = 0;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    list&lt;int&gt;::iterator it = <a class="code" href="class_graf.html#a1b3d532db5934e6f161b914794c444d5" title="Lista wezlow zamnknietych.">CL</a>.begin();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    list&lt;int&gt;::iterator it2 = <a class="code" href="class_graf.html#a1b3d532db5934e6f161b914794c444d5" title="Lista wezlow zamnknietych.">CL</a>.begin();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    it2++;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">for</span> (; it2 != <a class="code" href="class_graf.html#a1b3d532db5934e6f161b914794c444d5" title="Lista wezlow zamnknietych.">CL</a>.end(); ++it, ++it2) {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        suma += <a class="code" href="class_graf.html#a8f2d2d697b7dd639708657e6c4deb388">odleglosc</a>(*it, *it2);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">return</span> suma;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="code" href="class_graf.html#a96c839a91f11e176f2daabe6d02389b0">  152</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_graf.html#a96c839a91f11e176f2daabe6d02389b0" title="Metoda ktora zwraca sume funkcji zwroch i funkcji zwrocg.">Graf::zwrocf</a>() {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_graf.html#a85a1a93b7853bb90374e65373cc21658">zwroch</a>() + <a class="code" href="class_graf.html#aa4bdae7e3634f247228d8027d993c06e" title="Metoda ktora zwraca droge pomiedzy wierzcholkiem poczatkowym a x.">zwrocg</a>();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="code" href="class_graf.html#a3cbc8ee97c65b37076bbc1191a263497">  155</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_graf.html#a3cbc8ee97c65b37076bbc1191a263497" title="Metoda ktora sprawdza dostepnosc wierzcholka.">Graf::obecny</a>(list&lt;int&gt;&amp; lista, <span class="keywordtype">int</span> ktory) {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">for</span> (list&lt;int&gt;::iterator it = lista.begin(); it != lista.end(); ++it) {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">if</span> (*it == ktory)</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="code" href="class_graf.html#abcd0560ed9789d1a6e2d9a60c1510352">  163</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_graf.html#abcd0560ed9789d1a6e2d9a60c1510352" title="Wyszukuje najkrotsza sciezke miedzy dwoma wezlami jesli odnajdzie metoda zwraca true w innym przypadk...">Graf::Astar</a>(<span class="keywordtype">int</span> start, <span class="keywordtype">int</span> stop) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">int</span> minsciezka = 100000;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="class_graf.html#a7b668c8a19ae96d9ce221451296093ec" title="Lista wezlow otwartych.">OL</a>.push_back(start);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">while</span> (!<a class="code" href="class_graf.html#a7b668c8a19ae96d9ce221451296093ec" title="Lista wezlow otwartych.">OL</a>.empty()) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordtype">int</span> Q = <a class="code" href="class_graf.html#ac00087eee459e249a5eb875cb9174db0" title="Metoda ktora zwraca minimalna odleglosc pomiedzy wierzcholkami.">zwrocmin</a>();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <a class="code" href="class_graf.html#a1b3d532db5934e6f161b914794c444d5" title="Lista wezlow zamnknietych.">CL</a>.push_back(Q);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">if</span> (Q == stop)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">for</span> (list&lt;para&gt;::iterator it = <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[Q].begin(); it != <a class="code" href="class_graf.html#a72ccd052ab732941488da20d198aa82c" title="Inicjalizuje zmienna typu lista wektorow .">wektor</a>[Q].end();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                ++it) {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_graf.html#a3cbc8ee97c65b37076bbc1191a263497" title="Metoda ktora sprawdza dostepnosc wierzcholka.">obecny</a>(<a class="code" href="class_graf.html#a1b3d532db5934e6f161b914794c444d5" title="Lista wezlow zamnknietych.">CL</a>, it-&gt;numer)) {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!<a class="code" href="class_graf.html#a3cbc8ee97c65b37076bbc1191a263497" title="Metoda ktora sprawdza dostepnosc wierzcholka.">obecny</a>(<a class="code" href="class_graf.html#a7b668c8a19ae96d9ce221451296093ec" title="Lista wezlow otwartych.">OL</a>, it-&gt;numer)) {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <a class="code" href="class_graf.html#a7b668c8a19ae96d9ce221451296093ec" title="Lista wezlow otwartych.">OL</a>.push_back(it-&gt;numer);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                it-&gt;F = <a class="code" href="class_graf.html#a96c839a91f11e176f2daabe6d02389b0" title="Metoda ktora zwraca sume funkcji zwroch i funkcji zwrocg.">zwrocf</a>();</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                it-&gt;G = <a class="code" href="class_graf.html#aa4bdae7e3634f247228d8027d993c06e" title="Metoda ktora zwraca droge pomiedzy wierzcholkiem poczatkowym a x.">zwrocg</a>();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                it-&gt;H = <a class="code" href="class_graf.html#a85a1a93b7853bb90374e65373cc21658">zwroch</a>();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="keywordflow">if</span> (it-&gt;G &lt; minsciezka) {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                minsciezka = it-&gt;G;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">//nie ma sciezki miedzy 2 polami</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano N, 25 maj 2014 19:50:21 dla My Project programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3.1
+</small></address>
+</body>
+</html>

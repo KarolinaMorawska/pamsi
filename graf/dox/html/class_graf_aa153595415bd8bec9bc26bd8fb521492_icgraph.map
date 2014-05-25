@@ -1,0 +1,5 @@
+<map id="Graf::Polaczenie" name="Graf::Polaczenie">
+<area shape="rect" id="node3" href="$class_graf.html#a462c9d3d65e85fbee8e16bbeb7110803" title="Metoda ktora dodaje krawedz do grafu. Jej atrybutem sa zmienne okreslajace wierzcholki przez ktore ma..." alt="" coords="173,5,269,35"/>
+<area shape="rect" id="node7" href="$class_graf.html#a989e232821c5f0fa37d993168d56be6f" title="Metoda usuwa krawedz. Jej atrybutem sa dwie zmienne oznaczajace wierzcholki ktorych krawedz ma byc us..." alt="" coords="175,59,268,88"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Główna funkcja programu W funkcji main: &#45;tworzona jest zmienna typu Graf &#45;dodana do niej zostaja para..." alt="" coords="317,5,368,35"/>
+</map>

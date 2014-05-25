@@ -1,0 +1,5 @@
+<map id="Graf::odleglosc" name="Graf::odleglosc">
+<area shape="rect" id="node3" href="$class_graf.html#aa4bdae7e3634f247228d8027d993c06e" title="Metoda ktora zwraca droge pomiedzy wierzcholkiem poczatkowym a x." alt="" coords="167,32,263,61"/>
+<area shape="rect" id="node5" href="$class_graf.html#a96c839a91f11e176f2daabe6d02389b0" title="Metoda ktora zwraca sume funkcji zwroch i funkcji zwrocg." alt="" coords="313,5,407,35"/>
+<area shape="rect" id="node7" href="$class_graf.html#abcd0560ed9789d1a6e2d9a60c1510352" title="Wyszukuje najkrotsza sciezke miedzy dwoma wezlami jesli odnajdzie metoda zwraca true w innym przypadk..." alt="" coords="457,32,543,61"/>
+</map>

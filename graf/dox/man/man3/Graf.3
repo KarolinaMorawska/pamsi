@@ -1,0 +1,211 @@
+.TH "Graf" 3 "N, 25 maj 2014" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Graf \- 
+.PP
+Modeluje pojęcie \fBGraf\fP\&. Klasa modeluje pojęcie graf \&. Jej atrybutem jest pole zawierajace liste sasedztwa\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Graf\&.h>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "int \fBodleglosc\fP (int a, int b)"
+.br
+.ti -1c
+.RI "int \fBzwrocmin\fP ()"
+.br
+.RI "\fIMetoda ktora zwraca minimalna odleglosc pomiedzy wierzcholkami\&. \fP"
+.ti -1c
+.RI "double \fBzwroch\fP ()"
+.br
+.ti -1c
+.RI "double \fBzwrocg\fP ()"
+.br
+.RI "\fIMetoda ktora zwraca droge pomiedzy wierzcholkiem poczatkowym a x\&. \fP"
+.ti -1c
+.RI "double \fBzwrocf\fP ()"
+.br
+.RI "\fIMetoda ktora zwraca sume funkcji zwroch i funkcji zwrocg\&. \fP"
+.ti -1c
+.RI "bool \fBobecny\fP (list< int > &lista, int ktory)"
+.br
+.RI "\fIMetoda ktora sprawdza dostepnosc wierzcholka\&. \fP"
+.ti -1c
+.RI "int \fBzwrocdlawierz\fP (int w1, int w2)"
+.br
+.RI "\fIMetoda ktora zwraca dla wierzcholka funkcje f\&. \fP"
+.ti -1c
+.RI "void \fBDodajw\fP (unsigned int wierzcholek)"
+.br
+.RI "\fIMetoda ktora dodaje wierzcholek do grafu\&. Jej atrybutem jest zmienna typu int o nazwie wierzcholek\&. \fP"
+.ti -1c
+.RI "void \fBDodajk\fP (int waga, int w1, int w2)"
+.br
+.RI "\fIMetoda ktora dodaje krawedz do grafu\&. Jej atrybutem sa zmienne okreslajace wierzcholki przez ktore ma przejsc krawedz i zmienna ktora zawiera wage\&. \fP"
+.ti -1c
+.RI "void \fBUsunk\fP (int w1, int w2)"
+.br
+.RI "\fIMetoda usuwa krawedz\&. Jej atrybutem sa dwie zmienne oznaczajace wierzcholki ktorych krawedz ma byc usunieta\&. \fP"
+.ti -1c
+.RI "void \fBUsunw\fP (int wierzcholek)"
+.br
+.RI "\fIMetoda usuwa wierzcholek\&. Jej atrybutem jest zmienna typu int o nazwie wierzcholek\&. \fP"
+.ti -1c
+.RI "bool \fBPolaczenie\fP (int w1, int w2)"
+.br
+.RI "\fIMetoda sprawdza czy wystepuje polaczenie miedzy dwoma wierzcholkami\&. \fP"
+.ti -1c
+.RI "void \fBSasiad\fP (int w1)"
+.br
+.RI "\fIMetoda sprawdza sasiadow wybranego wierzcholka i wypisuje ich\&. \fP"
+.ti -1c
+.RI "void \fBBFS\fP (int wierzcholeks)"
+.br
+.RI "\fIMetoda przeszukiwania wstecz\&.Danymi wejściowymi dla algorytmu jest wierzchołek od którego rozpoczynane jest przeszukiwanie\&. Początkowo wszystkie wierzchołki kolorowane są na biało, co oznacza, że nie zostały jeszcze odwiedzone\&.Kolejka FIFO Q jest inicjalizowana węzłem startowym, którego kolor ustawiony został na szaro – oznacza to, że węzeł został już odwiedzony, lecz nie zostały odwiedzone węzły do niego sąsiednie\&. Następnie, pobierany jest pierwszy wierzchołek z kolejki i analizowana jest lista jego sąsiadów\&. Jeżeli sąsiad jest biały, oznacza to, że nie został jeszcze odwiedzony: aktualizowany jest więc jego kolor a następnie jest on dodawany do kolejki\&. Po przeglądnięciu wszystkich sąsiadów danego węzła kolor węzła bieżącego zmieniany jest na czarny (wszyscy jego sąsiedzi zostali odwiedzeni) i operacja powtarza się dla następnego węzła znajdującego się w kolejce, bądź też (jeżeli kolejka jest pusta) algorytm kończy swoje działanie\&. \fP"
+.ti -1c
+.RI "void \fBVisitNode\fP (int wierzcholek)"
+.br
+.RI "\fIPomocnicza metoda przy wyszkukiwaniu w glab, ktora sluzy do odwiedzania wezla\&.Na poczatku zamalowywuje wierzcholek na szaro, nastepnie dla kazdego wierzcholka v na liscie sasiedztwa u sprawdzane jest jezeli v jest bialy odwierz wierzcholek v\&. \fP"
+.ti -1c
+.RI "void \fBDFS\fP ()"
+.br
+.RI "\fIMetoda przeszukiwania w glab\&.Na poczatku dla kazdego wierzcholka u z grafu kolor wierzcholka ustawiany jest na bialy\&.W innym przypadku jezeli wierzcholek jest juz bialy wywolywana jest metoda VisitNode\&. \fP"
+.ti -1c
+.RI "bool \fBAstar\fP (int start, int stop)"
+.br
+.RI "\fIWyszukuje najkrotsza sciezke miedzy dwoma wezlami jesli odnajdzie metoda zwraca true w innym przypadku zwracane jest false\&. \fP"
+.in -1c
+.SS "Atrybuty publiczne"
+
+.in +1c
+.ti -1c
+.RI "list< int > \fBOL\fP"
+.br
+.RI "\fILista wezlow otwartych\&. \fP"
+.ti -1c
+.RI "list< int > \fBCL\fP"
+.br
+.RI "\fILista wezlow zamnknietych\&. \fP"
+.ti -1c
+.RI "vector< int > \fBshortdroga\fP"
+.br
+.RI "\fIWektor przechowujacy najkrotsza droge\&. \fP"
+.ti -1c
+.RI "vector< int > \fBcolour\fP"
+.br
+.RI "\fIInicjalizuje zmienna typu wektor ktora wykorzystywana jest przy metodach przeszukiwan aby sprawdzic czy dany wierzcholek byl odwiedzany i kolorowany na odpowiedni kolor\&. \fP"
+.ti -1c
+.RI "vector< list< \fBpara\fP > > \fBwektor\fP"
+.br
+.RI "\fIInicjalizuje zmienna typu lista wektorow \&. \fP"
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Definicja w linii 28 pliku Graf\&.h\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "bool Graf::Astar (intstart, intstop)"
+
+.PP
+Definicja w linii 163 pliku Graf\&.cpp\&.
+.SS "void Graf::BFS (intwierzcholeks)"
+
+.PP
+Definicja w linii 80 pliku Graf\&.cpp\&.
+.SS "void Graf::DFS ()"
+
+.PP
+Definicja w linii 115 pliku Graf\&.cpp\&.
+.SS "void Graf::Dodajk (intwaga, intw1, intw2)"
+
+.PP
+Definicja w linii 43 pliku Graf\&.cpp\&.
+.SS "void Graf::Dodajw (unsigned intwierzcholek)"
+
+.PP
+Definicja w linii 35 pliku Graf\&.cpp\&.
+.SS "bool Graf::obecny (list< int > &lista, intktory)"
+
+.PP
+Definicja w linii 155 pliku Graf\&.cpp\&.
+.SS "int Graf::odleglosc (inta, intb)"
+
+.PP
+Definicja w linii 128 pliku Graf\&.cpp\&.
+.SS "bool Graf::Polaczenie (intw1, intw2)"
+\fBZwraca:\fP
+.RS 4
+Zwraca true lub false\&. 
+.RE
+.PP
+
+.PP
+Definicja w linii 63 pliku Graf\&.cpp\&.
+.SS "void Graf::Sasiad (intw1)"
+
+.PP
+Definicja w linii 72 pliku Graf\&.cpp\&.
+.SS "void Graf::Usunk (intw1, intw2)"
+
+.PP
+Definicja w linii 49 pliku Graf\&.cpp\&.
+.SS "void Graf::Usunw (intwierzcholek)"
+
+.PP
+Definicja w linii 60 pliku Graf\&.cpp\&.
+.SS "void Graf::VisitNode (intwierzcholek)"
+
+.PP
+Definicja w linii 105 pliku Graf\&.cpp\&.
+.SS "int Graf::zwrocdlawierz (intw1, intw2)"
+
+.PP
+Definicja w linii 13 pliku Graf\&.cpp\&.
+.SS "double Graf::zwrocf ()"
+
+.PP
+Definicja w linii 152 pliku Graf\&.cpp\&.
+.SS "double Graf::zwrocg ()"
+
+.PP
+Definicja w linii 141 pliku Graf\&.cpp\&.
+.SS "double Graf::zwroch ()"
+Przewidywana przez heurystykę droga od x do wierzchołka docelowego\&. 
+.PP
+Definicja w linii 137 pliku Graf\&.cpp\&.
+.SS "int Graf::zwrocmin ()"
+
+.PP
+Definicja w linii 23 pliku Graf\&.cpp\&.
+.SH "Dokumentacja atrybutów składowych"
+.PP 
+.SS "list<int> Graf::CL"
+
+.PP
+Definicja w linii 38 pliku Graf\&.h\&.
+.SS "vector<int> Graf::colour"
+
+.PP
+Definicja w linii 72 pliku Graf\&.h\&.
+.SS "list<int> Graf::OL"
+
+.PP
+Definicja w linii 34 pliku Graf\&.h\&.
+.SS "vector<int> Graf::shortdroga"
+
+.PP
+Definicja w linii 42 pliku Graf\&.h\&.
+.SS "vector<list<\fBpara\fP> > Graf::wektor"
+
+.PP
+Definicja w linii 76 pliku Graf\&.h\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla My Project\&.

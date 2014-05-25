@@ -1,0 +1,4 @@
+<map id="Graf::zwrocdlawierz" name="Graf::zwrocdlawierz">
+<area shape="rect" id="node3" href="$class_graf.html#ac00087eee459e249a5eb875cb9174db0" title="Metoda ktora zwraca minimalna odleglosc pomiedzy wierzcholkami." alt="" coords="193,5,303,35"/>
+<area shape="rect" id="node5" href="$class_graf.html#abcd0560ed9789d1a6e2d9a60c1510352" title="Wyszukuje najkrotsza sciezke miedzy dwoma wezlami jesli odnajdzie metoda zwraca true w innym przypadk..." alt="" coords="353,5,439,35"/>
+</map>
