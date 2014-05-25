@@ -1,0 +1,98 @@
+.TH "plecak" 3 "So, 24 maj 2014" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+plecak \- 
+.PP
+Modeluje pojęcie plecak\&. Jej atrybutem jest wektor ktory zawiera elementy dodawane do plecaka\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <plecak\&.h>\fP
+.SS "Metody publiczne"
+
+.in +1c
+.ti -1c
+.RI "void \fBoblicz\fP (vector< pair< int, int > > \fBT\fP, int maxpoj)"
+.br
+.RI "\fIMetoda glowna programu, oblicza jak najlepsze zapelnienie plecaka\&. Jej atrybutami są wektor T i max pojemnosc plecaka\&. \fP"
+.ti -1c
+.RI "int \fBwartosc\fP (int poj)"
+.br
+.RI "\fIMetoda sluzy do zwracania wartosci przedmiotu\&. \fP"
+.ti -1c
+.RI "vector< pair< int, int > > \fBprzedmioty\fP (int poj)"
+.br
+.RI "\fIPomocniczy metoda zwracajaca elementy ktorymi zostal zapelniony plecak\&. \fP"
+.ti -1c
+.RI "\fBplecak\fP ()"
+.br
+.RI "\fIInicjalizuje konstruktor\&. \fP"
+.ti -1c
+.RI "virtual \fB~plecak\fP ()"
+.br
+.RI "\fIInicjalizuje wirtualny konstruktor\&. \fP"
+.in -1c
+.SS "Atrybuty publiczne"
+
+.in +1c
+.ti -1c
+.RI "vector< pair< int, int > > \fBT\fP"
+.br
+.RI "\fIZmienna wektor ktora przechowuje pare: waga i wartosc elementu\&. \fP"
+.ti -1c
+.RI "vector< int > \fBmaxvalue\fP"
+.br
+.RI "\fIZmienna wektor ktora przechowuje maksymalna wartosc jaka mozna wlozyc do plecaka\&. \fP"
+.ti -1c
+.RI "vector< int > \fBlastitem\fP"
+.br
+.RI "\fIZmienna wektor, przechowuje ostatni dodany element\&. \fP"
+.in -1c
+.SH "Opis szczegółowy"
+.PP 
+Definicja w linii 25 pliku plecak\&.h\&.
+.SH "Dokumentacja konstruktora i destruktora"
+.PP 
+.SS "plecak::plecak ()"
+
+.PP
+Definicja w linii 13 pliku plecak\&.cpp\&.
+.SS "plecak::~plecak ()\fC [virtual]\fP"
+
+.PP
+Definicja w linii 18 pliku plecak\&.cpp\&.
+.SH "Dokumentacja funkcji składowych"
+.PP 
+.SS "void plecak::oblicz (vector< pair< int, int > >T, intmaxpoj)"
+
+.PP
+Definicja w linii 22 pliku plecak\&.cpp\&.
+.SS "vector< pair< int, int > > plecak::przedmioty (intpoj)"
+
+.PP
+Definicja w linii 47 pliku plecak\&.cpp\&.
+.SS "int plecak::wartosc (intpoj)"
+
+.PP
+Definicja w linii 38 pliku plecak\&.cpp\&.
+.SH "Dokumentacja atrybutów składowych"
+.PP 
+.SS "vector<int> plecak::lastitem"
+
+.PP
+Definicja w linii 39 pliku plecak\&.h\&.
+.SS "vector<int> plecak::maxvalue"
+
+.PP
+Definicja w linii 35 pliku plecak\&.h\&.
+.SS "vector<pair<int,int> > plecak::T"
+
+.PP
+Definicja w linii 31 pliku plecak\&.h\&.
+
+.SH "Autor"
+.PP 
+Wygenerowano automatycznie z kodu źródłowego programem Doxygen dla My Project\&.

@@ -1,0 +1,166 @@
+\hypertarget{classplecak}{\section{Dokumentacja klasy plecak}
+\label{classplecak}\index{plecak@{plecak}}
+}
+
+
+Modeluje pojęcie plecak. Jej atrybutem jest wektor ktory zawiera elementy dodawane do plecaka.  
+
+
+
+
+{\ttfamily \#include $<$plecak.\-h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classplecak_a03475949d5e5613bdeaa2311465fac93}{oblicz} (vector$<$ pair$<$ int, int $>$ $>$ \hyperlink{classplecak_aa4925fd62ae61e120cae3409d97a12bb}{T}, int maxpoj)
+\begin{DoxyCompactList}\small\item\em Metoda glowna programu, oblicza jak najlepsze zapelnienie plecaka. Jej atrybutami są wektor T i max pojemnosc plecaka. \end{DoxyCompactList}\item 
+int \hyperlink{classplecak_ac71a254ad6907aaf40fe17d845dda799}{wartosc} (int poj)
+\begin{DoxyCompactList}\small\item\em Metoda sluzy do zwracania wartosci przedmiotu. \end{DoxyCompactList}\item 
+vector$<$ pair$<$ int, int $>$ $>$ \hyperlink{classplecak_a54c09cbd49dc74a905686731575c2fe5}{przedmioty} (int poj)
+\begin{DoxyCompactList}\small\item\em Pomocniczy metoda zwracajaca elementy ktorymi zostal zapelniony plecak. \end{DoxyCompactList}\item 
+\hyperlink{classplecak_ae4a83a03f80233a82ca1d2d1f963432a}{plecak} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje konstruktor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classplecak_a918a266d6f8e95439b6ba37c1f6b41cf}{$\sim$plecak} ()
+\begin{DoxyCompactList}\small\item\em Inicjalizuje wirtualny konstruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ pair$<$ int, int $>$ $>$ \hyperlink{classplecak_aa4925fd62ae61e120cae3409d97a12bb}{T}
+\begin{DoxyCompactList}\small\item\em Zmienna wektor ktora przechowuje pare\-: waga i wartosc elementu. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \hyperlink{classplecak_a42a413a1022b907eaf87605b17c86738}{maxvalue}
+\begin{DoxyCompactList}\small\item\em Zmienna wektor ktora przechowuje maksymalna wartosc jaka mozna wlozyc do plecaka. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \hyperlink{classplecak_a347d5be822af6095956944e815df0473}{lastitem}
+\begin{DoxyCompactList}\small\item\em Zmienna wektor, przechowuje ostatni dodany element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 25 pliku plecak.\-h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{classplecak_ae4a83a03f80233a82ca1d2d1f963432a}{\index{plecak@{plecak}!plecak@{plecak}}
+\index{plecak@{plecak}!plecak@{plecak}}
+\subsubsection[{plecak}]{\setlength{\rightskip}{0pt plus 5cm}plecak\-::plecak (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classplecak_ae4a83a03f80233a82ca1d2d1f963432a}
+
+
+Definicja w linii 13 pliku plecak.\-cpp.
+
+\hypertarget{classplecak_a918a266d6f8e95439b6ba37c1f6b41cf}{\index{plecak@{plecak}!$\sim$plecak@{$\sim$plecak}}
+\index{$\sim$plecak@{$\sim$plecak}!plecak@{plecak}}
+\subsubsection[{$\sim$plecak}]{\setlength{\rightskip}{0pt plus 5cm}plecak\-::$\sim$plecak (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classplecak_a918a266d6f8e95439b6ba37c1f6b41cf}
+
+
+Definicja w linii 18 pliku plecak.\-cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{classplecak_a03475949d5e5613bdeaa2311465fac93}{\index{plecak@{plecak}!oblicz@{oblicz}}
+\index{oblicz@{oblicz}!plecak@{plecak}}
+\subsubsection[{oblicz}]{\setlength{\rightskip}{0pt plus 5cm}void plecak\-::oblicz (
+\begin{DoxyParamCaption}
+\item[{vector$<$ pair$<$ int, int $>$ $>$}]{T, }
+\item[{int}]{maxpoj}
+\end{DoxyParamCaption}
+)}}\label{classplecak_a03475949d5e5613bdeaa2311465fac93}
+
+
+Definicja w linii 22 pliku plecak.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classplecak_a03475949d5e5613bdeaa2311465fac93_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classplecak_a54c09cbd49dc74a905686731575c2fe5}{\index{plecak@{plecak}!przedmioty@{przedmioty}}
+\index{przedmioty@{przedmioty}!plecak@{plecak}}
+\subsubsection[{przedmioty}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ pair$<$ int, int $>$ $>$ plecak\-::przedmioty (
+\begin{DoxyParamCaption}
+\item[{int}]{poj}
+\end{DoxyParamCaption}
+)}}\label{classplecak_a54c09cbd49dc74a905686731575c2fe5}
+
+
+Definicja w linii 47 pliku plecak.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classplecak_a54c09cbd49dc74a905686731575c2fe5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classplecak_ac71a254ad6907aaf40fe17d845dda799}{\index{plecak@{plecak}!wartosc@{wartosc}}
+\index{wartosc@{wartosc}!plecak@{plecak}}
+\subsubsection[{wartosc}]{\setlength{\rightskip}{0pt plus 5cm}int plecak\-::wartosc (
+\begin{DoxyParamCaption}
+\item[{int}]{poj}
+\end{DoxyParamCaption}
+)}}\label{classplecak_ac71a254ad6907aaf40fe17d845dda799}
+
+
+Definicja w linii 38 pliku plecak.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classplecak_ac71a254ad6907aaf40fe17d845dda799_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{classplecak_a347d5be822af6095956944e815df0473}{\index{plecak@{plecak}!lastitem@{lastitem}}
+\index{lastitem@{lastitem}!plecak@{plecak}}
+\subsubsection[{lastitem}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$ plecak\-::lastitem}}\label{classplecak_a347d5be822af6095956944e815df0473}
+
+
+Definicja w linii 39 pliku plecak.\-h.
+
+\hypertarget{classplecak_a42a413a1022b907eaf87605b17c86738}{\index{plecak@{plecak}!maxvalue@{maxvalue}}
+\index{maxvalue@{maxvalue}!plecak@{plecak}}
+\subsubsection[{maxvalue}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$ plecak\-::maxvalue}}\label{classplecak_a42a413a1022b907eaf87605b17c86738}
+
+
+Definicja w linii 35 pliku plecak.\-h.
+
+\hypertarget{classplecak_aa4925fd62ae61e120cae3409d97a12bb}{\index{plecak@{plecak}!T@{T}}
+\index{T@{T}!plecak@{plecak}}
+\subsubsection[{T}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$pair$<$int,int$>$ $>$ plecak\-::\-T}}\label{classplecak_aa4925fd62ae61e120cae3409d97a12bb}
+
+
+Definicja w linii 31 pliku plecak.\-h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+/home/karolina/\-Pulpit/pamsi8/prj/\hyperlink{plecak_8h}{plecak.\-h}\item 
+/home/karolina/\-Pulpit/pamsi8/prj/\hyperlink{plecak_8cpp}{plecak.\-cpp}\end{DoxyCompactItemize}
